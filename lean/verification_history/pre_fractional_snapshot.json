@@ -1,0 +1,1028 @@
+{
+  "verified_at_utc": "2026-11-08T20:57:56.938704+00:00",
+  "roots": [
+    "PfHk"
+  ],
+  "toolchain": "leanprover/lean4:v4.34.0-rc2",
+  "paper_sha256": "8eee3609f876225e333ddf29c390d2ede9c23090bc0e84110f747255ee4aa425",
+  "dependency_manifest_sha256": "3cf6258938aac4014b7f11dee13b247912436fae3206a24258405e784861d643",
+  "scope": "Full local source dependency closure of the listed root modules, rebuilt against existing gpt_lean and mathlib artifacts and audited for axioms.",
+  "sources": [
+    {
+      "source": "PfHk/CarlemanAlgebra.lean",
+      "source_sha256": "f1f917e2b0dbd6fab6b7e07929a0b2bdf59dd68990af75bac44b468dec1f50a5",
+      "artifact_sha256": "9157c3ed6210e3ce6edaa9e453dd02bba2d2c2f6f53203b46d9390d7a6c5a1f1"
+    },
+    {
+      "source": "PfHk/CarlemanWeights.lean",
+      "source_sha256": "e9599cbb728fbdd1eefe9bef53d732ce1714f508b041931b5527b456ef843ace",
+      "artifact_sha256": "dc2c35f5989afcdc65748dc9b222456110ecc9d1e2edb0236fa40eac77e5793d"
+    },
+    {
+      "source": "PfHk/CarlemanWeightDerivatives.lean",
+      "source_sha256": "2ec372cfc62cfeae3607696eb827b6c7bd1684a22c50eb31d2f9e592f4962b28",
+      "artifact_sha256": "7ea38201d173c25b373e951a4cc865819cea6f02b1d59a2a14f40d257c401a9a"
+    },
+    {
+      "source": "PfHk/ConfigurationGeometry.lean",
+      "source_sha256": "f557b6c84d34249b08505a3b1dec7cb7d690ea11e14cb0b8bd5ab916ac3edd25",
+      "artifact_sha256": "30d9a9337bb82323a43ba57039e8dde55f81134815b611d63af8f699acc73ad4"
+    },
+    {
+      "source": "PfHk/CounterexampleField.lean",
+      "source_sha256": "1915226e69d44bc6fccc4101d6d0e6dc3c6e4ea65f156822a564974a4028cab1",
+      "artifact_sha256": "a979ccd022bb3e3085e7dbec19ae3f7a63310b127e9c1b3959a6644b1778de6d"
+    },
+    {
+      "source": "PfHk/GroundState.lean",
+      "source_sha256": "a27c51259cdb28473919d4c61746834a4eb0a79512c3529751cf4fdc3bf82817",
+      "artifact_sha256": "1c33a291a728d46525126904b1a5dd6d77c5908fbf1a8dcc4865f8a8b7d294db"
+    },
+    {
+      "source": "PfHk/CutoffKernel.lean",
+      "source_sha256": "eb732d396807fd140fd528006cf5120ed491b283bf31ea75fa844f21d473bc5f",
+      "artifact_sha256": "0ad2abb4389129cddd0db51750c066cedcf8f4910ec3a1423ae873853b34c9e4"
+    },
+    {
+      "source": "PfHk/CylinderIdentity.lean",
+      "source_sha256": "45bbd3251aef3568c05aec54cd0bd20770343c7738c2b3f4e1daa73036c0f3f5",
+      "artifact_sha256": "4178ef215a9ebab028c7eb78462885f3b1e374d37e625c87217880413e753e0a"
+    },
+    {
+      "source": "PfHk/CylinderCarleman.lean",
+      "source_sha256": "dd71af28aaf697d3f44d6f574bb00382bea16bb08ed48b7904d8de5af4ac4d4b",
+      "artifact_sha256": "780c3470f103b204a2f97e73475b4cb131b7e55c7f6b982434f1727e95f1509c"
+    },
+    {
+      "source": "PfHk/CylinderEstimate.lean",
+      "source_sha256": "d455f2b0e2beab2f32ca4e4aa191306732e1f841bdc4f95f46e69ee2b4030b67",
+      "artifact_sha256": "6ec392b4e24bacac9d6f20c3455d0c30a4bd6023dccef98c2dc9a01dc85aef68"
+    },
+    {
+      "source": "PfHk/FourierDivergence.lean",
+      "source_sha256": "ffe4fc8b89bf5bf9029ba3d08c68bafff0d66ad5bd16fbba46be7bd4b12c114d",
+      "artifact_sha256": "dbb79e063b4c7793a169e6a4eccf51b2b6710fd9c0359bade695d36bab76f78e"
+    },
+    {
+      "source": "PfHk/FourierSource.lean",
+      "source_sha256": "5c76acc924a5283635a6666871e7910179c45f57f2e0dd06169e806249789163",
+      "artifact_sha256": "804018aa6e1913edbc9636fe80878f54dadc1fab242b7e771b7a87685e7a6162"
+    },
+    {
+      "source": "PfHk/FourierUniqueness.lean",
+      "source_sha256": "57e5d7db08278a26624783bb0319b3290250ceb6bb633b938bab3c27411769d1",
+      "artifact_sha256": "5b118c8f7970fb3c68429463dcdb5664962013df98aae6fdd7ace9361e70b271"
+    },
+    {
+      "source": "PfHk/InfiniteOrder.lean",
+      "source_sha256": "0ae83dfaa4abbd3855e913f9dfca9c6216eb537ee7783d0892cb383ebfca3f82",
+      "artifact_sha256": "f4a7518104ee7a1d6d009b5047d72e7565f1770a485a6135d28ff56b8055f474"
+    },
+    {
+      "source": "PfHk/IntegratedFormBounds.lean",
+      "source_sha256": "097e2b641a75512494e1c69678e7004e2609e1e08f2ef997a94b57fb9f00e306",
+      "artifact_sha256": "cb82b60ac4841404df53f64dd6aea8165fbdc858c6b606a96b377b7b1de4d84f"
+    },
+    {
+      "source": "PfHk/L2ParameterDerivative.lean",
+      "source_sha256": "c36fcc607caca4099deb471b1ac3b1272b30ccee422c0b2ad6017178aed2039d",
+      "artifact_sha256": "af6c25590920b30461d052555f526afdbe5415609e8468cc946b4dcd87a7c7c2"
+    },
+    {
+      "source": "PfHk/NonvanishingDensity.lean",
+      "source_sha256": "1c0dc9dfbd0f862ad9bb182fc3789ff9e487bdc4cc84e9adb9a1a6b800114a3a",
+      "artifact_sha256": "619de38e01f87edb675134674c11a112177767738a911bf76d6992f847c3d74d"
+    },
+    {
+      "source": "PfHk/NormWeakH1Finite.lean",
+      "source_sha256": "cecb78574fd23d5728d65ec05b7f039e571fbe51ecf1ee321f4bd1340ec73b83",
+      "artifact_sha256": "2c7469dc6b4c937bb1873924766b82f15f9546bfbc70a59961a4c38161de004c"
+    },
+    {
+      "source": "PfHk/PhysicalCutoffMultiplier.lean",
+      "source_sha256": "f3e38d59efb7769f77671aba8885acd45f2f4bdc653291e4ef17cc5c01af06f6",
+      "artifact_sha256": "f725cfd6b61e10a97d174c97a05592fab0ba07ac3b2fe127795d4dac7d303db2"
+    },
+    {
+      "source": "PfHk/L2ScalarNorm.lean",
+      "source_sha256": "e1089f3e5c3b471570c9f8565b285ef9c944caac82bc61843a69505f2c8bb64b",
+      "artifact_sha256": "8cc1a821ffde99925d52b76ea582a1ba72107b39e8751b5e882bc2f3998956dc"
+    },
+    {
+      "source": "PfHk/PhysicalCutoffCommutatorAlgebra.lean",
+      "source_sha256": "d3f0c18e5fc42f3bf085ea158cb1d625c1690ef77c827437786576dd64584c8b",
+      "artifact_sha256": "2411699de867939947da4207a32e5ae75c27998d680c5ff241371cd79b075c16"
+    },
+    {
+      "source": "PfHk/PhysicalCutoffCommutatorAlgebraLp.lean",
+      "source_sha256": "016de5d49c18c2ba0fe2aa9ecb8d5b19901b6db627ec6e4f44406114daf25f16",
+      "artifact_sha256": "c92f89c99ddcc37927113f262ff9d8a1949e07b557bc4e554b4965e3c632475c"
+    },
+    {
+      "source": "PfHk/PhysicalLocalEnergy.lean",
+      "source_sha256": "da1775de213cd51754f57703fd60a80ec8617f9b4fa93895e373830d6f17b810",
+      "artifact_sha256": "a151a4b1f287e84b3821aeb064fa5a4924f7348a1b399c1a9fd39aa11154ace3"
+    },
+    {
+      "source": "PfHk/PhysicalLocalEnergyIMS.lean",
+      "source_sha256": "51ad4347d342869eea12b2d85d18e13f5d1ee31ad9eb14a1ec20f73e2d61b869",
+      "artifact_sha256": "765eb6e510aee37d35b594e22bda702b18a94ec3388ebbfad6a41787d84c87e2"
+    },
+    {
+      "source": "PfHk/PhysicalLocalEnergyRough.lean",
+      "source_sha256": "95ff515f67c238047f4d3cdd09da735b54635bd7be539af1d3f0a8d24baa213b",
+      "artifact_sha256": "b9bd31675cfcfdc248f1e14d9346bb0aa148bbeaa15c0ebe1367f71a365c42f5"
+    },
+    {
+      "source": "PfHk/PhysicalCutoffCommutatorCore.lean",
+      "source_sha256": "94bee8db7f9d0e61e8c7f32a27b618b43f065fa6190f7461ef41f9f908308d56",
+      "artifact_sha256": "606176f75f55056a02122f2db6481d019e69d70478247639982173175ce6c12f"
+    },
+    {
+      "source": "PfHk/PhysicalCutoffCommutatorForm.lean",
+      "source_sha256": "39721bebf61e082fdad93baca399c5561542e09e07aa01647b32c4dc13e3ac0f",
+      "artifact_sha256": "b9e41622b64e15efa82ebdda7fed5b782d4453df16244a324ab3164cf66a3a92"
+    },
+    {
+      "source": "PfHk/PhysicalCutoffCommutator.lean",
+      "source_sha256": "3fd2559602c98d890e0e2fd160b3fc45bf32f796bdb2706bf8e59b8ab1f65124",
+      "artifact_sha256": "a56ea46e72d3873bbc79e225666779f29881728291f3928296d4347f346da49c"
+    },
+    {
+      "source": "PfHk/PhysicalLocalEnergyBallCutoff.lean",
+      "source_sha256": "6f4c4ab309c43f0d967196da944d653c207c8e51da500955814e914678be8d09",
+      "artifact_sha256": "42ae78f2f143fd670659626f46cb97c01eca5e1a302685a036d6227c7d3831c0"
+    },
+    {
+      "source": "PfHk/PhysicalLocalEnergyDiamagnetic.lean",
+      "source_sha256": "349083d57b9425177f9d026148fc04eebbb351140d1c46dd27bb191c6a82fa4e",
+      "artifact_sha256": "ffa7c60439a8b2625b2dfa3715647b406a37d65d57c6798e1cd4fb88e6e96d72"
+    },
+    {
+      "source": "PfHk/PhysicalLocalEnergyRoughCutoff.lean",
+      "source_sha256": "aa06fbec30b0a0b69eddf3321e585181c23cc7e1becc2f9c435d49c3b5ad1079",
+      "artifact_sha256": "c44ea59c7414b64ba93f1f5c3ef781abf36cfe732fa04cb5b9f85ffde85b63f1"
+    },
+    {
+      "source": "PfHk/PhysicalLocalEnergyRoughIMS.lean",
+      "source_sha256": "3838abe2eb984ef184f46d9aa79369143664b07d222212d2e20ef5a4f2bf5a57",
+      "artifact_sha256": "d264251f6bf6bb97445a0c63450c34af48675e589051ecad2a28a053a871ef5e"
+    },
+    {
+      "source": "PfHk/PhysicalLocalEnergySobolev.lean",
+      "source_sha256": "b9af06e30d9b6eb498434ee491ffee69060cd074fa967fc63dd15d37de0b3580",
+      "artifact_sha256": "8358eaf0184caadce1fdf39a0213c9d25ec8ea661d79e0684f07eb84e9842a48"
+    },
+    {
+      "source": "PfHk/PhysicalLocalEnergyCutoff.lean",
+      "source_sha256": "84aacd55e4e5b9108ecc91a99641ca84bdab617e5c946089d5e4317754008725",
+      "artifact_sha256": "1dc547376e44eef043307809d172de10b707c3dc9783f3d6b865ad181a86f52b"
+    },
+    {
+      "source": "PfHk/ScalarCommutatorEstimate.lean",
+      "source_sha256": "829c543a75f53b2977900dc75e1c651772145b43e9de9996fb167352bfb23535",
+      "artifact_sha256": "6f116f8fe0655ebcad1765658d74aa75f0e9a51ef598d840cd849923ae366d89"
+    },
+    {
+      "source": "PfHk/UniqueContinuation.lean",
+      "source_sha256": "2b507db0934a535c352ac04dc05c9d732856df48990d5c8c11a389cbf8cb6cc5",
+      "artifact_sha256": "4922327dfee18b7a249eb048494840e0c64e39e93fa8c983fd25cc495499dd80"
+    },
+    {
+      "source": "PfHk/PhysicalCutoffCommutatorEstimate.lean",
+      "source_sha256": "56d97a69c3186dbdb79830407e50568e93ea9f76c5eaf8377baf44ae5c95c2c3",
+      "artifact_sha256": "5a9460955d41c95ed51cc2cd7c576db5006532e60a4bf8548f4c0727c2811173"
+    },
+    {
+      "source": "PfHk/PhysicalFieldRegularity.lean",
+      "source_sha256": "e58de6cfaeea7609fdb503ce235f94b21c2a49dac2ce6594a79e1bedff86d16e",
+      "artifact_sha256": "3b447f9a22ccb16b5477aae9f99e232eebef5523138b9e8bd9eec305640367cb"
+    },
+    {
+      "source": "PfHk/PhysicalFieldRegularityDerivative.lean",
+      "source_sha256": "a6bb989b5ad47e870986e20883b67ed63cd5f377e77bf39c93c90b13f1aa453b",
+      "artifact_sha256": "9f915f28985445863fc83b583715c87ba497bd39742618cc22450c731721ecdf"
+    },
+    {
+      "source": "PfHk/PolarCalculus.lean",
+      "source_sha256": "55f3ade285e595e86b87ff58b951d30bdc7803a52c7729052bf73f6e91ad519e",
+      "artifact_sha256": "53003735922661d76239fb7179c5979607b8e43e5f36c3f7f64f50b2f6115c2a"
+    },
+    {
+      "source": "PfHk/LogPolarCalculus.lean",
+      "source_sha256": "fedf12f34a8f01deec80aed1c122a67c8e455210966a254b8df082e88e01bf73",
+      "artifact_sha256": "788e35a4525196a48a0ef078490e0049ea8ec00d2816e16de696d8ecdd1a939a"
+    },
+    {
+      "source": "PfHk/CarlemanPolarMeasure.lean",
+      "source_sha256": "1b2095e8b93d2967d0629eedd78921b7897222f6d2c2379ac55026dc87ae7a28",
+      "artifact_sha256": "aedad4e0385b4569c793a72af78b08e261ef3ce493a2ae86fd135afa83219081"
+    },
+    {
+      "source": "PfHk/CarlemanSpatialDensity.lean",
+      "source_sha256": "be339f40014fb32ea5d39ed99374cf7a03bf2a11686d53a8f6b7dd4850b7438e",
+      "artifact_sha256": "d18f2fb9a7bcf833aa3ca49dbf8b9a329138af9319110675d7a0eaa7f43e633a"
+    },
+    {
+      "source": "PfHk/CarlemanTranslation.lean",
+      "source_sha256": "412949690074de3b95ea2bc982210eac8fda15092c2b6ad92f07a398d9055752",
+      "artifact_sha256": "d1dd904225cf1a15f9d49cbe92881a91ceca6eebd95f7f05cc9734145f202666"
+    },
+    {
+      "source": "PfHk/CarlemanAnnularWeights.lean",
+      "source_sha256": "55eff4c9af10c66ea42b899013296f11ed94094dbe5d28647e6a0404a273aa3f",
+      "artifact_sha256": "84a907c19fecfe30e32fb20015c0ef5a6ea7fb9c621a655362872d8047e11cd3"
+    },
+    {
+      "source": "PfHk/PhysicalCarlemanInput.lean",
+      "source_sha256": "e4442211dd6c7c8bab3f06966f145866509f929462ece326e8daf06da23139c8",
+      "artifact_sha256": "2a1f8d9b8f1d815358f4c8c35d3710e11e41c1c4d8a5f063ebc3c304a9a083b4"
+    },
+    {
+      "source": "PfHk/AnnularSupportGeometry.lean",
+      "source_sha256": "abded25512aa01867533bca252d1c1af16f7a335d74699d955c99ba43d75df6d",
+      "artifact_sha256": "efed6c531505bf52b32fd8a72c0e0e6b6b1598e5ca3d4e6a2bd87c0afe5bdf67"
+    },
+    {
+      "source": "PfHk/CompactWeightMultipliers.lean",
+      "source_sha256": "58fc27e1340098964b063fb22ec9c86f33abe152b271f822436fdeadb8a0fa85",
+      "artifact_sha256": "79715eb0277d379080c48bed461da00ca1e49e1de402f6f390c6c7a70c04c5e1"
+    },
+    {
+      "source": "PfHk/CarlemanWeightedL2.lean",
+      "source_sha256": "dfa91fd2f65499808ecdeca952331ad2b038559232297a99b76dd4a906e9b7bd",
+      "artifact_sha256": "f4680d67d92f34839aa825942e6d8fa12f630befdf857c910ec2d39f68b68683"
+    },
+    {
+      "source": "PfHk/C1ReferenceCore.lean",
+      "source_sha256": "e4d57a762c5cc58c997402a58e7d7b453c2825062b0b2a8bc7def17f54b3301d",
+      "artifact_sha256": "090d0c3b175849dcd7d40769504bc92c6dd138f1395353c3118a136990ee0138"
+    },
+    {
+      "source": "PfHk/PolarInnerCalculus.lean",
+      "source_sha256": "53c844a480227aed3ba15d8df4766fdcb1f40acd4afccccac867c6e3e6e7709c",
+      "artifact_sha256": "81ffafa8053569f5fe3a2d6f52eabd04963828bb2869a40a8faaf886b3e996cf"
+    },
+    {
+      "source": "PfHk/C1ReferenceForm.lean",
+      "source_sha256": "de5ac150bd0579baa5fed2195366be16a21214da75512248e6294d3e513ad95a",
+      "artifact_sha256": "3ef0500885c9a0f82f495017658e4cd3e138591b23484e8d97bcdcfc61705b32"
+    },
+    {
+      "source": "PfHk/RadialGauge.lean",
+      "source_sha256": "a99da85db59d4a512f2fedd22bcd1af99e93bb30ac586eb1452de28091eacd71",
+      "artifact_sha256": "923d3136a112cc446fc3a67b980b00fb4be2861c07beda1f1ec149d1c4b2abf4"
+    },
+    {
+      "source": "PfHk/RadialGaugeCurvature.lean",
+      "source_sha256": "004530715efdb2fcd6915c845f03a1d4e09b6cd14b1e68fbf8af22c3100c5699",
+      "artifact_sha256": "909c15d3b2bbdced286883ca59fe4b4b1d8d80a96f1278d003cbe5a7b91a43be"
+    },
+    {
+      "source": "PfHk/RadialGaugeAngularSlope.lean",
+      "source_sha256": "8857358a7d5f682c2bdbe7ab45007cf3da88c0b7468b8c5c4db601415895f899",
+      "artifact_sha256": "2f16e8bf39805972d82b5fa1a3fac0147cfa99aebd0714828a25cdc2dcd20f87"
+    },
+    {
+      "source": "PfHk/RadialGaugeConnection.lean",
+      "source_sha256": "d9534f8764315c99c22eba3563bc9ae9cb3d4bd35e24fada832e4cb9b3c913c8",
+      "artifact_sha256": "2bbbce687d1bde84c2c12bb29a8aa633966665299d7889b90c3b36b75420e008"
+    },
+    {
+      "source": "PfHk/RadialGaugeLinearity.lean",
+      "source_sha256": "abdbdc16b4fa92171c956153eeb7bf378bc54c5619b20c3f79bbc8820ae0d5e6",
+      "artifact_sha256": "5e977a08ae1d104bd514f06083b6fe1648545bb0c5252f6d749d25fca9ec36e1"
+    },
+    {
+      "source": "PfHk/RadialGaugeContinuity.lean",
+      "source_sha256": "3c23875c4633fd19ce3de822e622c57127646c19f36c8d38f114b58d3eb4d914",
+      "artifact_sha256": "6ea61d465c0b101b217229cda3729c971b2bc0c400d01a4ceadf4b9f1ebe4396"
+    },
+    {
+      "source": "PfHk/CenteredRadialGauge.lean",
+      "source_sha256": "8b4cb81e6fe157a720dd1a9f7b374858cd3f40d9eba25662755d002bc858d558",
+      "artifact_sha256": "e7d8d5f7b03af3bbe2437fcb6f5084ff94992924332412e9febcf82c40ce273c"
+    },
+    {
+      "source": "PfHk/RadialGaugeEnergyLabel.lean",
+      "source_sha256": "9c42ed8ed9a6c882d061666252f6b13f2e17bab42ef5deae0382ea5136f5ce4a",
+      "artifact_sha256": "d790a11373dad15530a3a6be46ff04ad919911da3f75eaa1585ea89ec3fda434"
+    },
+    {
+      "source": "PfHk/RadialGaugeCovariance.lean",
+      "source_sha256": "05e002683ea9334cff9fbd8469b388db248734fc129cf9c9d53ce7cc1c8f3223",
+      "artifact_sha256": "6684109678b7b5f0daa327c5f216b924a0d1602881d7e62854695cd5d93d3b57"
+    },
+    {
+      "source": "PfHk/CenteredRadialGaugeConnection.lean",
+      "source_sha256": "b40b061365d0455b5ced8145353a4545aa0cad9d2a31a7711bea68bad3ea09f6",
+      "artifact_sha256": "d7681fc64a9fc29b6f682dbf0d7f44fb27564ba3a110242fae5cb9a58c367d5f"
+    },
+    {
+      "source": "PfHk/CenteredRadialGaugeEnergy.lean",
+      "source_sha256": "062a5d85d9a15a3876018909938e8cdab35363929d4167172c1b99c10aab8a40",
+      "artifact_sha256": "9db3c5204a27d59b81e60dd6d6bd321d873e18a37854f93963a6e26f14a151fb"
+    },
+    {
+      "source": "PfHk/CenteredRadialGaugeCovariance.lean",
+      "source_sha256": "85a305995d257d63ad6b23b059cc4e3f24530e400f20c0d2db14c653b0348211",
+      "artifact_sha256": "622af809862a7046124c14b2296c66422b49d6dbecb8d24a3faf4f1f237d2e0d"
+    },
+    {
+      "source": "PfHk/RadialGaugeRadiation.lean",
+      "source_sha256": "8d9d22b0ec5a7ed8821ac2208482b071a2697999d1b4896f1df324f9520bb5bf",
+      "artifact_sha256": "f09fcb1ad94dbf8281ab1217c03d22f66d17e7b30cd10b86c54fab01d391faad"
+    },
+    {
+      "source": "PfHk/CenteredRadialGaugeRadiation.lean",
+      "source_sha256": "caf0ff8643f7737fe9ce1a4055e0fbea97f8cbe8afea9fc2546e5a7e13a35824",
+      "artifact_sha256": "5a64b9e0c1672e5f7097e17793b3f953e0007e923d40b67905a3b6b680f355d5"
+    },
+    {
+      "source": "PfHk/CenteredRadialGaugePolar.lean",
+      "source_sha256": "25b3ff9e1407947c25f1fc8e789e2de4998f1e44b38066e6aded9712fcd23fda",
+      "artifact_sha256": "1ade9de938837684a43af400bfffb7d74484dfd6792c96f2ac6fb33c69f1c929"
+    },
+    {
+      "source": "PfHk/CenteredPhysicalReference.lean",
+      "source_sha256": "4e2771525667a78a81ee1a4f1427190007fb893a72cff0439c5a8ad34aac99cf",
+      "artifact_sha256": "12bd597bfcc1c008c1a706404b6c07baf50247474d28ac5d3625a20973494875"
+    },
+    {
+      "source": "PfHk/C1FromLines.lean",
+      "source_sha256": "9d8f9e660bf32efa02cc912df05e82930210c24828165d98cf370b743afb74ad",
+      "artifact_sha256": "1bb751093781dd37f2406209d48c3a7402cde3b9bc158042ae8892ed1ef8a51f"
+    },
+    {
+      "source": "PfHk/CenteredRadialGaugeC1.lean",
+      "source_sha256": "02234f76c15ff64518ffd56ada554ab71acaa8264d60f005b888a5150c326ce8",
+      "artifact_sha256": "4d67dd94006feed332b4e6229adbec7728a5f9e87d57f6b8a958bec69e1ffcdf"
+    },
+    {
+      "source": "PfHk/L2OperatorDerivative.lean",
+      "source_sha256": "25f159ec2d3fedde11e60cdf07edef03312e7b19efa95cfaeb9bb1ede8ada04b",
+      "artifact_sha256": "ff23ee15742a766b9b0c6a42d6a2d58b7d900b2862f8f3c2e9ea79fd76f3dc3b"
+    },
+    {
+      "source": "PfHk/CompactL2Parameter.lean",
+      "source_sha256": "4942a6312126e291dd9bca24a2c575dba6a7c53f1dfa5b509cdf172c83263772",
+      "artifact_sha256": "4739ed188fab191feb78f8b7f3bcc3f52009cc28635d515814e9a66df178c071"
+    },
+    {
+      "source": "PfHk/PhysicalSphereSpace.lean",
+      "source_sha256": "c1a60b5bfa52bbde9fc49a3882aa20572f22092593da3e2cc61526d631d00017",
+      "artifact_sha256": "f88ca49f4fb2329ef1a62645bdafd68cb71e4c2c0f50f35f0f55eb6c06bd2404"
+    },
+    {
+      "source": "PfHk/PhysicalOperatorCore.lean",
+      "source_sha256": "f4960d21e002ae2e453b98b34b786e1306055b759aa8a51f5806aa34cab4d167",
+      "artifact_sha256": "f650f0a9d3c7d17c3445277b9aa9a22c9570e21bb464089af7bec1231b60214e"
+    },
+    {
+      "source": "PfHk/WeylGraphC1Calculus.lean",
+      "source_sha256": "9d38ba1c50215aee194bd14b1b0722dc170fdde42e7f1aa8ad5d21a8b8807b3d",
+      "artifact_sha256": "41ec2725f245baeef31fe4599961051bf53901ebc25eb7786f87df5774986626"
+    },
+    {
+      "source": "PfHk/CenteredRadialGaugeCoreRegularity.lean",
+      "source_sha256": "2cb932764bef45be4054275637398ffe74865f907783ffb651de88d05fb57ac3",
+      "artifact_sha256": "6ebf7847b247ac2d6202e821478815d9862bbd79ce352addff30bb9764d6f976"
+    },
+    {
+      "source": "PfHk/CenteredRadialGaugePolarInner.lean",
+      "source_sha256": "b3d8bfa6b1eccaf67ef93fbb9d0c8fd3218b8384b14d75267d477c1bc1dd1978",
+      "artifact_sha256": "8b5c9d5ec2133a43848e8e2c72b3c8e0c4e1c9704156db2bf73512f12a611369"
+    },
+    {
+      "source": "PfHk/PolarCalculusAlgebra.lean",
+      "source_sha256": "112f2cf80c988cce9e9222379898ea7ae8c24464e5365cea5ce14a71537289f1",
+      "artifact_sha256": "6fb8d2107b6c1bbaf411b06aef843a438b4bb7dec44cf8c2501fd973abeb6218"
+    },
+    {
+      "source": "PfHk/SphereRestrictionCalculus.lean",
+      "source_sha256": "8acc46cc501889d15b7ef1240288f84237474d7a5caf01cc0a28c26c529e1334",
+      "artifact_sha256": "4cba8fc20dec2811d03282f7425b7b8b8fb67f3ebd06d53ae9de5e49f75e09d3"
+    },
+    {
+      "source": "PfHk/CenteredPhysicalPolarForm.lean",
+      "source_sha256": "e6539973fb65720bdf66402bd402eaf67c5df665d08b1e0197b3d8801794814f",
+      "artifact_sha256": "bb8568d4cf0ba2ee26a032d2c7ad9e58393f3d2a212005c9ed511a5751527ccb"
+    },
+    {
+      "source": "PfHk/RadialGaugeAngular.lean",
+      "source_sha256": "ddbca4cdfc4b6f1aed6851abb2266bd4bcfcc96a6486133f8d681865d0950c8a",
+      "artifact_sha256": "ee46fab6507b4c721e6eb5693aeaaa6015cdf85791d55e1d617d07f8f2dc07c0"
+    },
+    {
+      "source": "PfHk/PhysicalFormProductRules.lean",
+      "source_sha256": "d1e520d93ad56c2f8f926f119d6459895949937ac47357967597348a2b6c07ae",
+      "artifact_sha256": "92e18bf7e5c92d353717210a82399ab7b0a3cadba9fe1a9bb7bb84e845b26333"
+    },
+    {
+      "source": "PfHk/PhysicalOperatorCoreFinite.lean",
+      "source_sha256": "a78d80f0e2e818f6717e5b911f04f3e3db3b59f06bdcdef9c4e7e920292d0956",
+      "artifact_sha256": "f05c56be2925d2ed2c3f42e5586267e9a4d497329d9b4809abe546d0fb0c9d20"
+    },
+    {
+      "source": "PfHk/CenteredRadialGaugeRadialCore.lean",
+      "source_sha256": "d80169dbd2630db36edda09cae9b824fb42ec866815bb21a434285ee677678cc",
+      "artifact_sha256": "31efaa96125212b4d59ededee1df3ca785f0cbb1a87114d42851d8b52e065eaa"
+    },
+    {
+      "source": "PfHk/CenteredPhysicalCoreSupport.lean",
+      "source_sha256": "c8204302ccb10335ca6f6257f3c91af4e794a229b96250ceb19206ad53053eb9",
+      "artifact_sha256": "1af1f1db43076678ec0ab4f750292bb7a07028e8b4178acf4df69a1f481b8821"
+    },
+    {
+      "source": "PfHk/PhysicalPolarDensity.lean",
+      "source_sha256": "e2e69992524cab7be8b0e7d6a5c62ba0363df8461d79b7d32caf5bc16c769d83",
+      "artifact_sha256": "daa775fde47c14b0f24c5850b1f669a086aa197bfdc37e18c23b66e5619a1532"
+    },
+    {
+      "source": "PfHk/PhysicalCoreSpatialIntegrability.lean",
+      "source_sha256": "213220ebd4f369b043e90ac5e6080ae8ee7621db97c155b879807c4b6c29175f",
+      "artifact_sha256": "2bf94f275999c9e188ce81e6b7d15f1487028866ba34338f886d7a58cf01bb4e"
+    },
+    {
+      "source": "PfHk/ComparisonGraphAlgebra.lean",
+      "source_sha256": "b4b2471f9db4fb0a86090677f9457c5883942eb5040bd11650863e12c5ef6187",
+      "artifact_sha256": "1881c0ee3d0e1a5ca0efffec50b1a77cde2cddcae8126560b8d4a163af14e285"
+    },
+    {
+      "source": "PfHk/PhysicalFreeOperator.lean",
+      "source_sha256": "23146327135f4c693846b442402afc750283b2d802f16558a225aff204f922a5",
+      "artifact_sha256": "bf99433a267ff6398723cc414852c1e8a7002b41491588ae1b3aea46b92d8c03"
+    },
+    {
+      "source": "PfHk/PhysicalComparisonDomain.lean",
+      "source_sha256": "bcc74092400017c707dd6d6d63c3a9ece5b9bbdb99711035187359f877b341d2",
+      "artifact_sha256": "e1fc888c10c7409204d2a7264cb3f1f8d7a35f0f14e570289d15f2693d629bd7"
+    },
+    {
+      "source": "PfHk/PhysicalOperatorCoreSource.lean",
+      "source_sha256": "67145f798a877818d2b7833b17e284ce4fa6b69592bd267143aefd7e79855c7a",
+      "artifact_sha256": "6ec801008b57e7ea9f25fb220697978b12c488f064bd0ccd428ed1d61a68c535"
+    },
+    {
+      "source": "PfHk/PositiveFormGraphLimits.lean",
+      "source_sha256": "2e66f5a2fa4dfdc409c2961c7b4d86545efe0b85744b87c6b60e8e09909bebdc",
+      "artifact_sha256": "1bab22d3110ee39cb125028f391a58be519f3db03133100bb5467099d7c33f68"
+    },
+    {
+      "source": "PfHk/PhysicalOperatorDomain.lean",
+      "source_sha256": "7859e2c047eb5bca43c72aa4a98b5fa679a5f91a96162b2f9d88bd8df358fce2",
+      "artifact_sha256": "a34cff7b2e176a19cbcfcdd6715dbf8c73fb188435526c68a3e5c8cde3a0c38a"
+    },
+    {
+      "source": "PfHk/PhysicalSupportedGraphLimits.lean",
+      "source_sha256": "5c7ba364351f88d5eb8f16b4ab37b5cea01cd3c4b27a985960c78c4b8f387f27",
+      "artifact_sha256": "88f4c9a1952b92d45aad5b386c5c72352e2ef73edb587f1a9d80d61ac307cc8f"
+    },
+    {
+      "source": "PfHk/PhysicalAnnularGraphTransfer.lean",
+      "source_sha256": "72298340fbeadf4554f98ff27ee13a7a917d95e6c35387248418e183fe1cf8da",
+      "artifact_sha256": "5672b30d6ba546615eb0bb2f50fed9de49cd9735e07523575ea0c98d606baf79"
+    },
+    {
+      "source": "PfHk/ElectronicShiftH1.lean",
+      "source_sha256": "daa9a2e641e7afe3cc4b4552915fc9ceb0cf332588ab1089d63ea8f944ead2e3",
+      "artifact_sha256": "f9a364736ed55326a37632de49d13baf06121a305df236e0d5800aec8720dd33"
+    },
+    {
+      "source": "PfHk/PhysicalElectronicShift.lean",
+      "source_sha256": "604e4056dd70a9e0ed8bfb282c18a05262b4475a6d43a2a61458509361951255",
+      "artifact_sha256": "4919ee0cd725fb77b7f4465724fb3788df8588f84a1dc4b8f3626767bce1e184"
+    },
+    {
+      "source": "PfHk/PhysicalCenteredShift.lean",
+      "source_sha256": "4023689af81fab8a593760ceb97ce24f7d5088ecdbe5b3ef83f7a7ca7ca27c16",
+      "artifact_sha256": "917380ea0945c2672ec31ec0bcb9fec651bc24b7b35bf6fc729998a0dfd60461"
+    },
+    {
+      "source": "PfHk/PhysicalFreeCenterTransport.lean",
+      "source_sha256": "85ffa6bbc1a68229c8edca6534fdd0cbd89135d84948d0dd67fc8d7e82d41979",
+      "artifact_sha256": "3ce9ef15cbd061b85fe53d96f45f9d0994002e39c0e39b75c302171fd37020a4"
+    },
+    {
+      "source": "PfHk/CenteredRadialGaugeRadiationOperator.lean",
+      "source_sha256": "8c1711b1b89405a439818f0fea7c10a5f8e319640665e8aa6aaef422383e695d",
+      "artifact_sha256": "15a74016042bd9ff7da4a37990fc853fcbfab4392b5c2388a29479eef6696dd5"
+    },
+    {
+      "source": "PfHk/ClosedGraphDifferentiation.lean",
+      "source_sha256": "3c3013320e7f9e6ae11a10e6916b4bcc6b8db5943f33c17138e9a61262849289",
+      "artifact_sha256": "c7d6b4c9180b5e1c0562b5859fc84c56049ecb943280cb06dae3ee2edd0441f2"
+    },
+    {
+      "source": "PfHk/SphereCoreGeometry.lean",
+      "source_sha256": "8f6c6ce14c199e68cf683372c36f930d33f4384235ed6a4fdcb13aaeaaf562e9",
+      "artifact_sha256": "012d55574bcf91b6326e445f4edd71fd51bd5f20605e4c694e4028a5235f9316"
+    },
+    {
+      "source": "PfHk/SphereGradientGraph.lean",
+      "source_sha256": "a7bbf1f9ab06de6d8773e24da347b3583d239c2fbd266598295c75c4ec1b0d98",
+      "artifact_sha256": "b627b604f2f43b4dfa1315b9abe8f6108081ab590949fd0bd3979699e97a80d4"
+    },
+    {
+      "source": "PfHk/SphereCoreGradientGraph.lean",
+      "source_sha256": "4da13133ed842461f8336c6eeb5a5c44d051b9628337c30c7dd7622b15ae9b7e",
+      "artifact_sha256": "531de899ba093708f3105139475156385bfc47cadf55da48b355d3114b8aebeb"
+    },
+    {
+      "source": "PfHk/SphereCoreConstruction.lean",
+      "source_sha256": "0818d94405c641ac41fde92da1280e0f30b00bed8a8c5f396af8885dcdff9938",
+      "artifact_sha256": "518d9917b8aad7eb209ce3e141ab02e564cd3b86ffbe749b86025c34793af06c"
+    },
+    {
+      "source": "PfHk/CenteredRadialGaugeRawCore.lean",
+      "source_sha256": "a2d197d14c570815d17adb877cae5b1aabfa54c9b06d1d0307e9a79a4808c2b7",
+      "artifact_sha256": "64a4d146d3a3635b4aa8ff65acdfb84eb5dc459f4352617ac4441bace1f65953"
+    },
+    {
+      "source": "PfHk/CenteredRadialGaugeFieldControl.lean",
+      "source_sha256": "80364d104bf54427ece15d6f03ba78602dd49a93d01aa96040584a1d26a054bc",
+      "artifact_sha256": "bf65d9b9e1d76008818fff92c38f90b5f685a49006eafe3bc93e3e1184f3f8fb"
+    },
+    {
+      "source": "PfHk/CenteredRadialGaugeAngular.lean",
+      "source_sha256": "700dee0f15ad993e4706b9f75e680dc566bff07fdbbb2dfeeda12c180e5a0ceb",
+      "artifact_sha256": "8b7d1e0914f907ae0f38ceca056bc7306cc6c281d02859ae2ebba246b49bf8f7"
+    },
+    {
+      "source": "PfHk/SpatialFieldParameterDerivative.lean",
+      "source_sha256": "8323ce34a3406ae642e2340ba9bfe1fc1c91fea8231f3a0bba4c92ddd4be26b7",
+      "artifact_sha256": "518684ef80b98363d8fa08a6c71c2e6c90a25600e3bcc2e34df169c5ec137185"
+    },
+    {
+      "source": "PfHk/CenteredSphereAngularField.lean",
+      "source_sha256": "2769872a27b5a0a61d2b753a6de61a707011bf715bf79c9a9ca0dcd9778477fb",
+      "artifact_sha256": "738a8fff29b4adeb3c99385d248c3d6b6c603d275b9b1840fc2afa7737639ef9"
+    },
+    {
+      "source": "PfHk/L2QuadraticForms.lean",
+      "source_sha256": "54ad7af4f4f3f5efa15514e4d8f717886f058617a8c01f6d1927573e1f3019d6",
+      "artifact_sha256": "b8d4112637a55b8c940b067691ddbcaab49b40c22ad179ef118ee92c89485e08"
+    },
+    {
+      "source": "PfHk/CenteredSphereAngularEnergy.lean",
+      "source_sha256": "72d6eca558be8ef4a72442c510b9dfbe37ab61053e60d5c1c1f2f223355bf7be",
+      "artifact_sha256": "ae9cd1b79bef30cdff56dd8ba8b350bbea21c34104ddab507874a1acff08b883"
+    },
+    {
+      "source": "PfHk/SpatialFieldOperatorBound.lean",
+      "source_sha256": "b3984d26239ed017c3bcff3c481b718938d754aa6cfc8ec918cc8d91072dab50",
+      "artifact_sha256": "625c079009cdf6cf981e42c1171f6a9943dd1629ee448bea1f9ea10895709eaa"
+    },
+    {
+      "source": "PfHk/StrongOperatorDerivative.lean",
+      "source_sha256": "80b6c5cb743f96c5fc793a9cfce32afa979026e1604458716459af173f5e8faf",
+      "artifact_sha256": "712320557f61e19467619360fab432155ecb3ec69a66ef540440e3ac6c7eee2a"
+    },
+    {
+      "source": "PfHk/CenteredSphereFormProductRules.lean",
+      "source_sha256": "b4aade274e78897e098d94d1372629748bcd43794ba92f0dea71ab64ed12e07b",
+      "artifact_sha256": "fc118a5e06a87a6accb1e4d7d28028841e856ff1c9f522844c29454aaad647d9"
+    },
+    {
+      "source": "PfHk/RadialGaugeRadiationIntegral.lean",
+      "source_sha256": "a32ce6583cecfdd0c5428a6a2aa3eb5ee53d07b71af44aa36edce91bdbc84671",
+      "artifact_sha256": "ef8993682dbcc2f22070b2197440f948a1e750447215f4ad87aa954ac425e2d7"
+    },
+    {
+      "source": "PfHk/CenteredSphereRadiationEnergy.lean",
+      "source_sha256": "9223288b5c3875457767eaae6466afe859e3a5353e2214b9cebc21016546dba1",
+      "artifact_sha256": "6422c0b541f186128105638d23db0b47717dfced8fa023503cd23f373c5cd3aa"
+    },
+    {
+      "source": "PfHk/SpatialBilinearDerivative.lean",
+      "source_sha256": "180468e714666894c6cf125a5bac6ca67ba7a4e4fc8406f2ad2712eba59977c7",
+      "artifact_sha256": "d5aaf1fbe999e5af522b53beb09b2843ee055ce5de0d4666fc83ac2936d617c5"
+    },
+    {
+      "source": "PfHk/CenteredSphereRadiationProduct.lean",
+      "source_sha256": "661a612bcb64c0a31fdc28e2d922fbb78a65aaa3cbc4647f80edb8d944f733c1",
+      "artifact_sha256": "43a9e112065f005b84f0d8813167baf29273ef257d97ea784d7af55fe84decbe"
+    },
+    {
+      "source": "PfHk/SphereCoreForms.lean",
+      "source_sha256": "c7713b2a874b8b6a729729cfc17044e7e0989ccd00385d26346113a160e04acd",
+      "artifact_sha256": "148e5bd93cd6be58339fe10dcf77ad6b718ee766ab718aadac83fafa9c3ab65b"
+    },
+    {
+      "source": "PfHk/CenteredRadialGaugeCoreRadiation.lean",
+      "source_sha256": "b3646e9c78c70fefaee47fd9ee5303d1a7983ea40e3a614301c6a3ef9ac608d4",
+      "artifact_sha256": "641a44bfb8e6235307a26b17365d465200fb54fb7dc4e5a46afa71888845c694"
+    },
+    {
+      "source": "PfHk/CylinderConjugation.lean",
+      "source_sha256": "5893226414a8d9cf83edf141692efc9ccd6d03a445654b90883612555c91fce2",
+      "artifact_sha256": "16216b6384d2ba2a3e4e9b7b0671f95f7cd6bef74219027d4bdbf9ed876d0e97"
+    },
+    {
+      "source": "PfHk/SphereCoreAlgebra.lean",
+      "source_sha256": "f810a677976da4745fc71743fbefd0c37a2d66baf88aeaa3ac94b33fbd07732d",
+      "artifact_sha256": "aae2f78f650e53354c2717f213f204e26b78e7dceab1b274c3d552afa270e987"
+    },
+    {
+      "source": "PfHk/SphereCoreConformal.lean",
+      "source_sha256": "98e288c40adf0038f2908ee3aa751287df1dee3da2472c58fadcfe111a00bc67",
+      "artifact_sha256": "682f45d8122aaefcd74f219312fd5f5053208113e3cf0b5f178aca7e38f86a4d"
+    },
+    {
+      "source": "PfHk/SphereCoreFormScaling.lean",
+      "source_sha256": "b9d16e5d1960ccf82cdbbb56ea410a634254724cf422900ba1a33b191e5eeede",
+      "artifact_sha256": "6b371a96517adb0cac615868bb355fe431837f9f50638599aac4cdad1c8123aa"
+    },
+    {
+      "source": "PfHk/PhysicalCylinderSource.lean",
+      "source_sha256": "77b2c79a91477e6b6a63b20ca35afb4cab191e175db81c51b9701431d8b67fe8",
+      "artifact_sha256": "d0a9226c1d4b50ad3d3f07f223033188919e5b1c437f21f2c010198c102dd8f4"
+    },
+    {
+      "source": "PfHk/PhysicalCylinderContinuity.lean",
+      "source_sha256": "991571ed7fc8d24b53c55c0495d3dadc669e2cc89ac9a5a263ce5f48c7962512",
+      "artifact_sha256": "0dbc75e8654a53aaa7918a468b41dbbd558a32941429a221df2f6de2bb3ef8f5"
+    },
+    {
+      "source": "PfHk/WeylCoreReference.lean",
+      "source_sha256": "8e0c7aefb3a50adfac4ef915a17d7f27d4c13188e28ff501b83781e44f19bd24",
+      "artifact_sha256": "38c33eaebb0a4443a8735883c316eaa4095c3c57ed9324e1ce3f1db3773bdbf0"
+    },
+    {
+      "source": "PfHk/CenteredRadialGaugeFormCore.lean",
+      "source_sha256": "9a85bd718109f91fd07e78b634fb357578a8dd1133e8ae7f4d709cd52feac1f9",
+      "artifact_sha256": "09ad4f1049e437b9a7d3758adbe78019444fe5b4913c42aef32747e1c106fad5"
+    },
+    {
+      "source": "PfHk/PolarSobolevChartAlgebra.lean",
+      "source_sha256": "a5feeee9699cc670607bec27edccc4c661855f2ea961052c0f95c2787017e562",
+      "artifact_sha256": "f1c93985cf4233303cfc70f6ea7d966b2157ce4ede6ea6c0f605b317d0bef78f"
+    },
+    {
+      "source": "PfHk/OrdinaryPolarSobolevChart.lean",
+      "source_sha256": "3ce4a0ca6e89b1af7584985507e7874e9b1804ce70a90f11c73aef556a7a0c1d",
+      "artifact_sha256": "171baaa8e41f47b6c11c2ccb6ed057a4f19d4e4a4647c9630e96eec27febb928"
+    },
+    {
+      "source": "PfHk/CompactSlabOperators.lean",
+      "source_sha256": "2c200b34f932e6dce8ee1fe144728fe5fac818226cecceb19a58a14f3e1d8003",
+      "artifact_sha256": "f319242fa4c0b768f6fd9356589711f9c96d5042da2516319d2c2340797e6726"
+    },
+    {
+      "source": "PfHk/SlabFormAlgebra.lean",
+      "source_sha256": "722901eed640a47daf19d5acdcdce7caf2cf4fbfff1d4d693860492bc40433a7",
+      "artifact_sha256": "79f731f6efa70bb44b6a192f490272661fd9c0659481712d7499f3e2e003cc64"
+    },
+    {
+      "source": "PfHk/PhysicalSlabForm.lean",
+      "source_sha256": "7d0a15ee7eceff680848e37106e331b68e5e21a1e1e5900b91835aa19bd28d48",
+      "artifact_sha256": "7b805aa9e6f83811bfcbb49adf6431fbce8cfd576dac224c9837bdc0410ad4f9"
+    },
+    {
+      "source": "PfHk/PhysicalSlabFormEvaluation.lean",
+      "source_sha256": "9f21a988173969efd616ecd12dec6788028a7e5ed68e3620ea2881f6bc93a34a",
+      "artifact_sha256": "5c609e7416e88997e9929c6a613c36bc7b6a78b0331eca857e9c0f1b857c084d"
+    },
+    {
+      "source": "PfHk/PolarChartAlgebra.lean",
+      "source_sha256": "6d500b96be788bd0f5c2a8415384e4e277a7f40dfa579e1c49b5b040c266e67f",
+      "artifact_sha256": "7aff7c5b189c6f8c26e3cdbcab84170c2a560934a4a6fa57002dd9ea154abdb5"
+    },
+    {
+      "source": "PfHk/PolarChartEvaluation.lean",
+      "source_sha256": "56eafd8b954eed0192c9dd4d5d24d9ece0b9ff7bcf2bce1545f5b3a15a61845d",
+      "artifact_sha256": "d02a797509e1f5dcdb898ac9b683c98e4a1e0f913b83d508336ec751fbfaa8b6"
+    },
+    {
+      "source": "PfHk/PhysicalChartCore.lean",
+      "source_sha256": "d733308ab0f79e31888d73ad3d8221a9e25cb6f23d4f097352ec7a0b9495f69c",
+      "artifact_sha256": "25afc640c4bc2d4b9f29e5a259588dffdf86ecc65be54d70b08f4225ecbe2d32"
+    },
+    {
+      "source": "PfHk/L2DensityIntegral.lean",
+      "source_sha256": "f14380a644696ec4623224c75a4c6724f057f4b6ef79daeaf39211527aa50eac",
+      "artifact_sha256": "6ff87ad0315fe7269da7ae2060965181bad54882be430c732416b9dd82c779be"
+    },
+    {
+      "source": "PfHk/SphereCoreRepresentatives.lean",
+      "source_sha256": "29ef2c7d4b82200b3c09dec332060a9896317609b0d10ec9ab3c82dc64e08653",
+      "artifact_sha256": "f97484b4bfeb5ceaf42fd0a17aa2dbb369d097b273638b0348d356b42cedad65"
+    },
+    {
+      "source": "PfHk/PhysicalCylinderRepresentatives.lean",
+      "source_sha256": "a58ef56fc24cac8cd5612437922100fb581193a34810b49f04d97181969845fe",
+      "artifact_sha256": "eb1927238f1149b5d78a5c040c002a7a2dc47659d6de59062562dd42e5b0a9a6"
+    },
+    {
+      "source": "PfHk/PhysicalSlabTestEvaluation.lean",
+      "source_sha256": "82ccc55c66908f1c1d39b20142b9114edf8cb3d1d7e4a0bc47e7d12894213035",
+      "artifact_sha256": "8cf5c3ca74fa4f8e6fa62d2e98a76f36b06f7ab810531b9720e525550868f0cf"
+    },
+    {
+      "source": "PfHk/PhysicalCylinderPairRepresentatives.lean",
+      "source_sha256": "3a5d5c552db176986f58a310e9288a426dc13a0dd2ccc50ad0aad9f6b6a898ee",
+      "artifact_sha256": "48eb5521083b0cdd29e8b8bf379a0fc05834c27f130d9dcdfbfd648964119303"
+    },
+    {
+      "source": "PfHk/SlabBilinearIntegration.lean",
+      "source_sha256": "4371df9882dbfacc3fd1246e8d6f61ca369da654ff8c54dcce4c53436ba25a12",
+      "artifact_sha256": "534799c554545272934c9976702a04ecb6767108d3fc57a5b8ed7e7094ff2b78"
+    },
+    {
+      "source": "PfHk/SeparatedSlabIntegration.lean",
+      "source_sha256": "2722ea1deb412d49939eb78a1ed2aac30bc409d3add135b7253e8c5b7f03ef20",
+      "artifact_sha256": "7f8415803f30db3915ddf81e905f8a225e707bd2a0d311647ae3afd02b396935"
+    },
+    {
+      "source": "PfHk/PhysicalSlabSeparatedForm.lean",
+      "source_sha256": "0f37877c74ab39400004922a40ba5c08d2ed676ab455f77947ec494baaf1dbb2",
+      "artifact_sha256": "fb952b1220c4fa42e48769202fe78d7a44719b8c541f131c197c2bf5eeb03e25"
+    },
+    {
+      "source": "PfHk/CarlemanSourcePair.lean",
+      "source_sha256": "66bb3abf5a7753a4f3727234e5a8d57b62082a13829397bd1e0598592fbffc3d",
+      "artifact_sha256": "9921f42c751af427e18971845475cf0a46e191f54597d0c16405a01ec40cd480"
+    },
+    {
+      "source": "PfHk/PhysicalCylinderSlabSource.lean",
+      "source_sha256": "31815747771d7310d004f4339a5fbfe80137c03a48de4e9cd524958482fb4231",
+      "artifact_sha256": "41717fae27a811e8b5e3801cdf4d7ec0315e54b19370f2f38ec90761646ac3fc"
+    },
+    {
+      "source": "PfHk/PhysicalSlabSeparatedSource.lean",
+      "source_sha256": "2918b9f6b94eb9d03742cfc3552228fb87edd94177168227b0da800d35d9c5d4",
+      "artifact_sha256": "1a2ff784454bca2f64d18fa132c2d933292503da9534b5f433dfd5a4f675cd75"
+    },
+    {
+      "source": "PfHk/AnnularPolarMeasure.lean",
+      "source_sha256": "208106d25335d73cd942976cac7b7fc25de08bc922501bef82f34bc22763dd43",
+      "artifact_sha256": "0d49895a48cab7d5b6b22821c114345cf27b606d8ff02fc9558e451292f1325c"
+    },
+    {
+      "source": "PfHk/PhysicalSlabCoreForm.lean",
+      "source_sha256": "116bb59e9605640e5a65aad85bd5a9e6fd9d3a47b936f0c1550cf5300e5ff35d",
+      "artifact_sha256": "7f56c3e2b1bb24d36812f7265a55fa54865a2310ea469c72f35952cbf7e775ad"
+    },
+    {
+      "source": "PfHk/PhysicalSlabSourcePair.lean",
+      "source_sha256": "9202346bd5e0114e7b847b36cdbc41e0d315c8d62a88ebefa85fbba6b9cfd239",
+      "artifact_sha256": "35c3a6c63cd12380d6c6f412da36cb6bc8ab0fcb4b728b8553db908f06a44499"
+    },
+    {
+      "source": "PfHk/PhysicalSlabWeakForm.lean",
+      "source_sha256": "e68d3346a996a0ac793a9546faefb075190db6291537516d997d0f551af409dc",
+      "artifact_sha256": "477a7a4ca1b0c0827ad29ec77fc17d0704a996b876443ed534fd27ec88eddeac"
+    },
+    {
+      "source": "PfHk/PhysicalCylinderWeakTests.lean",
+      "source_sha256": "a00923430611d428281a5bb23b303113149aeb670885446d70df7c5d2e3d87df",
+      "artifact_sha256": "d1934987d09815531826c3ce09116780e3821a26909125b789e69ce6027375a9"
+    },
+    {
+      "source": "PfHk/SphereCorePairContinuity.lean",
+      "source_sha256": "65a50f9ed0abb056d6bfb903eaeb34921c81ecb0c013e951916c1da5aa54b9ce",
+      "artifact_sha256": "3afbef92fc6be11ddf294a093d2263c4d50ab2f831b03d5731061af6e09436d7"
+    },
+    {
+      "source": "PfHk/WeakCylinderForm.lean",
+      "source_sha256": "53a77f9d33550ef1f764711245ccfbe4e0ccc9018eb886057a840ba8ccba2b7e",
+      "artifact_sha256": "e1cf47fa1b909531fbea88619758529aead6a9062a5e5d86d5b860e7d8ccdf34"
+    },
+    {
+      "source": "PfHk/WeakRadialEquation.lean",
+      "source_sha256": "c20adfe959cde7dedce46fb62f146016a874fa7433280e3fa3f80e704644811e",
+      "artifact_sha256": "71e45d149b0ab71458cb93340db49b68121338ffdf3091c985a1a4f3ef13e8fc"
+    },
+    {
+      "source": "PfHk/PhysicalCylinderAngularRepresentative.lean",
+      "source_sha256": "2e834aea5dd36f41fa922157dc6b51241a89aff41a48e828987525140dbd066e",
+      "artifact_sha256": "aded15a6c7aa6431516a03fb53496881b2732bab44f10427845fb2b0e18b1677"
+    },
+    {
+      "source": "PfHk/CylinderIntegrationConditions.lean",
+      "source_sha256": "0190ac7560639688de5ee3fd7b289b2dfc0f30cc964bc3ce1b1486e8ef356a50",
+      "artifact_sha256": "c7374924f33e8ca4c058c5fe822b40a4aee885c3b82454ca3c068ea9cb312823"
+    },
+    {
+      "source": "PfHk/CylinderPhysicalDensity.lean",
+      "source_sha256": "d0c701d3100b244809d8a529a10e72518a167af8f53084a2fb34f05f4557f3d6",
+      "artifact_sha256": "cb6fb35c9af7bd907041f54b650fe54f1917df6ac39547a8c2d7fa9e425217f6"
+    },
+    {
+      "source": "PfHk/WeightedCylinderDensity.lean",
+      "source_sha256": "3b4125f0ee832861afb82482e067be015181a282f7809fbd8810af6023cf7c69",
+      "artifact_sha256": "1dfb82e7c2492e9a0c6d9a1c83440c0896ba10e29a110fa2f66a1cd03852bb9b"
+    },
+    {
+      "source": "PfHk/CompactCylinderIntegration.lean",
+      "source_sha256": "12f77e360375efe2aa1e63f167860960d36b2b5c43535f7a60e33278d5c8bde0",
+      "artifact_sha256": "6638ec474fc723da7cef4ed900e91a22617c3e19b2f6c94b73a2bdd9b43f21cb"
+    },
+    {
+      "source": "PfHk/CenteredPhysicalCylinderBounds.lean",
+      "source_sha256": "86452db27eb268b4be46f65f266eba6ce4ceded8b0e82dfc90742079a78e2ac4",
+      "artifact_sha256": "2697d5cdd73058ce4d203c1fb35199114267946bfdd50938bed28d27f1dcf92a"
+    },
+    {
+      "source": "PfHk/PhysicalCylinderEstimate.lean",
+      "source_sha256": "1e63f18512687922c629a006ff991609f8815b373990ef89b2048790abaece50",
+      "artifact_sha256": "f99706b512b598ea10b992f810da8c41547c27fb2bda84de34acaf4efe91945b"
+    },
+    {
+      "source": "PfHk/SmoothCarlemanWeight.lean",
+      "source_sha256": "32e8f485f576a6f1e2ba3ed436720330956c6a5d18c6219bbc8d4623a1dcc1c3",
+      "artifact_sha256": "471cc962d3e5b49bfec948a0717737bca04871d9366096c7d6d0e1437ec6b610"
+    },
+    {
+      "source": "PfHk/SmoothCarlemanConjugation.lean",
+      "source_sha256": "ee5289b755ddfae90892e875e24a365bedcd7b27a89dd940cf5b6f0e247ddf7b",
+      "artifact_sha256": "55fbf92a8b8d918373e5b7a2d5d9b56ec389bf11df00a53eb4203e8793047cbf"
+    },
+    {
+      "source": "PfHk/SphereCoreWeight.lean",
+      "source_sha256": "759bc3df76b4e7b5530d9ab88c73eabead7a684fcaf1166382768919b489f3ab",
+      "artifact_sha256": "aa605096f774f761208cc816874677169b2f1bafeed04e68bc508834e4a36d13"
+    },
+    {
+      "source": "PfHk/PhysicalWeightedCylinder.lean",
+      "source_sha256": "fd4885346db1e623993d9dc084f5f2367add138abfc74faa587a0a89cea3c0b1",
+      "artifact_sha256": "c6b6acdfebe45b711b81e024b61eb6cf4e554ab17137aa4f881a2ee422b08043"
+    },
+    {
+      "source": "PfHk/L2StrongContinuity.lean",
+      "source_sha256": "ec6a9c7a5835ce8ac60b03a6142590f302c15838d632f62a12a2828bf3c9c1e6",
+      "artifact_sha256": "552497a1edc4024737b6976348507502449c689a19b55cfb2c576079cd4dd2de"
+    },
+    {
+      "source": "PfHk/L2ParameterContinuity.lean",
+      "source_sha256": "de983c74a542985452c517c7bbd67c847c0578c16d9c79447f59a76db4a1aa10",
+      "artifact_sha256": "b20df0f714bd11afca703ede16189e514986f10b45e20dc95e508804c6287817"
+    },
+    {
+      "source": "PfHk/SpatialFieldParameterContinuity.lean",
+      "source_sha256": "c9b0d7f8e43b0977edb11ef8f5cd5b392fed8de4eb1f96965e36e63f4fe62a95",
+      "artifact_sha256": "9f2bd7a89f00815a5682a89c6167be9fa7a49877be36c340df6a45592ba0ca07"
+    },
+    {
+      "source": "PfHk/CenteredSphereAngularContinuity.lean",
+      "source_sha256": "db100f9cedcc263e18e7366d9e127b9f722104d835b1f441903f1cb71e974ce9",
+      "artifact_sha256": "5de56c292a9f40e6427288ada69c41c6e322968f0603a40cd67ede26978076d2"
+    },
+    {
+      "source": "PfHk/SpatialBilinearContinuity.lean",
+      "source_sha256": "5c783bd005a9a1d45811f7fac6382c7b0f23a49479e8aa8f47fb4c0e0ffd85c6",
+      "artifact_sha256": "6b78623dc2948c3076fdda64b16f58b2312edbfe613abf739aa1824dada6f856"
+    },
+    {
+      "source": "PfHk/CenteredSphereRadiationContinuity.lean",
+      "source_sha256": "57cb546c88363fbc0db055c49cceaed556f9df593dec56d28435d15055ea3b85",
+      "artifact_sha256": "6b6d865e8b5845b347c33c01f6789e8a549a9a618bad9b94114e04f3787b523c"
+    },
+    {
+      "source": "PfHk/LogarithmicCompactSupport.lean",
+      "source_sha256": "5aa201f02d227a5ebc28ea6c74df65f9162c9731cae2298e38b39cd302084863",
+      "artifact_sha256": "931d51bc46b986e9ccc2cb13b1d45f3391bb562e734966692f91a51713333bfd"
+    },
+    {
+      "source": "PfHk/SphereCoreCompact.lean",
+      "source_sha256": "f8ec1ab610194896d91cd2a76c03d1edfaa322353bf10fa029f8ff1ac395091c",
+      "artifact_sha256": "5c6a3368c3f9a7c2e2af0ffbb22ad3a09bb5df72a3d6e072211fa751aff54e4d"
+    },
+    {
+      "source": "PfHk/PhysicalCylinderIntegration.lean",
+      "source_sha256": "6c34838ab29fcf435ed35f6094e7038ab7dea994e378f1f07fee4ed3811aeae2",
+      "artifact_sha256": "2ed7d0beca8c197965c19ef38d09cffb99b5a1f4fffc086050ed865ae1d3fc00"
+    },
+    {
+      "source": "PfHk/PhysicalCylinderSupport.lean",
+      "source_sha256": "4f964b1ad9eba345f5040186e46bf1f4c0e68cbcef57b2da0a98f5c63f33b479",
+      "artifact_sha256": "a0504a3a113bca8e88a6ffb713e1954f6741015156a4a4bfa40bda7e0aad2691"
+    },
+    {
+      "source": "PfHk/PhysicalCylinderCoreEstimate.lean",
+      "source_sha256": "95b209748ea739da86c9dae64b69dd6ac39c7828982a13c765c5516e6c9f3623",
+      "artifact_sha256": "f97a8600669e2ab44950dff992c84792b327b6dd78b2d168ff40b6e8d4a6862f"
+    },
+    {
+      "source": "PfHk/PhysicalPolarTransport.lean",
+      "source_sha256": "538a4b91ea7548c58ac717dc04811655675d24e408de9eb7d16019f951455780",
+      "artifact_sha256": "f72aa2260bf0d0b33125bd411d8615741045c52a786f7dfe2446754fd5bc830e"
+    },
+    {
+      "source": "PfHk/PhysicalCylinderEnergy.lean",
+      "source_sha256": "576d0d33360f0d071869e88154f37427ff2bf93576b86b202e628d771b4aac56",
+      "artifact_sha256": "49c52c5a4d5a30f95f9389a29c0e4fa0cdb9b631d2871af8f51cefe7e1f92d7c"
+    },
+    {
+      "source": "PfHk/PhysicalCylinderNormTransport.lean",
+      "source_sha256": "e011eae40b25087a4d4747bf32e193ac95ad717248182cbca51aaf23a4280f4d",
+      "artifact_sha256": "4927070c35a8f033692a1099894cb0ddc35d55fed3142d656892e724374e670a"
+    },
+    {
+      "source": "PfHk/PhysicalFreeCoreTransport.lean",
+      "source_sha256": "beb85ff69ec17973ec10b2d6f8ba2424a417f85adb1aeb4fe1fdfb076c11cea0",
+      "artifact_sha256": "38d99878731eaa999106e2b545aa0605f297087425640c84c1ff8089f20cbca4"
+    },
+    {
+      "source": "PfHk/PhysicalFreeCoreCarleman.lean",
+      "source_sha256": "bfbd07ffa58d0b535bdcca8e970d19a0b908cb3052ebb69f9cdc91ad6ad77139",
+      "artifact_sha256": "a3b638343dad9b24fddfc8149babf7cebbc8210e3bf46506e71b327f82a40da3"
+    },
+    {
+      "source": "PfHk/PhysicalFreeOperatorCarleman.lean",
+      "source_sha256": "ef41e0d7f81ca1177e152bf52d4e953589e9525792967f8c78c64afa99fb1f85",
+      "artifact_sha256": "04ed70ce6f83c48853d98177cc7322819fe9deb8271782fba3d35b05c2bb8b8d"
+    },
+    {
+      "source": "PfHk/PhysicalFreeCarleman.lean",
+      "source_sha256": "c5a6146d67b01acbaf9d294130b05e4f0246b5aa6739e68e38b49716da5ebd04",
+      "artifact_sha256": "abe56092ae33a3cdf3300797a3e7262390b98e7f1859db8c463b5081d8493e2a"
+    },
+    {
+      "source": "PfHk/UniqueContinuationDensity.lean",
+      "source_sha256": "fb03be0cc02c52900699f730b4d23715f32ef1336e7a283869dba3c3d48d32ce",
+      "artifact_sha256": "bba52c84be7973e33d840b6f2b0c5643d2e4c7a088a922ab84f3743255b3e8bd"
+    },
+    {
+      "source": "PfHk/DensityFlatPoint.lean",
+      "source_sha256": "cf7c03f17b63102aa0b671706e81847ad2f4bba5adf3e7105cee2ef4410a1343",
+      "artifact_sha256": "446979c738b096e7587bc828119d27cf4962b4f637585fdd7479ca6367691776"
+    },
+    {
+      "source": "PfHk/InfiniteOrderMonotone.lean",
+      "source_sha256": "1dedf145e0f10c42120a7d9556627411968900e101c205e15d31fd6e5b123464",
+      "artifact_sha256": "b1dff373d4092e0bfc058ec961eed76126454a76dd4b053cfe32cfb8e9e69050"
+    },
+    {
+      "source": "PfHk/PhysicalScalarSobolev.lean",
+      "source_sha256": "bbca53819c43f21c4341e106f7ae79353f0ac905f660779805510d3565c3a68f",
+      "artifact_sha256": "262494cd584c5de0889424c341f57b517468fe5733e4dd50b7ba553f128a184d"
+    },
+    {
+      "source": "PfHk/PhysicalEnergyInfiniteOrder.lean",
+      "source_sha256": "42f1294041ed66e70b31a35ceeaaea89173d3c177837faeb3bd523f725d70ce4",
+      "artifact_sha256": "5ac489960d28b60bb0db31096a3445cda0f273f4b27ea5663f1b697b3641ecbd"
+    },
+    {
+      "source": "PfHk/PhysicalDensityInfiniteOrder.lean",
+      "source_sha256": "86922fd57082a9958c63702d0f7699fa0ee4ad8df509fc6ea731746c76c1d64a",
+      "artifact_sha256": "44f17adb4692e8af5c727d1f6b3fbfd1e0ddf695cd15f1a661bf8ae0cc9957f5"
+    },
+    {
+      "source": "PfHk/PhysicalInfiniteOrder.lean",
+      "source_sha256": "2b25ebc9b554aec98607db92119f97ec5a35e450ce7d0c2c7a1d01ee5c84b415",
+      "artifact_sha256": "b10c7b857dd35fd998c27fcaeb82ad65af7f56a102ceb9bb8284d87a1288022c"
+    },
+    {
+      "source": "PfHk/SmoothCutoffBounds.lean",
+      "source_sha256": "5a3e3f670b018d23840d618991d83096673dd6286841f6a0626b81c160067c1c",
+      "artifact_sha256": "3971b820874b3ebc76fd114feedb5fcfdf33e6045418cdb2c1f6f49502cf404c"
+    },
+    {
+      "source": "PfHk/PhysicalLocalEnergyBumps.lean",
+      "source_sha256": "2d1842e2fed3157221b2eaf30a9ee7f48a5a168337dc852e32b71ce7d497b00d",
+      "artifact_sha256": "781a61e40be68e773f936774d4801a2b6f185860a6308c27cf441518bbe623f3"
+    },
+    {
+      "source": "PfHk/RadialGaugeRadiationPhysical.lean",
+      "source_sha256": "f91a6e216eea80ff64f38c572e47b28a8a4a29ec35d9c0af786065a00b04e477",
+      "artifact_sha256": "4d537c1b627150c73013eb96a5bf313150c7875805e86f40134981bf2a5dcc7b"
+    },
+    {
+      "source": "PfHk/RadialGaugeFieldControl.lean",
+      "source_sha256": "0e6d82b7d4bb73eec56ac346409303e3ef8e2442fb91bb0dd367889d18f13cd0",
+      "artifact_sha256": "ad865a261fda871139b25b4ca727407808e5c29bbda160f7c214148d66b34749"
+    },
+    {
+      "source": "PfHk/RadialGaugeAngularPhysical.lean",
+      "source_sha256": "9c87b77b1eea870f360f3b97a92869c99af8cd1ed4437ec599daa6cae6beaa55",
+      "artifact_sha256": "a7d2d681245f674074f495afa6a29b08544a1819e0d56028b7ddf0073f3c48dc"
+    },
+    {
+      "source": "PfHk/ScalarUniqueness.lean",
+      "source_sha256": "94b111e13283b4e2947556a5c52f40a31f9a4dd11d1202eaaf5b6ea9e2eac6f9",
+      "artifact_sha256": "e97c9dc66ece7f76a8d5d61f8b8d9c0243148f70ff8a1c741b37cdcc15db2d26"
+    },
+    {
+      "source": "PfHk/VectorUniqueness.lean",
+      "source_sha256": "630fbff3f2aa166121f9e192bc9210a294a7399aed2a6226d764d82ad8f31508",
+      "artifact_sha256": "f14681e2ce38a9680a0d4605367e2927e714fb2d578783c4966eaf12a10653a7"
+    },
+    {
+      "source": "PfHk/WeightedDensity.lean",
+      "source_sha256": "ecea161ce8add6b2e458eafdbc583435428603e87998e90aabf1464fc220fce4",
+      "artifact_sha256": "b5c83ddb7d86008a2da2d1102fc285ecbe063e64778b86d6c1ec7e839c3e0a38"
+    },
+    {
+      "source": "PfHk.lean",
+      "source_sha256": "71f5d3f75e5bf9e87a7b8f9f0ef785dcafa743e668716f18e0b506b9b8a93e1e",
+      "artifact_sha256": "8573798907d2f7cb1fd18f81b6cf912171ada8fbb3bff4e79101b768e50449ba"
+    },
+    {
+      "source": "ScopeAudit.lean",
+      "source_sha256": "ea4d24d1d897aa1fe296567efcd4e6907866df236ba6c87691dd399f60daed85",
+      "artifact_sha256": "facb86ff04ef7ff661a06713edd79aeaacbee0bbee45fa6ee2e8f5f79421a9e3"
+    }
+  ],
+  "verification_log_sha256": "5aa9335c320095cc64056315cb5599f6a2c2257204308b5fdb5c94a34e78342e"
+}

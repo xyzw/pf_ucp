@@ -1,0 +1,71 @@
+import PfHk.PhysicalLocalEnergyRough
+
+/-! The natural rough-potential test domain is a complex vector space.
+These closure properties allow finite electronic antisymmetrization of
+actual reference tests. -/
+
+noncomputable section
+namespace PfHk.PhysicalLocalEnergy
+
+open MeasureTheory GptLean GptLean.PhysicalFock GptLean.PhysicalPFReference
+
+set_option backward.isDefEq.respectTransparency.types true
+set_option maxHeartbeats 40000
+set_option Elab.async false
+
+attribute [local irreducible] PhysicalPFReference.inclusion
+
+variable {I : Type} [Fintype I] [DecidableEq I]
+
+theorem HasMultiplier.zero (f : Position I → ℝ) : HasMultiplier f (0 : WaveSpace I) := by
+  apply (memLp_congr_ae (show (fun x => f x • (0 : WaveSpace I) x) =ᵐ[volume]
+    fun _ => (0 : PhotonFock) from ?_)).mpr MemLp.zero'
+  filter_upwards [Lp.coeFn_zero PhotonFock 2 (volume : Measure (Position I))] with x hx
+  simp only [hx, Pi.zero_apply, smul_zero]
+
+theorem HasMultiplier.add (f : Position I → ℝ) {u v : WaveSpace I}
+    (hu : HasMultiplier f u) (hv : HasMultiplier f v) : HasMultiplier f (u + v) := by
+  apply (memLp_congr_ae (show (fun x => f x • (u + v) x) =ᵐ[volume]
+    fun x => f x • u x + f x • v x from ?_)).mpr (MemLp.add hu hv)
+  filter_upwards [Lp.coeFn_add u v] with x hx
+  simp only [hx, Pi.add_apply, smul_add]
+
+theorem HasMultiplier.smul (f : Position I → ℝ) {u : WaveSpace I}
+    (hu : HasMultiplier f u) (c : ℂ) : HasMultiplier f (c • u) := by
+  apply (memLp_congr_ae (show (fun x => f x • (c • u) x) =ᵐ[volume]
+    fun x => c • (f x • u x) from ?_)).mpr (hu.const_smul c)
+  filter_upwards [Lp.coeFn_smul c u] with x hx
+  simp only [hx, Pi.smul_apply, smul_comm (f x) c]
+
+variable (V : Position I → ℝ) (A : I → Position I → ℝ)
+  (positive negative : Position I → ℝ)
+
+theorem ExternalDomain.zero : ExternalDomain V A positive negative (0 : Reference I V) := by
+  have h (f : Position I → ℝ) : HasMultiplier f (inclusion I V (0 : Reference I V)) :=
+    (congrArg (HasMultiplier f) (map_zero (inclusion I V))).mpr (HasMultiplier.zero f)
+  exact ⟨fun i => h (A i), h positive, h negative⟩
+
+theorem ExternalDomain.add {u v : Reference I V}
+    (hu : ExternalDomain V A positive negative u)
+    (hv : ExternalDomain V A positive negative v) : ExternalDomain V A positive negative (u + v) := by
+  have h (f : Position I → ℝ) (hfu : HasMultiplier f (inclusion I V u))
+      (hfv : HasMultiplier f (inclusion I V v)) : HasMultiplier f (inclusion I V (u + v)) :=
+    (congrArg (HasMultiplier f) (map_add (inclusion I V) u v)).mpr (hfu.add f hfv)
+  exact ⟨fun i => h (A i) (hu.vector i) (hv.vector i),
+    h positive hu.positive hv.positive, h negative hu.negative hv.negative⟩
+
+theorem ExternalDomain.smul {u : Reference I V}
+    (hu : ExternalDomain V A positive negative u) (c : ℂ) :
+    ExternalDomain V A positive negative (c • u) := by
+  have h (f : Position I → ℝ) (hfu : HasMultiplier f (inclusion I V u)) :
+      HasMultiplier f (inclusion I V (c • u)) :=
+    (congrArg (HasMultiplier f) (map_smul (inclusion I V) c u)).mpr (hfu.smul f c)
+  exact ⟨fun i => h (A i) (hu.vector i), h positive hu.positive, h negative hu.negative⟩
+
+def externalTestSubmodule : Submodule ℂ (Reference I V) where
+  carrier := {u | ExternalDomain V A positive negative u}
+  zero_mem' := ExternalDomain.zero V A positive negative
+  add_mem' := fun hu hv => ExternalDomain.add V A positive negative hu hv
+  smul_mem' := fun c _ hu => ExternalDomain.smul V A positive negative hu c
+
+end PfHk.PhysicalLocalEnergy

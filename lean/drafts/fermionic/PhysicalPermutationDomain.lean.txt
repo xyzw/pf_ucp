@@ -1,0 +1,72 @@
+import PfHk.PhysicalPermutationReference
+
+/-! Permutation closure of the actual signed rough-potential test domain. -/
+
+noncomputable section
+namespace PfHk.PhysicalPermutationReference
+
+open MeasureTheory GptLean GptLean.PhysicalFock GptLean.PhysicalPFReference
+  GptLean.SymmetricLift PfHk.PhysicalLocalEnergy
+
+set_option backward.isDefEq.respectTransparency.types true
+set_option maxHeartbeats 40000
+set_option Elab.async false
+
+attribute [local irreducible] PhysicalPFReference.inclusion permuteReference
+
+variable {N : ℕ} (π : Equiv.Perm (Fin N))
+
+theorem hasMultiplier_pull (f g : Configuration N → ℝ)
+    (hfg : ∀ᵐ x ∂volume, g x = f (permuteConfiguration π x))
+    {u : WaveSpace (Fin N × Fin 3)} (hu : HasMultiplier f u) : HasMultiplier g (pullL2 π u) := by
+  have hp : MemLp (fun x => f (permuteConfiguration π x) •
+      u (permuteConfiguration π x)) 2 volume :=
+    hu.comp_measurePreserving (permuteConfiguration π).measurePreserving
+  apply (memLp_congr_ae (show (fun x => g x • pullL2 π u x) =ᵐ[volume]
+    fun x => f (permuteConfiguration π x) • u (permuteConfiguration π x) from ?_)).mpr hp
+  filter_upwards [hfg, pullL2_ae π u] with x hf hu
+  exact congrArg₂ (fun c : ℝ => fun z : PhotonFock => c • z) hf hu
+
+theorem roughMultiply_pull (f g : Configuration N → ℝ)
+    (hfg : ∀ᵐ x ∂volume, g x = f (permuteConfiguration π x))
+    (u : WaveSpace (Fin N × Fin 3)) (hu : HasMultiplier f u)
+    (hv : HasMultiplier g (pullL2 π u)) :
+    roughMultiply g (pullL2 π u) hv = pullL2 π (roughMultiply f u hu) := by
+  apply Lp.ext
+  filter_upwards [roughMultiply_ae g (pullL2 π u) hv, pullL2_ae π u, hfg,
+    pullL2_ae π (roughMultiply f u hu), ae_pull π (roughMultiply_ae f u hu)]
+    with x h₁ h₂ h₃ h₄ h₅
+  exact h₁.trans ((congrArg₂ (fun c : ℝ => fun z : PhotonFock => c • z) h₃ h₂).trans
+    (h₅.symm.trans h₄.symm))
+
+variable (V : Configuration N → ℝ)
+  (hV : ∀ x, V (permuteConfiguration π x) = V x)
+  (A : (Fin N × Fin 3) → Configuration N → ℝ)
+  (positive negative : Configuration N → ℝ)
+  (hA : ∀ q, ∀ᵐ x ∂volume, A q x = A (π q.1, q.2) (permuteConfiguration π x))
+  (hpositive : ∀ᵐ x ∂volume, positive x = positive (permuteConfiguration π x))
+  (hnegative : ∀ᵐ x ∂volume, negative x = negative (permuteConfiguration π x))
+
+theorem externalDomain_permute {u : Reference (Fin N × Fin 3) V}
+    (hu : ExternalDomain V A positive negative u) :
+    ExternalDomain V A positive negative (permuteReference π V hV u) := by
+  have h (f g : Configuration N → ℝ)
+      (hfg : ∀ᵐ x ∂volume, g x = f (permuteConfiguration π x))
+      (hf : HasMultiplier f (inclusion (Fin N × Fin 3) V u)) :
+      HasMultiplier g (inclusion (Fin N × Fin 3) V (permuteReference π V hV u)) :=
+    (congrArg (HasMultiplier g) (inclusion_permute π V hV u)).mpr
+      (hasMultiplier_pull π f g hfg hf)
+  exact ⟨fun q => h (A (π q.1, q.2)) (A q) (hA q) (hu.vector _),
+    h positive positive hpositive hu.positive,
+    h negative negative hnegative hu.negative⟩
+
+/-- The full natural test domain is preserved before averaging over the
+finite permutation group. -/
+def externalReferenceLinear :
+    externalTestSubmodule V A positive negative →ₗ[ℂ] externalTestSubmodule V A positive negative where
+  toFun u := ⟨permuteReference π V hV u.val,
+    externalDomain_permute π V hV A positive negative hA hpositive hnegative u.property⟩
+  map_add' u v := Subtype.ext (map_add (referenceLinear π V hV) u.val v.val)
+  map_smul' c u := Subtype.ext (map_smul (referenceLinear π V hV) c u.val)
+
+end PfHk.PhysicalPermutationReference

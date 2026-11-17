@@ -1,0 +1,99 @@
+import PfHk.PhysicalPermutationDomain
+
+/-! Permutation covariance of the actual covariant derivatives, including
+the rough external vector potential. -/
+
+noncomputable section
+namespace PfHk.PhysicalPermutationReference
+
+open MeasureTheory GptLean GptLean.PhysicalFock GptLean.PhysicalPFReference
+  GptLean.SymmetricLift PfHk.PhysicalLocalEnergy
+
+set_option backward.isDefEq.respectTransparency.types true
+set_option maxHeartbeats 40000
+set_option Elab.async false
+
+local instance permutationFieldPhotonDirectInner : InnerProductSpace ℂ PhotonFock :=
+  { (inferInstance : InnerProductSpace ℂ PhotonFock) with
+    toNormedSpace := (inferInstance : NormedSpace ℂ PhotonFock) }
+
+attribute [local irreducible] PhysicalPFReference.covariant PhysicalPFReference.field
+  PhysicalPFReference.ordinary PhysicalPFReference.inclusion PhysicalPFReference.radiation
+  PhysicalPFReference.potential permuteReference
+
+variable {N : ℕ} (π : Equiv.Perm (Fin N)) (V : Configuration N → ℝ)
+  (hV : ∀ x, V (permuteConfiguration π x) = V x)
+
+theorem roughMultiply_reference_permute (f g : Configuration N → ℝ)
+    (hfg : ∀ᵐ x ∂volume, g x = f (permuteConfiguration π x))
+    (u : Reference (Fin N × Fin 3) V)
+    (hu : HasMultiplier f (inclusion (Fin N × Fin 3) V u))
+    (hv : HasMultiplier g (inclusion (Fin N × Fin 3) V (permuteReference π V hV u))) :
+    roughMultiply g (inclusion (Fin N × Fin 3) V (permuteReference π V hV u)) hv =
+      pullL2 π (roughMultiply f (inclusion (Fin N × Fin 3) V u) hu) := by
+  have ha := (Filter.EventuallyEq.of_eq (congrArg
+    (fun z : WaveSpace (Fin N × Fin 3) => ⇑z) (inclusion_permute π V hV u))).trans
+      (pullL2_ae π (inclusion (Fin N × Fin 3) V u))
+  apply Lp.ext
+  filter_upwards [roughMultiply_ae g _ hv, ha, hfg,
+    pullL2_ae π (roughMultiply f (inclusion (Fin N × Fin 3) V u) hu),
+    ae_pull π (roughMultiply_ae f _ hu)] with x h₁ h₂ h₃ h₄ h₅
+  exact h₁.trans ((congrArg₂ (fun c : ℝ => fun z : PhotonFock => c • z) h₃ h₂).trans
+    (h₅.symm.trans h₄.symm))
+
+variable (C : CanonicalSectorCCR photonMeasure)
+  (κ : (Fin N × Fin 3) → Configuration N → WeightedPhotonKernel)
+  (hκ : ∀ q, AEStronglyMeasurable (κ q) volume)
+  (M : ℝ) (hb : ∀ q, ∀ᵐ x ∂volume, ‖κ q x‖ ≤ M)
+  (hκperm : ∀ q, ∀ᵐ x ∂volume, κ q x = κ (π q.1, q.2) (permuteConfiguration π x))
+
+include hκperm in
+theorem field_permute (u : Reference (Fin N × Fin 3) V) (q : Fin N × Fin 3) :
+    field (Fin N × Fin 3) V C κ hκ M hb q (permuteReference π V hV u) =
+      pullL2 π (field (Fin N × Fin 3) V C κ hκ M hb (π q.1, q.2) u) := by
+  have ha := (Filter.EventuallyEq.of_eq (congrArg
+    (fun z : RadiationGraph (Fin N × Fin 3) => ⇑z) (radiationSource_permute π V hV u))).trans
+      (pullL2_ae π (radiationSource (Fin N × Fin 3) V u))
+  have hf (w : Reference (Fin N × Fin 3) V) (j : Fin N × Fin 3) :
+      field (Fin N × Fin 3) V C κ hκ M hb j w =ᵐ[volume]
+        fun x => kernelField C (κ j x) (radiationSource (Fin N × Fin 3) V w x) := by
+    simpa only [PhysicalPFReference.field, ContinuousLinearMap.comp_apply] using
+      spatialField_ae volume C (κ j) (hκ j) M (hb j) (radiationSource (Fin N × Fin 3) V w)
+  apply Lp.ext
+  filter_upwards [hf (permuteReference π V hV u) q, ha, hκperm q,
+    pullL2_ae π (field (Fin N × Fin 3) V C κ hκ M hb (π q.1, q.2) u),
+    ae_pull π (hf u (π q.1, q.2))] with x h₁ h₂ h₃ h₄ h₅
+  exact h₁.trans ((congrArg₂ (fun k a => kernelField C k a) h₃ h₂).trans
+    (h₅.symm.trans h₄.symm))
+
+include hκperm in
+theorem covariant_permute (e : ℝ) (u : Reference (Fin N × Fin 3) V) (q : Fin N × Fin 3) :
+    covariant (Fin N × Fin 3) V C κ hκ M hb e q (permuteReference π V hV u) =
+      pullL2 π (covariant (Fin N × Fin 3) V C κ hκ M hb e (π q.1, q.2) u) :=
+  (covariant_apply (Fin N × Fin 3) V C κ hκ M hb e q (permuteReference π V hV u)).trans
+    ((congrArg₂ (fun a b : WaveSpace (Fin N × Fin 3) => (-Complex.I) • a - (e : ℂ) • b)
+      (ordinary_permute π V hV u q) (field_permute π V hV C κ hκ M hb hκperm u q)).trans
+      ((congrArg₂ (· - ·) (map_smul (pullL2 π) (-Complex.I) _).symm
+        (map_smul (pullL2 π) (e : ℂ) _).symm).trans
+        ((map_sub (pullL2 π) _ _).symm.trans (congrArg (pullL2 π)
+          (covariant_apply (Fin N × Fin 3) V C κ hκ M hb e (π q.1, q.2) u).symm))))
+
+variable (A : (Fin N × Fin 3) → Configuration N → ℝ)
+  (positive negative : Configuration N → ℝ)
+  (hA : ∀ q, ∀ᵐ x ∂volume, A q x = A (π q.1, q.2) (permuteConfiguration π x))
+  (hpositive : ∀ᵐ x ∂volume, positive x = positive (permuteConfiguration π x))
+  (hnegative : ∀ᵐ x ∂volume, negative x = negative (permuteConfiguration π x))
+
+include hκperm hA hpositive hnegative in
+theorem externalCovariant_permute (e : ℝ) (u : Reference (Fin N × Fin 3) V)
+    (hu : ExternalDomain V A positive negative u) (q : Fin N × Fin 3) :
+    externalCovariant V C κ hκ M hb e A positive negative (permuteReference π V hV u)
+      (externalDomain_permute π V hV A positive negative hA hpositive hnegative hu) q =
+      pullL2 π (externalCovariant V C κ hκ M hb e A positive negative u hu (π q.1, q.2)) := by
+  unfold externalCovariant
+  exact (congrArg₂ (fun a b : WaveSpace (Fin N × Fin 3) => a + b)
+    (covariant_permute π V hV C κ hκ M hb hκperm e u q)
+    (roughMultiply_reference_permute π V hV (A (π q.1, q.2)) (A q) (hA q) u
+      (hu.vector _) _)).trans (map_add (pullL2 π) _ _).symm
+
+end PfHk.PhysicalPermutationReference

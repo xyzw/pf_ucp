@@ -1,0 +1,85 @@
+{
+  "verified_at_utc": "2026-11-08T14:45:18.684748+00:00",
+  "toolchain": "leanprover/lean4:v4.34.0-rc2",
+  "paper_sha256": "8eee3609f876225e333ddf29c390d2ede9c23090bc0e84110f747255ee4aa425",
+  "dependency_manifest_sha256": "3cf6258938aac4014b7f11dee13b247912436fae3206a24258405e784861d643",
+  "scope": "All new sources were compiled against existing gpt_lean and mathlib artifacts. This is not a source rebuild of dependencies or a complete formalization of the paper.",
+  "sources": [
+    {
+      "source": "PfHk/CarlemanAlgebra.lean",
+      "source_sha256": "f1f917e2b0dbd6fab6b7e07929a0b2bdf59dd68990af75bac44b468dec1f50a5",
+      "artifact_sha256": "9157c3ed6210e3ce6edaa9e453dd02bba2d2c2f6f53203b46d9390d7a6c5a1f1"
+    },
+    {
+      "source": "PfHk/CarlemanWeights.lean",
+      "source_sha256": "e9599cbb728fbdd1eefe9bef53d732ce1714f508b041931b5527b456ef843ace",
+      "artifact_sha256": "dc2c35f5989afcdc65748dc9b222456110ecc9d1e2edb0236fa40eac77e5793d"
+    },
+    {
+      "source": "PfHk/CounterexampleField.lean",
+      "source_sha256": "1915226e69d44bc6fccc4101d6d0e6dc3c6e4ea65f156822a564974a4028cab1",
+      "artifact_sha256": "a979ccd022bb3e3085e7dbec19ae3f7a63310b127e9c1b3959a6644b1778de6d"
+    },
+    {
+      "source": "PfHk/CutoffKernel.lean",
+      "source_sha256": "eb732d396807fd140fd528006cf5120ed491b283bf31ea75fa844f21d473bc5f",
+      "artifact_sha256": "0ad2abb4389129cddd0db51750c066cedcf8f4910ec3a1423ae873853b34c9e4"
+    },
+    {
+      "source": "PfHk/FourierDivergence.lean",
+      "source_sha256": "ffe4fc8b89bf5bf9029ba3d08c68bafff0d66ad5bd16fbba46be7bd4b12c114d",
+      "artifact_sha256": "dbb79e063b4c7793a169e6a4eccf51b2b6710fd9c0359bade695d36bab76f78e"
+    },
+    {
+      "source": "PfHk/FourierSource.lean",
+      "source_sha256": "5c76acc924a5283635a6666871e7910179c45f57f2e0dd06169e806249789163",
+      "artifact_sha256": "804018aa6e1913edbc9636fe80878f54dadc1fab242b7e771b7a87685e7a6162"
+    },
+    {
+      "source": "PfHk/FourierUniqueness.lean",
+      "source_sha256": "57e5d7db08278a26624783bb0319b3290250ceb6bb633b938bab3c27411769d1",
+      "artifact_sha256": "5b118c8f7970fb3c68429463dcdb5664962013df98aae6fdd7ace9361e70b271"
+    },
+    {
+      "source": "PfHk/GroundState.lean",
+      "source_sha256": "a27c51259cdb28473919d4c61746834a4eb0a79512c3529751cf4fdc3bf82817",
+      "artifact_sha256": "1c33a291a728d46525126904b1a5dd6d77c5908fbf1a8dcc4865f8a8b7d294db"
+    },
+    {
+      "source": "PfHk/InfiniteOrder.lean",
+      "source_sha256": "0ae83dfaa4abbd3855e913f9dfca9c6216eb537ee7783d0892cb383ebfca3f82",
+      "artifact_sha256": "f4a7518104ee7a1d6d009b5047d72e7565f1770a485a6135d28ff56b8055f474"
+    },
+    {
+      "source": "PfHk/NonvanishingDensity.lean",
+      "source_sha256": "1c0dc9dfbd0f862ad9bb182fc3789ff9e487bdc4cc84e9adb9a1a6b800114a3a",
+      "artifact_sha256": "619de38e01f87edb675134674c11a112177767738a911bf76d6992f847c3d74d"
+    },
+    {
+      "source": "PfHk/ScalarUniqueness.lean",
+      "source_sha256": "94b111e13283b4e2947556a5c52f40a31f9a4dd11d1202eaaf5b6ea9e2eac6f9",
+      "artifact_sha256": "e97c9dc66ece7f76a8d5d61f8b8d9c0243148f70ff8a1c741b37cdcc15db2d26"
+    },
+    {
+      "source": "PfHk/VectorUniqueness.lean",
+      "source_sha256": "630fbff3f2aa166121f9e192bc9210a294a7399aed2a6226d764d82ad8f31508",
+      "artifact_sha256": "f14681e2ce38a9680a0d4605367e2927e714fb2d578783c4966eaf12a10653a7"
+    },
+    {
+      "source": "PfHk/WeightedDensity.lean",
+      "source_sha256": "ecea161ce8add6b2e458eafdbc583435428603e87998e90aabf1464fc220fce4",
+      "artifact_sha256": "b5c83ddb7d86008a2da2d1102fc285ecbe063e64778b86d6c1ec7e839c3e0a38"
+    },
+    {
+      "source": "PfHk.lean",
+      "source_sha256": "ee9ecc2857a843d31f74ca0f63d9fc313d94f00fdbc961293407c91aa4ec14ad",
+      "artifact_sha256": "cc91ec920a69446608e2b9ed5d53e00c108798782cfb1c701369210927079a5d"
+    },
+    {
+      "source": "Audit.lean",
+      "source_sha256": "8bc5cc515a7bb3f4c0bc32942589474007310aac8c66672a33ed7b154356de59",
+      "artifact_sha256": "b4067164fee2d316309b269a251984c535e5ff6e5ec318947c19f385cf03116f"
+    }
+  ],
+  "verification_log_sha256": "a4d39ab02e2014b43a7e91c5a0d673beb4ef435d1af4f2f4689ade93ff449864"
+}

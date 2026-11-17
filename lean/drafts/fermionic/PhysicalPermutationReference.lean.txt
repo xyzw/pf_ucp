@@ -1,0 +1,137 @@
+import PfHk.PhysicalExternalDomainLinear
+import GptLean.PhysicalH1Permutation
+import GptLean.SymmetricLift.PermutationGeometry
+
+/-! Electronic permutations on the actual common PF reference domain.
+The photon fibre is unchanged, and the scalar internal potential is
+assumed symmetric as in the many-electron model. -/
+
+noncomputable section
+namespace PfHk.PhysicalPermutationReference
+
+open MeasureTheory GptLean GptLean.PhysicalFock GptLean.PhysicalPFReference
+  GptLean.SymmetricLift PfHk.PhysicalLocalEnergy
+open scoped InnerProductSpace
+
+set_option backward.isDefEq.respectTransparency.types true
+set_option maxHeartbeats 40000
+set_option Elab.async false
+
+local instance permutationPhotonDirectInner : InnerProductSpace ℂ PhotonFock :=
+  { (inferInstance : InnerProductSpace ℂ PhotonFock) with
+    toNormedSpace := (inferInstance : NormedSpace ℂ PhotonFock) }
+
+attribute [local irreducible] PhysicalPFReference.covariant PhysicalPFReference.field
+  PhysicalPFReference.ordinary PhysicalPFReference.inclusion PhysicalPFReference.radiation
+  PhysicalPFReference.potential radiationGraphInclusion radiationGraphDerivative
+
+variable {N : ℕ} (π : Equiv.Perm (Fin N))
+
+def pullL2 {H : Type*} [NormedAddCommGroup H] [NormedSpace ℂ H] :
+    Lp H 2 (volume : Measure (Configuration N)) →ₗᵢ[ℂ]
+      Lp H 2 (volume : Measure (Configuration N)) :=
+  Lp.compMeasurePreservingₗᵢ ℂ (permuteConfiguration π)
+    (permuteConfiguration π).measurePreserving
+
+theorem pullL2_ae {H : Type*} [NormedAddCommGroup H] [NormedSpace ℂ H]
+    (u : Lp H 2 (volume : Measure (Configuration N))) :
+    pullL2 π u =ᵐ[volume] fun x => u (permuteConfiguration π x) :=
+  Lp.coeFn_compMeasurePreserving u (permuteConfiguration π).measurePreserving
+
+theorem ae_pull {P : Configuration N → Prop} (h : ∀ᵐ x ∂volume, P x) :
+    ∀ᵐ x ∂volume, P (permuteConfiguration π x) :=
+  (permuteConfiguration π).measurePreserving.quasiMeasurePreserving.ae h
+
+theorem pullL2_compLpL {H K : Type*}
+    [NormedAddCommGroup H] [NormedSpace ℂ H]
+    [NormedAddCommGroup K] [NormedSpace ℂ K]
+    (L : H →L[ℂ] K) (u : Lp H 2 (volume : Measure (Configuration N))) :
+    pullL2 π (L.compLpL 2 volume u) = L.compLpL 2 volume (pullL2 π u) := by
+  apply Lp.ext
+  filter_upwards [pullL2_ae π (L.compLpL 2 volume u), ae_pull π (L.coeFn_compLpL u),
+    L.coeFn_compLpL (pullL2 π u), pullL2_ae π u] with x h₁ h₂ h₃ h₄
+  exact h₁.trans (h₂.trans ((congrArg L h₄).symm.trans h₃.symm))
+
+variable (V : Configuration N → ℝ)
+  (hV : ∀ x, V (permuteConfiguration π x) = V x)
+
+private theorem potential_mem (p : PotentialGraph (Fin N × Fin 3) V) :
+    ((pullL2 π p.val.1, pullL2 π p.val.2) :
+      WaveSpace (Fin N × Fin 3) × WaveSpace (Fin N × Fin 3)) ∈
+      PhysicalMultiplicationGraph.graph volume (H := PhotonFock)
+        (fun x => (Real.sqrt (V x) : ℂ)) := by
+  have hp : ∀ᵐ x ∂volume, p.val.2 x = (Real.sqrt (V x) : ℂ) • p.val.1 x := p.property
+  change ∀ᵐ x ∂volume, pullL2 π p.val.2 x = (Real.sqrt (V x) : ℂ) • pullL2 π p.val.1 x
+  filter_upwards [ae_pull π hp, pullL2_ae π p.val.1, pullL2_ae π p.val.2] with x hp h₁ h₂
+  exact h₂.trans (hp.trans ((congrArg (fun t : ℝ => (Real.sqrt t : ℂ) •
+    p.val.1 (permuteConfiguration π x)) (hV x)).trans
+      (congrArg (fun z : PhotonFock => (Real.sqrt (V x) : ℂ) • z) h₁.symm)))
+
+def potentialMap (p : PotentialGraph (Fin N × Fin 3) V) : PotentialGraph (Fin N × Fin 3) V :=
+  ⟨(pullL2 π p.val.1, pullL2 π p.val.2), potential_mem π V hV p⟩
+
+private theorem electronic_value (u : Reference (Fin N × Fin 3) V) :
+    ElectronicH1Complex.value (PhysicalH1Permutation.permutation π
+      (electronic (Fin N × Fin 3) V u)) = pullL2 π (inclusion (Fin N × Fin 3) V u) := rfl
+
+private theorem radiation_value (u : Reference (Fin N × Fin 3) V) :
+    spatialRadiationInclusion volume (pullL2 π (radiationSource (Fin N × Fin 3) V u)) =
+      pullL2 π (inclusion (Fin N × Fin 3) V u) :=
+  (pullL2_compLpL π radiationGraphInclusion (radiationSource (Fin N × Fin 3) V u)).symm.trans
+    (congrArg (pullL2 π) (radiation_matches (Fin N × Fin 3) V u))
+
+def permuteReference (u : Reference (Fin N × Fin 3) V) : Reference (Fin N × Fin 3) V :=
+  ⟨(PhysicalH1Permutation.permutation π (electronic (Fin N × Fin 3) V u),
+    pullL2 π (radiationSource (Fin N × Fin 3) V u),
+    potentialMap π V hV (potentialSource (Fin N × Fin 3) V u)), by
+    change (ElectronicH1Complex.value (PhysicalH1Permutation.permutation π
+      (electronic (Fin N × Fin 3) V u)) -
+        spatialRadiationInclusion volume (pullL2 π (radiationSource (Fin N × Fin 3) V u)),
+      ElectronicH1Complex.value (PhysicalH1Permutation.permutation π
+        (electronic (Fin N × Fin 3) V u)) -
+        pullL2 π (potentialSource (Fin N × Fin 3) V u).val.1) = (0, 0)
+    exact Prod.ext (sub_eq_zero.mpr ((electronic_value π V u).trans (radiation_value π V u).symm))
+      (sub_eq_zero.mpr ((electronic_value π V u).trans
+        (congrArg (pullL2 π) (potential_matches (Fin N × Fin 3) V u).symm)))⟩
+
+theorem inclusion_permute (u : Reference (Fin N × Fin 3) V) :
+    inclusion (Fin N × Fin 3) V (permuteReference π V hV u) =
+      pullL2 π (inclusion (Fin N × Fin 3) V u) := electronic_value π V u
+
+theorem ordinary_permute (u : Reference (Fin N × Fin 3) V) (q : Fin N × Fin 3) :
+    ordinary (Fin N × Fin 3) V q (permuteReference π V hV u) =
+      pullL2 π (ordinary (Fin N × Fin 3) V (π q.1, q.2) u) := rfl
+
+theorem radiationSource_permute (u : Reference (Fin N × Fin 3) V) :
+    radiationSource (Fin N × Fin 3) V (permuteReference π V hV u) =
+      pullL2 π (radiationSource (Fin N × Fin 3) V u) := rfl
+
+theorem radiation_permute (u : Reference (Fin N × Fin 3) V) :
+    radiation (Fin N × Fin 3) V (permuteReference π V hV u) =
+      pullL2 π (radiation (Fin N × Fin 3) V u) :=
+  (pullL2_compLpL π radiationGraphDerivative (radiationSource (Fin N × Fin 3) V u)).symm
+
+theorem potential_permute (u : Reference (Fin N × Fin 3) V) :
+    potential (Fin N × Fin 3) V (permuteReference π V hV u) =
+      pullL2 π (potential (Fin N × Fin 3) V u) := rfl
+
+private def liftLinear {Q H : Type*} [AddCommGroup Q] [Module ℂ Q]
+    [AddCommGroup H] [Module ℂ H] (J : Q →ₗ[ℂ] H) (hJ : Function.Injective J)
+    (T : H →ₗ[ℂ] H) (f : Q → Q) (hf : ∀ u, J (f u) = T (J u)) : Q →ₗ[ℂ] Q where
+  toFun := f
+  map_add' u v := by
+    apply hJ
+    simp only [hf, map_add]
+  map_smul' c u := by
+    apply hJ
+    simp only [hf, map_smul, RingHom.id_apply]
+
+def referenceLinear : Reference (Fin N × Fin 3) V →ₗ[ℂ] Reference (Fin N × Fin 3) V :=
+  liftLinear (inclusion (Fin N × Fin 3) V).toLinearMap
+    (inclusion_injective (Fin N × Fin 3) V) (pullL2 π).toLinearMap
+    (permuteReference π V hV) (inclusion_permute π V hV)
+
+theorem referenceLinear_apply (u : Reference (Fin N × Fin 3) V) :
+    referenceLinear π V hV u = permuteReference π V hV u := rfl
+
+end PfHk.PhysicalPermutationReference

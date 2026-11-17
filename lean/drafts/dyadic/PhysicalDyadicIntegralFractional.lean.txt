@@ -1,0 +1,128 @@
+import PfHk.PhysicalDyadicGraph
+import PfHk.PhysicalDyadicSpectral
+import Mathlib.Topology.Algebra.InfiniteSum.Real
+
+/-! The physical mixed estimate from scalar annular envelopes. The
+localized vectors and their comparison images are actual operator-domain
+vectors. The inputs bound scalar weights and physical energy integrals,
+and do not postulate either dyadic endpoint. -/
+
+noncomputable section
+namespace PfHk.PhysicalDyadicIntegralFractional
+
+open MeasureTheory GptLean GptLean.PhysicalFock GptLean.PhysicalPFReference
+open PfHk.PhysicalCutoffCommutator PfHk.PhysicalOperatorDomain
+  PfHk.PhysicalLocalEnergy PfHk.PhysicalDyadicGraph PfHk.DyadicFractional
+
+set_option backward.isDefEq.respectTransparency.types true
+set_option maxHeartbeats 80000
+set_option Elab.async false
+
+local instance integralPhotonDirectInner : InnerProductSpace ℂ PhotonFock :=
+  PfHk.PhysicalOperatorDomain.comparisonPhotonDirectInner
+
+attribute [local irreducible] PhysicalPFReference.inclusion
+  PhysicalPFReference.ordinary PhysicalPFReference.radiation
+
+variable {I : Type} [Fintype I] [DecidableEq I]
+
+variable (C : CanonicalSectorCCR photonMeasure)
+  (κ : I → Position I → WeightedPhotonKernel)
+  (hκ : ∀ i, AEStronglyMeasurable (κ i) volume)
+  (M : ℝ) (hbound : ∀ i, ∀ᵐ x ∂volume, ‖κ i x‖ ≤ M) (e : ℝ)
+  (A : I → Position I → ℝ) (positive negative : Position I → ℝ)
+
+/-- Finite mixed comparison estimate derived from the actual product rule,
+graph estimate, scalar cutoff envelopes, and physical energy bounds. -/
+theorem fractional_sum_of_integrals {J : Type*} (S : Finset J)
+    (spectral : ComparisonSpectralCalculus (I := I))
+    (hD : DomainIdentification (fun _ => 0)
+      (OperatorGraph (fun _ => 0) C κ hκ M hbound e A positive negative))
+    (hG : GraphNormEquivalence (fun _ => 0)
+      (OperatorGraph (fun _ => 0) C κ hκ M hbound e A positive negative))
+    (a : J → TwiceDifferentiableMultiplier I) {u : Reference I (fun _ => 0)}
+    {hu : ExternalDomain (fun _ => 0) A positive negative u} {f : WaveSpace I}
+    (hf : IsOperatorPair (fun _ => 0) C κ hκ M hbound e A positive negative u hu f)
+    (v : J → WaveSpace I)
+    (hv : ∀ j, IsComparisonPair (fun _ => 0)
+      (PhysicalPFScalarMultiplier.multiply (fun _ => 0) (a j).scalar u) (v j))
+    (β R : J → ℝ) {τ s C₀ Cf Cg Cl Cu F : ℝ}
+    (hτ : 0 < τ) (hs : 0 ≤ s) (hs2 : s ≤ 2)
+    (hβ : ∀ j ∈ S, 0 < β j) (hR : ∀ j ∈ S, 0 < R j)
+    (W₀ Wf Wu G L : Position I → ℝ)
+    (hzero : ∀ x, (∑ j ∈ S, coefficient τ (β j) (R j) 0 *
+      (a j).scalar.weight x ^ 2) ≤ W₀ x)
+    (hsource : ∀ x, (∑ j ∈ S, coefficient τ (β j) (R j) 2 *
+      (a j).scalar.weight x ^ 2) ≤ Wf x)
+    (hmass : ∀ x, (∑ j ∈ S, coefficient τ (β j) (R j) 2 *
+      (a j).scalar.weight x ^ 2) ≤ Wu x)
+    (hgrad : ∀ x, (∑ j ∈ S, coefficient τ (β j) (R j) 2 *
+      (∑ i, (a j).scalar.gradient i x ^ 2)) ≤ G x)
+    (hlap : ∀ x, (∑ j ∈ S, coefficient τ (β j) (R j) 2 *
+      laplacian (a j) x ^ 2) ≤ L x)
+    (hzeroI : Integrable (fun x => W₀ x * ‖inclusion I (fun _ => 0) u x‖ ^ 2) volume)
+    (hfI : Integrable (fun x => Wf x * ‖f x‖ ^ 2) volume)
+    (huI : Integrable (fun x => Wu x * ‖inclusion I (fun _ => 0) u x‖ ^ 2) volume)
+    (hGI : Integrable (fun x => G x * (∑ i,
+      ‖externalCovariant (fun _ => 0) C κ hκ M hbound e A positive negative u hu i x‖ ^ 2)) volume)
+    (hLI : Integrable (fun x => L x * ‖inclusion I (fun _ => 0) u x‖ ^ 2) volume)
+    (hzeroB : (∫ x, W₀ x * ‖inclusion I (fun _ => 0) u x‖ ^ 2) ≤ C₀ * F)
+    (hfB : (∫ x, Wf x * ‖f x‖ ^ 2) ≤ Cf * F)
+    (huB : (∫ x, Wu x * ‖inclusion I (fun _ => 0) u x‖ ^ 2) ≤ Cu * F)
+    (hGB : (∫ x, G x * (∑ i,
+      ‖externalCovariant (fun _ => 0) C κ hκ M hbound e A positive negative u hu i x‖ ^ 2)) ≤ Cg * F)
+    (hLB : (∫ x, L x * ‖inclusion I (fun _ => 0) u x‖ ^ 2) ≤ Cl * F) :
+    (∑ j ∈ S, coefficient τ (β j) (R j) s *
+      fractionalNormSq spectral s (PhysicalPFScalarMultiplier.multiply (fun _ => 0) (a j).scalar u) ⟨v j, hv j⟩) ≤
+      ((s / 2) * (2 * hG.bound ^ 2 * (2 * Cf + 4 * Cg + Cl + Cu)) +
+        (1 - s / 2) * C₀) * F := by
+  have h₀ := (multiplier_norm_sum_bound S a (fun j => coefficient τ (β j) (R j) 0)
+    (inclusion I (fun _ => 0) u) W₀ hzero hzeroI).trans hzeroB
+  have h₀' : (∑ j ∈ S, coefficient τ (β j) (R j) 0 *
+      ‖inclusion I (fun _ => 0)
+        (PhysicalPFScalarMultiplier.multiply (fun _ => 0) (a j).scalar u)‖ ^ 2) ≤ C₀ * F := by
+    simpa only [PhysicalPFScalarMultiplier.value_multiply] using h₀
+  have hb := localized_comparison_integral_sum_fixed (fun _ => 0)
+    C κ hκ M hbound e A positive negative S (fun j => coefficient τ (β j) (R j) 2)
+    (fun j hj => (coefficient_pos hτ (hβ j hj) (hR j hj) 2).le)
+    hG a hf v hv Wf Wu G L hsource hmass hgrad hlap hfI huI hGI hLI
+  have h₂ : (∑ j ∈ S, coefficient τ (β j) (R j) 2 * ‖v j‖ ^ 2) ≤
+      (2 * hG.bound ^ 2 * (2 * Cf + 4 * Cg + Cl + Cu)) * F := by
+    apply hb.trans
+    have hint : 2 * (∫ x, Wf x * ‖f x‖ ^ 2) +
+        4 * (∫ x, G x * (∑ i,
+          ‖externalCovariant (fun _ => 0) C κ hκ M hbound e A positive negative u hu i x‖ ^ 2)) +
+        (∫ x, L x * ‖inclusion I (fun _ => 0) u x‖ ^ 2) +
+        (∫ x, Wu x * ‖inclusion I (fun _ => 0) u x‖ ^ 2) ≤
+        (2 * Cf + 4 * Cg + Cl + Cu) * F := by
+      exact (add_le_add (add_le_add
+        (add_le_add (mul_le_mul_of_nonneg_left hfB (by norm_num : (0 : ℝ) ≤ 2))
+          (mul_le_mul_of_nonneg_left hGB (by norm_num : (0 : ℝ) ≤ 4))) hLB) huB).trans_eq (by ring)
+    exact (mul_le_mul_of_nonneg_left hint (by positivity)).trans_eq (by ring)
+  exact comparison_fractional_sum_normSq spectral S
+    (fun j => PhysicalPFScalarMultiplier.multiply (fun _ => 0) (a j).scalar u)
+    v hv β R hτ hs hs2 hβ hR h₀' h₂
+
+/-- Uniform finite mixed estimates give the full summable annular series.
+This applies to the preceding integral theorem for every finite set. -/
+theorem fractional_tsum_of_finite_sums {J : Type*}
+    (spectral : ComparisonSpectralCalculus (I := I))
+    (a : J → TwiceDifferentiableMultiplier I) (u : Reference I (fun _ => 0))
+    (v : J → WaveSpace I)
+    (hv : ∀ j, IsComparisonPair (fun _ => 0)
+      (PhysicalPFScalarMultiplier.multiply (fun _ => 0) (a j).scalar u) (v j))
+    (β R : J → ℝ) {τ s B : ℝ} (hτ : 0 < τ)
+    (hβ : ∀ j, 0 < β j) (hR : ∀ j, 0 < R j)
+    (hfinite : ∀ S : Finset J,
+      (∑ j ∈ S, coefficient τ (β j) (R j) s *
+        fractionalNormSq spectral s (PhysicalPFScalarMultiplier.multiply (fun _ => 0) (a j).scalar u) ⟨v j, hv j⟩) ≤ B) :
+    Summable (fun j => coefficient τ (β j) (R j) s *
+      fractionalNormSq spectral s (PhysicalPFScalarMultiplier.multiply (fun _ => 0) (a j).scalar u) ⟨v j, hv j⟩) ∧
+    (∑' j, coefficient τ (β j) (R j) s *
+      fractionalNormSq spectral s (PhysicalPFScalarMultiplier.multiply (fun _ => 0) (a j).scalar u) ⟨v j, hv j⟩) ≤ B := by
+  have hnonneg : ∀ j, 0 ≤ coefficient τ (β j) (R j) s *
+      fractionalNormSq spectral s (PhysicalPFScalarMultiplier.multiply (fun _ => 0) (a j).scalar u) ⟨v j, hv j⟩ :=
+    fun j => mul_nonneg (coefficient_pos hτ (hβ j) (hR j) s).le (fractionalNormSq_nonneg spectral s _ _)
+  exact ⟨summable_of_sum_le hnonneg hfinite, Real.tsum_le_of_sum_le hnonneg hfinite⟩
+
+end PfHk.PhysicalDyadicIntegralFractional

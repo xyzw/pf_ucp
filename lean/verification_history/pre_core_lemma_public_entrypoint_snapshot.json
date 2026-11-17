@@ -1,0 +1,23 @@
+{
+  "verified_at_utc": "2026-11-12T12:04:07.696138+00:00",
+  "source": "Audit.lean",
+  "source_sha256": "0ce571c645d9bcd31d966b0a9449b9a41229f6316113753376cc1bf65ad3a0b2",
+  "artifact_sha256": "8913b2d3cce80249e1a255b543c1e1347801c26338e8b7cd10361041321c23b4",
+  "verification_log": "public_entrypoint_verification.log",
+  "verification_log_sha256": "cb2063da639182b0dd5ca8e1e31a653cb674c934aebd42cad2ff717a942772e2",
+  "scope_snapshot_sha256": "f24efc2e02f827bca6436ef17bd1ccf1d3deb23396167fddea85136de5918d73",
+  "toolchain": "leanprover/lean4:v4.34.0-rc2",
+  "dependency_manifest_sha256": "56107fa1a1aca7c77d3b865e56683842b4ee2a18aeff666d8799700a1ff9d505",
+  "paper_sha256": "053124f56d338a1b92090aa52b2b173a93e2970fdf4ef70a5da2f7dd8e1904e2",
+  "paper_pdf_sha256": "a604f3233bf75d2e444e973bad64b340bc1d779d9a623021a133f497adbfbce7",
+  "audited_modules": 1258,
+  "audited_declarations": 30666,
+  "audited_theorems": 23945,
+  "audited_definitions": 6094,
+  "compiler_exit_code": 0,
+  "allowed_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ]
+}

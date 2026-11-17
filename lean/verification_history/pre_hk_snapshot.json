@@ -1,0 +1,2504 @@
+{
+  "verified_at_utc": "2026-11-09T17:08:52.037039+00:00",
+  "roots": [
+    "PfHk"
+  ],
+  "toolchain": "leanprover/lean4:v4.34.0-rc2",
+  "paper_sha256": "8eee3609f876225e333ddf29c390d2ede9c23090bc0e84110f747255ee4aa425",
+  "dependency_manifest_sha256": "3cf6258938aac4014b7f11dee13b247912436fae3206a24258405e784861d643",
+  "scope": "Full local dependency closure of the listed root modules audited for axioms, with prior source and artifact hashes verified for reused modules. All other modules and the generated audit were rebuilt against existing gpt_lean and mathlib artifacts.",
+  "verification_mode": "hash-verified-reuse",
+  "reuse_snapshot_sha256": "b03ddb07685413d256502f61fe3ac97a031dbc5fb415cca0e3a6feea2011600c",
+  "rebuilt_modules": [
+    "PfHk.PhysicalReferencePermutation",
+    "PfHk.FiniteFormReduction",
+    "PfHk.SignTwistedReduction",
+    "PfHk.PhysicalFermionicAverage",
+    "PfHk.PhysicalFermionicProjection",
+    "PfHk.PhysicalDiamagneticPotential",
+    "PfHk.PhysicalCommonFormCoefficients",
+    "PfHk.PhysicalFermionicCoefficients",
+    "PfHk.ScalarMultiplicationLinear",
+    "PfHk.PhysicalExternalFormLinear",
+    "PfHk.LpSumCoordinateDomain",
+    "PfHk.CommonScalarDomain",
+    "PfHk.PhysicalCommonFormDomain",
+    "PfHk.PhysicalFermionicWeakEquation",
+    "PfHk.PhysicalCoefficientPermutation",
+    "PfHk.PhysicalPermutationFields",
+    "PfHk.PhysicalPermutationExternal",
+    "PfHk.PhysicalFermionicReduction",
+    "PfHk.PhysicalFermionicUCP",
+    "PfHk.FermionicVariational",
+    "PfHk.PhysicalShiftedFormEnergyFubini",
+    "PfHk.PhysicalParticleFubini",
+    "PfHk.PhysicalReferenceCoulombEquiv",
+    "PfHk.PhysicalShiftedFormEnergyLp",
+    "PfHk.PhysicalShiftedFormEnergyBase",
+    "PfHk.PhysicalShiftedScalarEnergy",
+    "PfHk.PhysicalShiftedFormEnergy",
+    "PfHk.PhysicalGroundStateWeak",
+    "PfHk.PhysicalGroundStateUCP",
+    "PfHk",
+    "ScopeAudit"
+  ],
+  "reused_modules": [
+    "PfHk.CarlemanAlgebra",
+    "PfHk.CarlemanWeights",
+    "PfHk.CarlemanWeightDerivatives",
+    "PfHk.ConfigurationGeometry",
+    "PfHk.CounterexampleField",
+    "PfHk.GroundState",
+    "PfHk.CutoffKernel",
+    "PfHk.CylinderIdentity",
+    "PfHk.CylinderCarleman",
+    "PfHk.CylinderEstimate",
+    "PfHk.FourierDivergence",
+    "PfHk.FourierSource",
+    "PfHk.FourierUniqueness",
+    "PfHk.InfiniteOrder",
+    "PfHk.IntegratedFormBounds",
+    "PfHk.L2ParameterDerivative",
+    "PfHk.NonvanishingDensity",
+    "PfHk.NormWeakH1Finite",
+    "PfHk.PhysicalCutoffMultiplier",
+    "PfHk.L2ScalarNorm",
+    "PfHk.PhysicalCutoffCommutatorAlgebra",
+    "PfHk.PhysicalCutoffCommutatorAlgebraLp",
+    "PfHk.PhysicalLocalEnergy",
+    "PfHk.PhysicalLocalEnergyIMS",
+    "PfHk.PhysicalLocalEnergyRough",
+    "PfHk.PhysicalCutoffCommutatorCore",
+    "PfHk.PhysicalCutoffCommutatorForm",
+    "PfHk.PhysicalCutoffCommutator",
+    "PfHk.PhysicalLocalEnergyBallCutoff",
+    "PfHk.PhysicalLocalEnergyDiamagnetic",
+    "PfHk.PhysicalLocalEnergyRoughCutoff",
+    "PfHk.PhysicalLocalEnergyRoughIMS",
+    "PfHk.PhysicalLocalEnergySobolev",
+    "PfHk.PhysicalLocalEnergyCutoff",
+    "PfHk.ScalarCommutatorEstimate",
+    "PfHk.UniqueContinuation",
+    "PfHk.PhysicalCutoffCommutatorEstimate",
+    "PfHk.PolarCalculus",
+    "PfHk.LogPolarCalculus",
+    "PfHk.CarlemanPolarMeasure",
+    "PfHk.CarlemanSpatialDensity",
+    "PfHk.CarlemanAnnularWeights",
+    "PfHk.DyadicFractional",
+    "PfHk.DyadicCoefficientBounds",
+    "PfHk.SmoothCutoffBounds",
+    "PfHk.SmoothCutoffOperations",
+    "PfHk.SmoothCutoffGeometry",
+    "PfHk.SmoothDyadicCutoffs",
+    "PfHk.DyadicWeightGeometry",
+    "PfHk.SmoothCompactMultiplier",
+    "PfHk.SmoothDyadicRegularity",
+    "PfHk.EnlargedDyadicRegularity",
+    "PfHk.SmoothCarlemanWeight",
+    "PfHk.SpatialCarlemanWeight",
+    "PfHk.WeightedDyadicCutoffs",
+    "PfHk.EnlargedWeightedDyadicCutoffs",
+    "PfHk.WeightedDyadicBounds",
+    "PfHk.EnlargedWeightedDyadicBounds",
+    "PfHk.CarlemanTranslation",
+    "PfHk.PhysicalCarlemanInput",
+    "PfHk.AnnularSupportGeometry",
+    "PfHk.CompactWeightMultipliers",
+    "PfHk.CarlemanWeightedL2",
+    "PfHk.C1ReferenceCore",
+    "PfHk.PolarInnerCalculus",
+    "PfHk.C1ReferenceForm",
+    "PfHk.PhysicalFieldRegularity",
+    "PfHk.PhysicalFieldRegularityDerivative",
+    "PfHk.RadialGauge",
+    "PfHk.RadialGaugeCurvature",
+    "PfHk.RadialGaugeAngularSlope",
+    "PfHk.RadialGaugeConnection",
+    "PfHk.RadialGaugeLinearity",
+    "PfHk.RadialGaugeContinuity",
+    "PfHk.CenteredRadialGauge",
+    "PfHk.RadialGaugeEnergyLabel",
+    "PfHk.RadialGaugeCovariance",
+    "PfHk.CenteredRadialGaugeConnection",
+    "PfHk.CenteredRadialGaugeEnergy",
+    "PfHk.CenteredRadialGaugeCovariance",
+    "PfHk.RadialGaugeRadiation",
+    "PfHk.CenteredRadialGaugeRadiation",
+    "PfHk.CenteredRadialGaugePolar",
+    "PfHk.CenteredPhysicalReference",
+    "PfHk.C1FromLines",
+    "PfHk.CenteredRadialGaugeC1",
+    "PfHk.L2OperatorDerivative",
+    "PfHk.CompactL2Parameter",
+    "PfHk.PhysicalSphereSpace",
+    "PfHk.PhysicalOperatorCore",
+    "PfHk.WeylGraphC1Calculus",
+    "PfHk.CenteredRadialGaugeCoreRegularity",
+    "PfHk.CenteredRadialGaugePolarInner",
+    "PfHk.PolarCalculusAlgebra",
+    "PfHk.SphereRestrictionCalculus",
+    "PfHk.CenteredPhysicalPolarForm",
+    "PfHk.RadialGaugeAngular",
+    "PfHk.PhysicalFormProductRules",
+    "PfHk.PhysicalOperatorCoreFinite",
+    "PfHk.CenteredRadialGaugeRadialCore",
+    "PfHk.CenteredPhysicalCoreSupport",
+    "PfHk.PhysicalPolarDensity",
+    "PfHk.PhysicalCoreSpatialIntegrability",
+    "PfHk.ComparisonGraphAlgebra",
+    "PfHk.PhysicalFreeOperator",
+    "PfHk.PhysicalComparisonDomain",
+    "PfHk.PhysicalOperatorCoreSource",
+    "PfHk.PositiveFormGraphLimits",
+    "PfHk.PhysicalOperatorDomain",
+    "PfHk.PhysicalSupportedGraphLimits",
+    "PfHk.PhysicalAnnularGraphTransfer",
+    "PfHk.ElectronicShiftH1",
+    "PfHk.PhysicalElectronicShift",
+    "PfHk.PhysicalCenteredShift",
+    "PfHk.PhysicalFreeCenterTransport",
+    "PfHk.CenteredRadialGaugeRadiationOperator",
+    "PfHk.ClosedGraphDifferentiation",
+    "PfHk.SphereCoreGeometry",
+    "PfHk.SphereGradientGraph",
+    "PfHk.SphereCoreGradientGraph",
+    "PfHk.SphereCoreConstruction",
+    "PfHk.CenteredRadialGaugeRawCore",
+    "PfHk.CenteredRadialGaugeFieldControl",
+    "PfHk.CenteredRadialGaugeAngular",
+    "PfHk.SpatialFieldParameterDerivative",
+    "PfHk.CenteredSphereAngularField",
+    "PfHk.L2QuadraticForms",
+    "PfHk.CenteredSphereAngularEnergy",
+    "PfHk.SpatialFieldOperatorBound",
+    "PfHk.StrongOperatorDerivative",
+    "PfHk.CenteredSphereFormProductRules",
+    "PfHk.RadialGaugeRadiationIntegral",
+    "PfHk.CenteredSphereRadiationEnergy",
+    "PfHk.SpatialBilinearDerivative",
+    "PfHk.CenteredSphereRadiationProduct",
+    "PfHk.SphereCoreForms",
+    "PfHk.CenteredRadialGaugeCoreRadiation",
+    "PfHk.CylinderConjugation",
+    "PfHk.SphereCoreAlgebra",
+    "PfHk.SphereCoreConformal",
+    "PfHk.SphereCoreFormScaling",
+    "PfHk.PhysicalCylinderSource",
+    "PfHk.PhysicalCylinderContinuity",
+    "PfHk.WeylCoreReference",
+    "PfHk.CenteredRadialGaugeFormCore",
+    "PfHk.PolarSobolevChartAlgebra",
+    "PfHk.OrdinaryPolarSobolevChart",
+    "PfHk.CompactSlabOperators",
+    "PfHk.SlabFormAlgebra",
+    "PfHk.PhysicalSlabForm",
+    "PfHk.PhysicalSlabFormEvaluation",
+    "PfHk.PolarChartAlgebra",
+    "PfHk.PolarChartEvaluation",
+    "PfHk.PhysicalChartCore",
+    "PfHk.L2DensityIntegral",
+    "PfHk.SphereCoreRepresentatives",
+    "PfHk.PhysicalCylinderRepresentatives",
+    "PfHk.PhysicalSlabTestEvaluation",
+    "PfHk.PhysicalCylinderPairRepresentatives",
+    "PfHk.SlabBilinearIntegration",
+    "PfHk.SeparatedSlabIntegration",
+    "PfHk.PhysicalSlabSeparatedForm",
+    "PfHk.CarlemanSourcePair",
+    "PfHk.PhysicalCylinderSlabSource",
+    "PfHk.PhysicalSlabSeparatedSource",
+    "PfHk.AnnularPolarMeasure",
+    "PfHk.PhysicalSlabCoreForm",
+    "PfHk.PhysicalSlabSourcePair",
+    "PfHk.PhysicalSlabWeakForm",
+    "PfHk.PhysicalCylinderWeakTests",
+    "PfHk.SphereCorePairContinuity",
+    "PfHk.WeakCylinderForm",
+    "PfHk.WeakRadialEquation",
+    "PfHk.PhysicalCylinderAngularRepresentative",
+    "PfHk.CylinderIntegrationConditions",
+    "PfHk.CylinderPhysicalDensity",
+    "PfHk.WeightedCylinderDensity",
+    "PfHk.CompactCylinderIntegration",
+    "PfHk.CenteredPhysicalCylinderBounds",
+    "PfHk.PhysicalCylinderEstimate",
+    "PfHk.SmoothCarlemanConjugation",
+    "PfHk.SphereCoreWeight",
+    "PfHk.PhysicalWeightedCylinder",
+    "PfHk.L2StrongContinuity",
+    "PfHk.L2ParameterContinuity",
+    "PfHk.SpatialFieldParameterContinuity",
+    "PfHk.CenteredSphereAngularContinuity",
+    "PfHk.SpatialBilinearContinuity",
+    "PfHk.CenteredSphereRadiationContinuity",
+    "PfHk.LogarithmicCompactSupport",
+    "PfHk.SphereCoreCompact",
+    "PfHk.PhysicalCylinderIntegration",
+    "PfHk.PhysicalCylinderSupport",
+    "PfHk.PhysicalCylinderCoreEstimate",
+    "PfHk.PhysicalPolarTransport",
+    "PfHk.PhysicalCylinderEnergy",
+    "PfHk.PhysicalCylinderNormTransport",
+    "PfHk.PhysicalFreeCoreTransport",
+    "PfHk.PhysicalFreeCoreCarleman",
+    "PfHk.PhysicalFreeOperatorCarleman",
+    "PfHk.PhysicalFreeCarleman",
+    "PfHk.PhysicalDyadicEnergy",
+    "PfHk.DyadicIntegralBounds",
+    "PfHk.ScalarWeightedCommutator",
+    "PfHk.WeightedNorm",
+    "PfHk.PhysicalDyadicGraph",
+    "PfHk.ComparisonSpectralAlgebra",
+    "PfHk.PhysicalComparisonSpectral",
+    "PfHk.PhysicalDyadicFractional",
+    "PfHk.PhysicalDyadicSpectral",
+    "PfHk.PhysicalEnlargedFractionalCarleman",
+    "PfHk.PerturbationSmallness",
+    "PfHk.AeDyadicPartition",
+    "PfHk.DyadicScalarNorm",
+    "PfHk.WeightedDyadicFiniteSupport",
+    "PfHk.PhysicalDyadicPartition",
+    "PfHk.WeightedCovariantEnergy",
+    "PfHk.PhysicalExternalEnergy",
+    "PfHk.FiniteWeightedSource",
+    "PfHk.CoordinateSobolev",
+    "PfHk.CoordinateComparisonSpectral",
+    "PfHk.CoordinateMultiplierFubini",
+    "PfHk.CoordinateMultiplication",
+    "PfHk.PhysicalPointwiseField",
+    "PfHk.MultiplierNormAlgebra",
+    "PfHk.FieldMultiplierNormAlgebra",
+    "PfHk.RoughFieldMultiplierAlgebra",
+    "PfHk.PhysicalMultiplierField",
+    "PfHk.ScalarCoefficientNormAlgebra",
+    "PfHk.PhysicalCoordinateMultipliers",
+    "PfHk.DyadicProductRuleAlgebra",
+    "PfHk.PhysicalDyadicProductRule",
+    "PfHk.PhysicalFractionalCarleman",
+    "PfHk.PhysicalDyadicScalarPerturbation",
+    "PfHk.PhysicalDyadicMagneticPerturbation",
+    "PfHk.PhysicalDyadicSpectralZero",
+    "PfHk.PhysicalDyadicCoordinatePerturbation",
+    "PfHk.DyadicWeightedPartition",
+    "PfHk.PhysicalDyadicKineticPerturbation",
+    "PfHk.FriedrichsDivergenceBackground",
+    "PfHk.ExternalOperatorAlgebra",
+    "PfHk.ExternalScalarApproximation",
+    "PfHk.PhysicalExternalOperator",
+    "PfHk.SignedScalarMultiplier",
+    "PfHk.PhysicalExternalCoefficients",
+    "PfHk.PhysicalExternalSource",
+    "PfHk.PhysicalFreePerturbationData",
+    "PfHk.PhysicalMixedSeries",
+    "PfHk.PhysicalSourceAbsorption",
+    "PfHk.PhysicalExternalCarlemanSum",
+    "PfHk.CoordinateMultiplierConvergence",
+    "PfHk.CoordinateDivergenceApproximation",
+    "PfHk.PhysicalDivergenceApproximation",
+    "PfHk.SymmetricGraphExtension",
+    "PfHk.KatoRellichBackground",
+    "PfHk.PhysicalExternalDomain",
+    "PfHk.FiniteHamiltonianSum",
+    "PfHk.LpFiniteProducts",
+    "PfHk.PhysicalRoughMultiplierSums",
+    "PfHk.PhysicalExternalTermsIdentity",
+    "PfHk.InfinitesimalBound",
+    "PfHk.SpectralInterpolationSmallness",
+    "PfHk.PhysicalRelativeMultiplier",
+    "PfHk.PhysicalExternalRelativeBound",
+    "PfHk.PhysicalExternalRealization",
+    "PfHk.PhysicalExternalCarleman",
+    "PfHk.PhysicalCoulombLocalBound",
+    "PfHk.PhysicalCoefficientLocality",
+    "PfHk.CoordinateCoefficientLocalization",
+    "PfHk.WeakDivergenceProduct",
+    "PfHk.LocalWeakDivergence",
+    "PfHk.SmoothVectorTruncation",
+    "PfHk.PhysicalLocalExternalCoefficients",
+    "PfHk.PhysicalUCPCoefficients",
+    "PfHk.PhysicalCoulombUCPCoefficients",
+    "PfHk.OrdinaryCoordinateLpMultiplier",
+    "PfHk.OrdinaryH1Norm",
+    "PfHk.OrdinaryCoordinateH1Multiplier",
+    "PfHk.ScalarLpDecomposition",
+    "PfHk.ScalarSqrtLp",
+    "PfHk.ScalarCoordinateFormBound",
+    "PfHk.EnergyShiftAbsorption",
+    "PfHk.PhysicalCutoffLocality",
+    "PfHk.BufferedCutoffLocality",
+    "PfHk.PhysicalExternalDensityLocality",
+    "PfHk.PhysicalLocalTruncation",
+    "PfHk.PhysicalLocalExternalCarleman",
+    "PfHk.PhysicalOperatorCarlemanBridge",
+    "PfHk.PhysicalShiftedOperatorCarleman",
+    "PfHk.PhysicalUniformOperatorCarleman",
+    "PfHk.PhysicalUCPBackgrounds",
+    "PfHk.ScalarPotentialSmallForm",
+    "PfHk.PhysicalUCPSmallForm",
+    "PfHk.PhysicalLocalEnergyBumps",
+    "PfHk.UniqueContinuationLIntegral",
+    "PfHk.CarlemanCutoffPassage",
+    "PfHk.PhysicalCarlemanCutoffPassage",
+    "PfHk.ScalarCutoffGeometry",
+    "PfHk.PhysicalCutoffGeometry",
+    "PfHk.UniqueContinuationErrorComparison",
+    "PfHk.PhysicalCutoffCommutatorLimit",
+    "PfHk.UniqueContinuationDensity",
+    "PfHk.DensityFlatPoint",
+    "PfHk.InfiniteOrderMonotone",
+    "PfHk.PhysicalScalarSobolev",
+    "PfHk.PhysicalEnergyInfiniteOrder",
+    "PfHk.PhysicalDensityInfiniteOrder",
+    "PfHk.PhysicalInfiniteOrder",
+    "PfHk.PhysicalCutoffInfiniteOrder",
+    "PfHk.PhysicalLocalUniqueContinuation",
+    "PfHk.UniqueContinuationTransfer",
+    "PfHk.PhysicalUniqueContinuation",
+    "PfHk.UniqueContinuationFlatSeed",
+    "PfHk.PhysicalUniqueContinuationFlat",
+    "PfHk.OrdinaryWeakSobolev",
+    "PfHk.ScalarSobolevNormAlgebra",
+    "PfHk.ScalarSobolevFromWeak",
+    "PfHk.PhysicalUCPConsequences",
+    "PfHk.RadialGaugeRadiationPhysical",
+    "PfHk.RadialGaugeFieldControl",
+    "PfHk.RadialGaugeAngularPhysical",
+    "PfHk.ScalarUniqueness",
+    "PfHk.VectorUniqueness",
+    "PfHk.WeightedDensity"
+  ],
+  "sources": [
+    {
+      "source": "PfHk/CarlemanAlgebra.lean",
+      "source_sha256": "f1f917e2b0dbd6fab6b7e07929a0b2bdf59dd68990af75bac44b468dec1f50a5",
+      "artifact_sha256": "9157c3ed6210e3ce6edaa9e453dd02bba2d2c2f6f53203b46d9390d7a6c5a1f1",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/CarlemanWeights.lean",
+      "source_sha256": "e9599cbb728fbdd1eefe9bef53d732ce1714f508b041931b5527b456ef843ace",
+      "artifact_sha256": "dc2c35f5989afcdc65748dc9b222456110ecc9d1e2edb0236fa40eac77e5793d",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/CarlemanWeightDerivatives.lean",
+      "source_sha256": "2ec372cfc62cfeae3607696eb827b6c7bd1684a22c50eb31d2f9e592f4962b28",
+      "artifact_sha256": "7ea38201d173c25b373e951a4cc865819cea6f02b1d59a2a14f40d257c401a9a",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/ConfigurationGeometry.lean",
+      "source_sha256": "f557b6c84d34249b08505a3b1dec7cb7d690ea11e14cb0b8bd5ab916ac3edd25",
+      "artifact_sha256": "30d9a9337bb82323a43ba57039e8dde55f81134815b611d63af8f699acc73ad4",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/CounterexampleField.lean",
+      "source_sha256": "1915226e69d44bc6fccc4101d6d0e6dc3c6e4ea65f156822a564974a4028cab1",
+      "artifact_sha256": "a979ccd022bb3e3085e7dbec19ae3f7a63310b127e9c1b3959a6644b1778de6d",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/GroundState.lean",
+      "source_sha256": "a27c51259cdb28473919d4c61746834a4eb0a79512c3529751cf4fdc3bf82817",
+      "artifact_sha256": "1c33a291a728d46525126904b1a5dd6d77c5908fbf1a8dcc4865f8a8b7d294db",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/CutoffKernel.lean",
+      "source_sha256": "eb732d396807fd140fd528006cf5120ed491b283bf31ea75fa844f21d473bc5f",
+      "artifact_sha256": "0ad2abb4389129cddd0db51750c066cedcf8f4910ec3a1423ae873853b34c9e4",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/CylinderIdentity.lean",
+      "source_sha256": "45bbd3251aef3568c05aec54cd0bd20770343c7738c2b3f4e1daa73036c0f3f5",
+      "artifact_sha256": "4178ef215a9ebab028c7eb78462885f3b1e374d37e625c87217880413e753e0a",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/CylinderCarleman.lean",
+      "source_sha256": "dd71af28aaf697d3f44d6f574bb00382bea16bb08ed48b7904d8de5af4ac4d4b",
+      "artifact_sha256": "780c3470f103b204a2f97e73475b4cb131b7e55c7f6b982434f1727e95f1509c",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/CylinderEstimate.lean",
+      "source_sha256": "d455f2b0e2beab2f32ca4e4aa191306732e1f841bdc4f95f46e69ee2b4030b67",
+      "artifact_sha256": "6ec392b4e24bacac9d6f20c3455d0c30a4bd6023dccef98c2dc9a01dc85aef68",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/FourierDivergence.lean",
+      "source_sha256": "ffe4fc8b89bf5bf9029ba3d08c68bafff0d66ad5bd16fbba46be7bd4b12c114d",
+      "artifact_sha256": "dbb79e063b4c7793a169e6a4eccf51b2b6710fd9c0359bade695d36bab76f78e",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/FourierSource.lean",
+      "source_sha256": "5c76acc924a5283635a6666871e7910179c45f57f2e0dd06169e806249789163",
+      "artifact_sha256": "804018aa6e1913edbc9636fe80878f54dadc1fab242b7e771b7a87685e7a6162",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/FourierUniqueness.lean",
+      "source_sha256": "57e5d7db08278a26624783bb0319b3290250ceb6bb633b938bab3c27411769d1",
+      "artifact_sha256": "5b118c8f7970fb3c68429463dcdb5664962013df98aae6fdd7ace9361e70b271",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/InfiniteOrder.lean",
+      "source_sha256": "0ae83dfaa4abbd3855e913f9dfca9c6216eb537ee7783d0892cb383ebfca3f82",
+      "artifact_sha256": "f4a7518104ee7a1d6d009b5047d72e7565f1770a485a6135d28ff56b8055f474",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/IntegratedFormBounds.lean",
+      "source_sha256": "097e2b641a75512494e1c69678e7004e2609e1e08f2ef997a94b57fb9f00e306",
+      "artifact_sha256": "cb82b60ac4841404df53f64dd6aea8165fbdc858c6b606a96b377b7b1de4d84f",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/L2ParameterDerivative.lean",
+      "source_sha256": "c36fcc607caca4099deb471b1ac3b1272b30ccee422c0b2ad6017178aed2039d",
+      "artifact_sha256": "af6c25590920b30461d052555f526afdbe5415609e8468cc946b4dcd87a7c7c2",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/NonvanishingDensity.lean",
+      "source_sha256": "1c0dc9dfbd0f862ad9bb182fc3789ff9e487bdc4cc84e9adb9a1a6b800114a3a",
+      "artifact_sha256": "619de38e01f87edb675134674c11a112177767738a911bf76d6992f847c3d74d",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/NormWeakH1Finite.lean",
+      "source_sha256": "cecb78574fd23d5728d65ec05b7f039e571fbe51ecf1ee321f4bd1340ec73b83",
+      "artifact_sha256": "2c7469dc6b4c937bb1873924766b82f15f9546bfbc70a59961a4c38161de004c",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/PhysicalCutoffMultiplier.lean",
+      "source_sha256": "f3e38d59efb7769f77671aba8885acd45f2f4bdc653291e4ef17cc5c01af06f6",
+      "artifact_sha256": "f725cfd6b61e10a97d174c97a05592fab0ba07ac3b2fe127795d4dac7d303db2",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/L2ScalarNorm.lean",
+      "source_sha256": "e1089f3e5c3b471570c9f8565b285ef9c944caac82bc61843a69505f2c8bb64b",
+      "artifact_sha256": "8cc1a821ffde99925d52b76ea582a1ba72107b39e8751b5e882bc2f3998956dc",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/PhysicalCutoffCommutatorAlgebra.lean",
+      "source_sha256": "d3f0c18e5fc42f3bf085ea158cb1d625c1690ef77c827437786576dd64584c8b",
+      "artifact_sha256": "2411699de867939947da4207a32e5ae75c27998d680c5ff241371cd79b075c16",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/PhysicalCutoffCommutatorAlgebraLp.lean",
+      "source_sha256": "016de5d49c18c2ba0fe2aa9ecb8d5b19901b6db627ec6e4f44406114daf25f16",
+      "artifact_sha256": "c92f89c99ddcc37927113f262ff9d8a1949e07b557bc4e554b4965e3c632475c",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/PhysicalLocalEnergy.lean",
+      "source_sha256": "da1775de213cd51754f57703fd60a80ec8617f9b4fa93895e373830d6f17b810",
+      "artifact_sha256": "a151a4b1f287e84b3821aeb064fa5a4924f7348a1b399c1a9fd39aa11154ace3",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/PhysicalLocalEnergyIMS.lean",
+      "source_sha256": "51ad4347d342869eea12b2d85d18e13f5d1ee31ad9eb14a1ec20f73e2d61b869",
+      "artifact_sha256": "765eb6e510aee37d35b594e22bda702b18a94ec3388ebbfad6a41787d84c87e2",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/PhysicalLocalEnergyRough.lean",
+      "source_sha256": "95ff515f67c238047f4d3cdd09da735b54635bd7be539af1d3f0a8d24baa213b",
+      "artifact_sha256": "b9bd31675cfcfdc248f1e14d9346bb0aa148bbeaa15c0ebe1367f71a365c42f5",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/PhysicalCutoffCommutatorCore.lean",
+      "source_sha256": "94bee8db7f9d0e61e8c7f32a27b618b43f065fa6190f7461ef41f9f908308d56",
+      "artifact_sha256": "606176f75f55056a02122f2db6481d019e69d70478247639982173175ce6c12f",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/PhysicalCutoffCommutatorForm.lean",
+      "source_sha256": "39721bebf61e082fdad93baca399c5561542e09e07aa01647b32c4dc13e3ac0f",
+      "artifact_sha256": "b9e41622b64e15efa82ebdda7fed5b782d4453df16244a324ab3164cf66a3a92",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/PhysicalCutoffCommutator.lean",
+      "source_sha256": "3fd2559602c98d890e0e2fd160b3fc45bf32f796bdb2706bf8e59b8ab1f65124",
+      "artifact_sha256": "a56ea46e72d3873bbc79e225666779f29881728291f3928296d4347f346da49c",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/PhysicalLocalEnergyBallCutoff.lean",
+      "source_sha256": "6f4c4ab309c43f0d967196da944d653c207c8e51da500955814e914678be8d09",
+      "artifact_sha256": "42ae78f2f143fd670659626f46cb97c01eca5e1a302685a036d6227c7d3831c0",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/PhysicalLocalEnergyDiamagnetic.lean",
+      "source_sha256": "349083d57b9425177f9d026148fc04eebbb351140d1c46dd27bb191c6a82fa4e",
+      "artifact_sha256": "ffa7c60439a8b2625b2dfa3715647b406a37d65d57c6798e1cd4fb88e6e96d72",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/PhysicalLocalEnergyRoughCutoff.lean",
+      "source_sha256": "aa06fbec30b0a0b69eddf3321e585181c23cc7e1becc2f9c435d49c3b5ad1079",
+      "artifact_sha256": "c44ea59c7414b64ba93f1f5c3ef781abf36cfe732fa04cb5b9f85ffde85b63f1",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/PhysicalLocalEnergyRoughIMS.lean",
+      "source_sha256": "3838abe2eb984ef184f46d9aa79369143664b07d222212d2e20ef5a4f2bf5a57",
+      "artifact_sha256": "d264251f6bf6bb97445a0c63450c34af48675e589051ecad2a28a053a871ef5e",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/PhysicalLocalEnergySobolev.lean",
+      "source_sha256": "b9af06e30d9b6eb498434ee491ffee69060cd074fa967fc63dd15d37de0b3580",
+      "artifact_sha256": "8358eaf0184caadce1fdf39a0213c9d25ec8ea661d79e0684f07eb84e9842a48",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/PhysicalLocalEnergyCutoff.lean",
+      "source_sha256": "84aacd55e4e5b9108ecc91a99641ca84bdab617e5c946089d5e4317754008725",
+      "artifact_sha256": "1dc547376e44eef043307809d172de10b707c3dc9783f3d6b865ad181a86f52b",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/ScalarCommutatorEstimate.lean",
+      "source_sha256": "829c543a75f53b2977900dc75e1c651772145b43e9de9996fb167352bfb23535",
+      "artifact_sha256": "6f116f8fe0655ebcad1765658d74aa75f0e9a51ef598d840cd849923ae366d89",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/UniqueContinuation.lean",
+      "source_sha256": "2b507db0934a535c352ac04dc05c9d732856df48990d5c8c11a389cbf8cb6cc5",
+      "artifact_sha256": "4922327dfee18b7a249eb048494840e0c64e39e93fa8c983fd25cc495499dd80",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/PhysicalCutoffCommutatorEstimate.lean",
+      "source_sha256": "56d97a69c3186dbdb79830407e50568e93ea9f76c5eaf8377baf44ae5c95c2c3",
+      "artifact_sha256": "5a9460955d41c95ed51cc2cd7c576db5006532e60a4bf8548f4c0727c2811173",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/PolarCalculus.lean",
+      "source_sha256": "55f3ade285e595e86b87ff58b951d30bdc7803a52c7729052bf73f6e91ad519e",
+      "artifact_sha256": "53003735922661d76239fb7179c5979607b8e43e5f36c3f7f64f50b2f6115c2a",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/LogPolarCalculus.lean",
+      "source_sha256": "fedf12f34a8f01deec80aed1c122a67c8e455210966a254b8df082e88e01bf73",
+      "artifact_sha256": "788e35a4525196a48a0ef078490e0049ea8ec00d2816e16de696d8ecdd1a939a",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/CarlemanPolarMeasure.lean",
+      "source_sha256": "1b2095e8b93d2967d0629eedd78921b7897222f6d2c2379ac55026dc87ae7a28",
+      "artifact_sha256": "aedad4e0385b4569c793a72af78b08e261ef3ce493a2ae86fd135afa83219081",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/CarlemanSpatialDensity.lean",
+      "source_sha256": "be339f40014fb32ea5d39ed99374cf7a03bf2a11686d53a8f6b7dd4850b7438e",
+      "artifact_sha256": "d18f2fb9a7bcf833aa3ca49dbf8b9a329138af9319110675d7a0eaa7f43e633a",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/CarlemanAnnularWeights.lean",
+      "source_sha256": "55eff4c9af10c66ea42b899013296f11ed94094dbe5d28647e6a0404a273aa3f",
+      "artifact_sha256": "84a907c19fecfe30e32fb20015c0ef5a6ea7fb9c621a655362872d8047e11cd3",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/DyadicFractional.lean",
+      "source_sha256": "5928f393b1ba89b1106a2049657964ab963177cefe0bad0f5535afed94ee245d",
+      "artifact_sha256": "e100a0aab7889b22ba7e510f32e8f2c93c6227aa11c57e4cfde132581a426f55",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/DyadicCoefficientBounds.lean",
+      "source_sha256": "27f5eef745a998eeaa756b10431a7b174074111dbf6b7131c5e18b04774d90e1",
+      "artifact_sha256": "273d04a61c462ffb46b8e513615bfc7bc03d2b5ef476f7037fecdc0ec9f2e0a4",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/SmoothCutoffBounds.lean",
+      "source_sha256": "5a3e3f670b018d23840d618991d83096673dd6286841f6a0626b81c160067c1c",
+      "artifact_sha256": "3971b820874b3ebc76fd114feedb5fcfdf33e6045418cdb2c1f6f49502cf404c",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/SmoothCutoffOperations.lean",
+      "source_sha256": "fd5fc3cab3517b9d50313f5f1efe1c6f05ffd27816be93d80ac68201248c202e",
+      "artifact_sha256": "e7ad73fa3cd91588862a09fb87d8a222b5863530d9d3334346bf10f91e638a9f",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/SmoothCutoffGeometry.lean",
+      "source_sha256": "b74668874447c5bf2c60dd790546d46c91e97c1d9ba86b8d7a4b95486cc5a111",
+      "artifact_sha256": "99ee59b80eecd74c3838a18c6d5b4589d1c6dc58a09c541833a9421428734429",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/SmoothDyadicCutoffs.lean",
+      "source_sha256": "a13e84f61eb7b3a3c46eef549ebf5acfb37fedd0cfe4efba517d4f58c7e68f47",
+      "artifact_sha256": "7af8e70a38a7b266f8557fa308e3b86968cdf184b066e9a4c2440ebcc34bb22c",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/DyadicWeightGeometry.lean",
+      "source_sha256": "46fdc576cd6ba191210f0063ed612422256c179f7703c66a11ae609fad23d2b9",
+      "artifact_sha256": "86c271907abdfe1fa50c45065f653a39a62d4db0ac25e0458aad6a984652b768",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/SmoothCompactMultiplier.lean",
+      "source_sha256": "69c19692536048352cd351a872a267e4254c1fceb6e87370a68d8be383b4cafa",
+      "artifact_sha256": "076243b1334ab32bcb9af9bcd2efb2995a85b7c74ceb29001581607e06a0efc5",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/SmoothDyadicRegularity.lean",
+      "source_sha256": "3a198f54acebcd81e758057071db6339d3ae111b0cb7cbf7e0e5ca6720b38ad5",
+      "artifact_sha256": "ca54832998d3e14a4ee5e107284f29c8136c7f1d50dc9b6f8181de3ccc13e307",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/EnlargedDyadicRegularity.lean",
+      "source_sha256": "7de8deee648dd2f78ba4a0cdce92caf0d78229404d693d68fa3d9d5dfee96348",
+      "artifact_sha256": "453b5a98d4e12ab0063085583b566b85f5f0dfa5d0bf333934d2b2e37657c841",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/SmoothCarlemanWeight.lean",
+      "source_sha256": "32e8f485f576a6f1e2ba3ed436720330956c6a5d18c6219bbc8d4623a1dcc1c3",
+      "artifact_sha256": "471cc962d3e5b49bfec948a0717737bca04871d9366096c7d6d0e1437ec6b610",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/SpatialCarlemanWeight.lean",
+      "source_sha256": "42b1c98ee4339df9a717b0af29067abd37a7fc6641fc0b047b58949127bd371b",
+      "artifact_sha256": "46df52ba2f56d5092acca1970a08bb477393278eb0e8695b8ce8e6ee0016c73d",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/WeightedDyadicCutoffs.lean",
+      "source_sha256": "0c1fa9db404447d7ca8b67536e032b3d2837f0b5906efebd90af060071e54ab9",
+      "artifact_sha256": "22e2edd2c222ccb9ae4c494c8782d1fdf3fd119fed21ddf62dcc3fefcc8004c6",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/EnlargedWeightedDyadicCutoffs.lean",
+      "source_sha256": "b0a5ccc178ad71b1fd1ce30a482e4a1879eaa82d4612f17123c20f39135aef4f",
+      "artifact_sha256": "f021b4515b692ec5b6a1221742e0af43265964d2ba9ece499991101214547a65",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/WeightedDyadicBounds.lean",
+      "source_sha256": "3c34c8255eaaed002e27e49051f2a3ce03fe47636bbf25a17798ca6f8e15b27e",
+      "artifact_sha256": "ba2e149f7c1d1b67cc523aed4f8bdf15c84ae2be9cac26650c25da13a08f4263",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/EnlargedWeightedDyadicBounds.lean",
+      "source_sha256": "e4bcb0a71e545f312b5ec3d7f5e861b2eb5fede3d06d2cdda2117cc5969be4c0",
+      "artifact_sha256": "7bae73a47dd2c828a8d14bd110b1f2295e4485ed9c59059fa4208e6de9db931c",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/CarlemanTranslation.lean",
+      "source_sha256": "412949690074de3b95ea2bc982210eac8fda15092c2b6ad92f07a398d9055752",
+      "artifact_sha256": "d1dd904225cf1a15f9d49cbe92881a91ceca6eebd95f7f05cc9734145f202666",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/PhysicalCarlemanInput.lean",
+      "source_sha256": "e4442211dd6c7c8bab3f06966f145866509f929462ece326e8daf06da23139c8",
+      "artifact_sha256": "2a1f8d9b8f1d815358f4c8c35d3710e11e41c1c4d8a5f063ebc3c304a9a083b4",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/AnnularSupportGeometry.lean",
+      "source_sha256": "abded25512aa01867533bca252d1c1af16f7a335d74699d955c99ba43d75df6d",
+      "artifact_sha256": "efed6c531505bf52b32fd8a72c0e0e6b6b1598e5ca3d4e6a2bd87c0afe5bdf67",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/CompactWeightMultipliers.lean",
+      "source_sha256": "58fc27e1340098964b063fb22ec9c86f33abe152b271f822436fdeadb8a0fa85",
+      "artifact_sha256": "79715eb0277d379080c48bed461da00ca1e49e1de402f6f390c6c7a70c04c5e1",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/CarlemanWeightedL2.lean",
+      "source_sha256": "dfa91fd2f65499808ecdeca952331ad2b038559232297a99b76dd4a906e9b7bd",
+      "artifact_sha256": "f4680d67d92f34839aa825942e6d8fa12f630befdf857c910ec2d39f68b68683",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/C1ReferenceCore.lean",
+      "source_sha256": "e4d57a762c5cc58c997402a58e7d7b453c2825062b0b2a8bc7def17f54b3301d",
+      "artifact_sha256": "090d0c3b175849dcd7d40769504bc92c6dd138f1395353c3118a136990ee0138",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/PolarInnerCalculus.lean",
+      "source_sha256": "53c844a480227aed3ba15d8df4766fdcb1f40acd4afccccac867c6e3e6e7709c",
+      "artifact_sha256": "81ffafa8053569f5fe3a2d6f52eabd04963828bb2869a40a8faaf886b3e996cf",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/C1ReferenceForm.lean",
+      "source_sha256": "de5ac150bd0579baa5fed2195366be16a21214da75512248e6294d3e513ad95a",
+      "artifact_sha256": "3ef0500885c9a0f82f495017658e4cd3e138591b23484e8d97bcdcfc61705b32",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/PhysicalFieldRegularity.lean",
+      "source_sha256": "e58de6cfaeea7609fdb503ce235f94b21c2a49dac2ce6594a79e1bedff86d16e",
+      "artifact_sha256": "3b447f9a22ccb16b5477aae9f99e232eebef5523138b9e8bd9eec305640367cb",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/PhysicalFieldRegularityDerivative.lean",
+      "source_sha256": "a6bb989b5ad47e870986e20883b67ed63cd5f377e77bf39c93c90b13f1aa453b",
+      "artifact_sha256": "9f915f28985445863fc83b583715c87ba497bd39742618cc22450c731721ecdf",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/RadialGauge.lean",
+      "source_sha256": "a99da85db59d4a512f2fedd22bcd1af99e93bb30ac586eb1452de28091eacd71",
+      "artifact_sha256": "923d3136a112cc446fc3a67b980b00fb4be2861c07beda1f1ec149d1c4b2abf4",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/RadialGaugeCurvature.lean",
+      "source_sha256": "004530715efdb2fcd6915c845f03a1d4e09b6cd14b1e68fbf8af22c3100c5699",
+      "artifact_sha256": "909c15d3b2bbdced286883ca59fe4b4b1d8d80a96f1278d003cbe5a7b91a43be",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/RadialGaugeAngularSlope.lean",
+      "source_sha256": "8857358a7d5f682c2bdbe7ab45007cf3da88c0b7468b8c5c4db601415895f899",
+      "artifact_sha256": "2f16e8bf39805972d82b5fa1a3fac0147cfa99aebd0714828a25cdc2dcd20f87",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/RadialGaugeConnection.lean",
+      "source_sha256": "d9534f8764315c99c22eba3563bc9ae9cb3d4bd35e24fada832e4cb9b3c913c8",
+      "artifact_sha256": "2bbbce687d1bde84c2c12bb29a8aa633966665299d7889b90c3b36b75420e008",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/RadialGaugeLinearity.lean",
+      "source_sha256": "abdbdc16b4fa92171c956153eeb7bf378bc54c5619b20c3f79bbc8820ae0d5e6",
+      "artifact_sha256": "5e977a08ae1d104bd514f06083b6fe1648545bb0c5252f6d749d25fca9ec36e1",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/RadialGaugeContinuity.lean",
+      "source_sha256": "3c23875c4633fd19ce3de822e622c57127646c19f36c8d38f114b58d3eb4d914",
+      "artifact_sha256": "6ea61d465c0b101b217229cda3729c971b2bc0c400d01a4ceadf4b9f1ebe4396",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/CenteredRadialGauge.lean",
+      "source_sha256": "8b4cb81e6fe157a720dd1a9f7b374858cd3f40d9eba25662755d002bc858d558",
+      "artifact_sha256": "e7d8d5f7b03af3bbe2437fcb6f5084ff94992924332412e9febcf82c40ce273c",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/RadialGaugeEnergyLabel.lean",
+      "source_sha256": "9c42ed8ed9a6c882d061666252f6b13f2e17bab42ef5deae0382ea5136f5ce4a",
+      "artifact_sha256": "d790a11373dad15530a3a6be46ff04ad919911da3f75eaa1585ea89ec3fda434",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/RadialGaugeCovariance.lean",
+      "source_sha256": "05e002683ea9334cff9fbd8469b388db248734fc129cf9c9d53ce7cc1c8f3223",
+      "artifact_sha256": "6684109678b7b5f0daa327c5f216b924a0d1602881d7e62854695cd5d93d3b57",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/CenteredRadialGaugeConnection.lean",
+      "source_sha256": "b40b061365d0455b5ced8145353a4545aa0cad9d2a31a7711bea68bad3ea09f6",
+      "artifact_sha256": "d7681fc64a9fc29b6f682dbf0d7f44fb27564ba3a110242fae5cb9a58c367d5f",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/CenteredRadialGaugeEnergy.lean",
+      "source_sha256": "062a5d85d9a15a3876018909938e8cdab35363929d4167172c1b99c10aab8a40",
+      "artifact_sha256": "9db3c5204a27d59b81e60dd6d6bd321d873e18a37854f93963a6e26f14a151fb",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/CenteredRadialGaugeCovariance.lean",
+      "source_sha256": "85a305995d257d63ad6b23b059cc4e3f24530e400f20c0d2db14c653b0348211",
+      "artifact_sha256": "622af809862a7046124c14b2296c66422b49d6dbecb8d24a3faf4f1f237d2e0d",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/RadialGaugeRadiation.lean",
+      "source_sha256": "8d9d22b0ec5a7ed8821ac2208482b071a2697999d1b4896f1df324f9520bb5bf",
+      "artifact_sha256": "f09fcb1ad94dbf8281ab1217c03d22f66d17e7b30cd10b86c54fab01d391faad",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/CenteredRadialGaugeRadiation.lean",
+      "source_sha256": "caf0ff8643f7737fe9ce1a4055e0fbea97f8cbe8afea9fc2546e5a7e13a35824",
+      "artifact_sha256": "5a64b9e0c1672e5f7097e17793b3f953e0007e923d40b67905a3b6b680f355d5",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/CenteredRadialGaugePolar.lean",
+      "source_sha256": "25b3ff9e1407947c25f1fc8e789e2de4998f1e44b38066e6aded9712fcd23fda",
+      "artifact_sha256": "1ade9de938837684a43af400bfffb7d74484dfd6792c96f2ac6fb33c69f1c929",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/CenteredPhysicalReference.lean",
+      "source_sha256": "4e2771525667a78a81ee1a4f1427190007fb893a72cff0439c5a8ad34aac99cf",
+      "artifact_sha256": "12bd597bfcc1c008c1a706404b6c07baf50247474d28ac5d3625a20973494875",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/C1FromLines.lean",
+      "source_sha256": "9d8f9e660bf32efa02cc912df05e82930210c24828165d98cf370b743afb74ad",
+      "artifact_sha256": "1bb751093781dd37f2406209d48c3a7402cde3b9bc158042ae8892ed1ef8a51f",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/CenteredRadialGaugeC1.lean",
+      "source_sha256": "02234f76c15ff64518ffd56ada554ab71acaa8264d60f005b888a5150c326ce8",
+      "artifact_sha256": "4d67dd94006feed332b4e6229adbec7728a5f9e87d57f6b8a958bec69e1ffcdf",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/L2OperatorDerivative.lean",
+      "source_sha256": "25f159ec2d3fedde11e60cdf07edef03312e7b19efa95cfaeb9bb1ede8ada04b",
+      "artifact_sha256": "ff23ee15742a766b9b0c6a42d6a2d58b7d900b2862f8f3c2e9ea79fd76f3dc3b",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/CompactL2Parameter.lean",
+      "source_sha256": "4942a6312126e291dd9bca24a2c575dba6a7c53f1dfa5b509cdf172c83263772",
+      "artifact_sha256": "4739ed188fab191feb78f8b7f3bcc3f52009cc28635d515814e9a66df178c071",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/PhysicalSphereSpace.lean",
+      "source_sha256": "c1a60b5bfa52bbde9fc49a3882aa20572f22092593da3e2cc61526d631d00017",
+      "artifact_sha256": "f88ca49f4fb2329ef1a62645bdafd68cb71e4c2c0f50f35f0f55eb6c06bd2404",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/PhysicalOperatorCore.lean",
+      "source_sha256": "f4960d21e002ae2e453b98b34b786e1306055b759aa8a51f5806aa34cab4d167",
+      "artifact_sha256": "f650f0a9d3c7d17c3445277b9aa9a22c9570e21bb464089af7bec1231b60214e",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/WeylGraphC1Calculus.lean",
+      "source_sha256": "9d38ba1c50215aee194bd14b1b0722dc170fdde42e7f1aa8ad5d21a8b8807b3d",
+      "artifact_sha256": "41ec2725f245baeef31fe4599961051bf53901ebc25eb7786f87df5774986626",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/CenteredRadialGaugeCoreRegularity.lean",
+      "source_sha256": "2cb932764bef45be4054275637398ffe74865f907783ffb651de88d05fb57ac3",
+      "artifact_sha256": "6ebf7847b247ac2d6202e821478815d9862bbd79ce352addff30bb9764d6f976",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/CenteredRadialGaugePolarInner.lean",
+      "source_sha256": "b3d8bfa6b1eccaf67ef93fbb9d0c8fd3218b8384b14d75267d477c1bc1dd1978",
+      "artifact_sha256": "8b5c9d5ec2133a43848e8e2c72b3c8e0c4e1c9704156db2bf73512f12a611369",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/PolarCalculusAlgebra.lean",
+      "source_sha256": "112f2cf80c988cce9e9222379898ea7ae8c24464e5365cea5ce14a71537289f1",
+      "artifact_sha256": "6fb8d2107b6c1bbaf411b06aef843a438b4bb7dec44cf8c2501fd973abeb6218",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/SphereRestrictionCalculus.lean",
+      "source_sha256": "8acc46cc501889d15b7ef1240288f84237474d7a5caf01cc0a28c26c529e1334",
+      "artifact_sha256": "4cba8fc20dec2811d03282f7425b7b8b8fb67f3ebd06d53ae9de5e49f75e09d3",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/CenteredPhysicalPolarForm.lean",
+      "source_sha256": "e6539973fb65720bdf66402bd402eaf67c5df665d08b1e0197b3d8801794814f",
+      "artifact_sha256": "bb8568d4cf0ba2ee26a032d2c7ad9e58393f3d2a212005c9ed511a5751527ccb",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/RadialGaugeAngular.lean",
+      "source_sha256": "ddbca4cdfc4b6f1aed6851abb2266bd4bcfcc96a6486133f8d681865d0950c8a",
+      "artifact_sha256": "ee46fab6507b4c721e6eb5693aeaaa6015cdf85791d55e1d617d07f8f2dc07c0",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/PhysicalFormProductRules.lean",
+      "source_sha256": "d1e520d93ad56c2f8f926f119d6459895949937ac47357967597348a2b6c07ae",
+      "artifact_sha256": "92e18bf7e5c92d353717210a82399ab7b0a3cadba9fe1a9bb7bb84e845b26333",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/PhysicalOperatorCoreFinite.lean",
+      "source_sha256": "a78d80f0e2e818f6717e5b911f04f3e3db3b59f06bdcdef9c4e7e920292d0956",
+      "artifact_sha256": "f05c56be2925d2ed2c3f42e5586267e9a4d497329d9b4809abe546d0fb0c9d20",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/CenteredRadialGaugeRadialCore.lean",
+      "source_sha256": "d80169dbd2630db36edda09cae9b824fb42ec866815bb21a434285ee677678cc",
+      "artifact_sha256": "31efaa96125212b4d59ededee1df3ca785f0cbb1a87114d42851d8b52e065eaa",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/CenteredPhysicalCoreSupport.lean",
+      "source_sha256": "c8204302ccb10335ca6f6257f3c91af4e794a229b96250ceb19206ad53053eb9",
+      "artifact_sha256": "1af1f1db43076678ec0ab4f750292bb7a07028e8b4178acf4df69a1f481b8821",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/PhysicalPolarDensity.lean",
+      "source_sha256": "e2e69992524cab7be8b0e7d6a5c62ba0363df8461d79b7d32caf5bc16c769d83",
+      "artifact_sha256": "daa775fde47c14b0f24c5850b1f669a086aa197bfdc37e18c23b66e5619a1532",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/PhysicalCoreSpatialIntegrability.lean",
+      "source_sha256": "213220ebd4f369b043e90ac5e6080ae8ee7621db97c155b879807c4b6c29175f",
+      "artifact_sha256": "2bf94f275999c9e188ce81e6b7d15f1487028866ba34338f886d7a58cf01bb4e",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/ComparisonGraphAlgebra.lean",
+      "source_sha256": "b4b2471f9db4fb0a86090677f9457c5883942eb5040bd11650863e12c5ef6187",
+      "artifact_sha256": "1881c0ee3d0e1a5ca0efffec50b1a77cde2cddcae8126560b8d4a163af14e285",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/PhysicalFreeOperator.lean",
+      "source_sha256": "23146327135f4c693846b442402afc750283b2d802f16558a225aff204f922a5",
+      "artifact_sha256": "bf99433a267ff6398723cc414852c1e8a7002b41491588ae1b3aea46b92d8c03",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/PhysicalComparisonDomain.lean",
+      "source_sha256": "bcc74092400017c707dd6d6d63c3a9ece5b9bbdb99711035187359f877b341d2",
+      "artifact_sha256": "e1fc888c10c7409204d2a7264cb3f1f8d7a35f0f14e570289d15f2693d629bd7",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/PhysicalOperatorCoreSource.lean",
+      "source_sha256": "67145f798a877818d2b7833b17e284ce4fa6b69592bd267143aefd7e79855c7a",
+      "artifact_sha256": "6ec801008b57e7ea9f25fb220697978b12c488f064bd0ccd428ed1d61a68c535",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/PositiveFormGraphLimits.lean",
+      "source_sha256": "2e66f5a2fa4dfdc409c2961c7b4d86545efe0b85744b87c6b60e8e09909bebdc",
+      "artifact_sha256": "1bab22d3110ee39cb125028f391a58be519f3db03133100bb5467099d7c33f68",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/PhysicalOperatorDomain.lean",
+      "source_sha256": "7859e2c047eb5bca43c72aa4a98b5fa679a5f91a96162b2f9d88bd8df358fce2",
+      "artifact_sha256": "a34cff7b2e176a19cbcfcdd6715dbf8c73fb188435526c68a3e5c8cde3a0c38a",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/PhysicalSupportedGraphLimits.lean",
+      "source_sha256": "5c7ba364351f88d5eb8f16b4ab37b5cea01cd3c4b27a985960c78c4b8f387f27",
+      "artifact_sha256": "88f4c9a1952b92d45aad5b386c5c72352e2ef73edb587f1a9d80d61ac307cc8f",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/PhysicalAnnularGraphTransfer.lean",
+      "source_sha256": "72298340fbeadf4554f98ff27ee13a7a917d95e6c35387248418e183fe1cf8da",
+      "artifact_sha256": "5672b30d6ba546615eb0bb2f50fed9de49cd9735e07523575ea0c98d606baf79",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/ElectronicShiftH1.lean",
+      "source_sha256": "daa9a2e641e7afe3cc4b4552915fc9ceb0cf332588ab1089d63ea8f944ead2e3",
+      "artifact_sha256": "f9a364736ed55326a37632de49d13baf06121a305df236e0d5800aec8720dd33",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/PhysicalElectronicShift.lean",
+      "source_sha256": "604e4056dd70a9e0ed8bfb282c18a05262b4475a6d43a2a61458509361951255",
+      "artifact_sha256": "4919ee0cd725fb77b7f4465724fb3788df8588f84a1dc4b8f3626767bce1e184",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/PhysicalCenteredShift.lean",
+      "source_sha256": "4023689af81fab8a593760ceb97ce24f7d5088ecdbe5b3ef83f7a7ca7ca27c16",
+      "artifact_sha256": "917380ea0945c2672ec31ec0bcb9fec651bc24b7b35bf6fc729998a0dfd60461",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/PhysicalFreeCenterTransport.lean",
+      "source_sha256": "85ffa6bbc1a68229c8edca6534fdd0cbd89135d84948d0dd67fc8d7e82d41979",
+      "artifact_sha256": "3ce9ef15cbd061b85fe53d96f45f9d0994002e39c0e39b75c302171fd37020a4",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/CenteredRadialGaugeRadiationOperator.lean",
+      "source_sha256": "8c1711b1b89405a439818f0fea7c10a5f8e319640665e8aa6aaef422383e695d",
+      "artifact_sha256": "15a74016042bd9ff7da4a37990fc853fcbfab4392b5c2388a29479eef6696dd5",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/ClosedGraphDifferentiation.lean",
+      "source_sha256": "3c3013320e7f9e6ae11a10e6916b4bcc6b8db5943f33c17138e9a61262849289",
+      "artifact_sha256": "c7d6b4c9180b5e1c0562b5859fc84c56049ecb943280cb06dae3ee2edd0441f2",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/SphereCoreGeometry.lean",
+      "source_sha256": "8f6c6ce14c199e68cf683372c36f930d33f4384235ed6a4fdcb13aaeaaf562e9",
+      "artifact_sha256": "012d55574bcf91b6326e445f4edd71fd51bd5f20605e4c694e4028a5235f9316",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/SphereGradientGraph.lean",
+      "source_sha256": "a7bbf1f9ab06de6d8773e24da347b3583d239c2fbd266598295c75c4ec1b0d98",
+      "artifact_sha256": "b627b604f2f43b4dfa1315b9abe8f6108081ab590949fd0bd3979699e97a80d4",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/SphereCoreGradientGraph.lean",
+      "source_sha256": "4da13133ed842461f8336c6eeb5a5c44d051b9628337c30c7dd7622b15ae9b7e",
+      "artifact_sha256": "531de899ba093708f3105139475156385bfc47cadf55da48b355d3114b8aebeb",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/SphereCoreConstruction.lean",
+      "source_sha256": "0818d94405c641ac41fde92da1280e0f30b00bed8a8c5f396af8885dcdff9938",
+      "artifact_sha256": "518d9917b8aad7eb209ce3e141ab02e564cd3b86ffbe749b86025c34793af06c",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/CenteredRadialGaugeRawCore.lean",
+      "source_sha256": "a2d197d14c570815d17adb877cae5b1aabfa54c9b06d1d0307e9a79a4808c2b7",
+      "artifact_sha256": "64a4d146d3a3635b4aa8ff65acdfb84eb5dc459f4352617ac4441bace1f65953",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/CenteredRadialGaugeFieldControl.lean",
+      "source_sha256": "80364d104bf54427ece15d6f03ba78602dd49a93d01aa96040584a1d26a054bc",
+      "artifact_sha256": "bf65d9b9e1d76008818fff92c38f90b5f685a49006eafe3bc93e3e1184f3f8fb",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/CenteredRadialGaugeAngular.lean",
+      "source_sha256": "700dee0f15ad993e4706b9f75e680dc566bff07fdbbb2dfeeda12c180e5a0ceb",
+      "artifact_sha256": "8b7d1e0914f907ae0f38ceca056bc7306cc6c281d02859ae2ebba246b49bf8f7",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/SpatialFieldParameterDerivative.lean",
+      "source_sha256": "8323ce34a3406ae642e2340ba9bfe1fc1c91fea8231f3a0bba4c92ddd4be26b7",
+      "artifact_sha256": "518684ef80b98363d8fa08a6c71c2e6c90a25600e3bcc2e34df169c5ec137185",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/CenteredSphereAngularField.lean",
+      "source_sha256": "2769872a27b5a0a61d2b753a6de61a707011bf715bf79c9a9ca0dcd9778477fb",
+      "artifact_sha256": "738a8fff29b4adeb3c99385d248c3d6b6c603d275b9b1840fc2afa7737639ef9",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/L2QuadraticForms.lean",
+      "source_sha256": "54ad7af4f4f3f5efa15514e4d8f717886f058617a8c01f6d1927573e1f3019d6",
+      "artifact_sha256": "b8d4112637a55b8c940b067691ddbcaab49b40c22ad179ef118ee92c89485e08",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/CenteredSphereAngularEnergy.lean",
+      "source_sha256": "72d6eca558be8ef4a72442c510b9dfbe37ab61053e60d5c1c1f2f223355bf7be",
+      "artifact_sha256": "ae9cd1b79bef30cdff56dd8ba8b350bbea21c34104ddab507874a1acff08b883",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/SpatialFieldOperatorBound.lean",
+      "source_sha256": "b3984d26239ed017c3bcff3c481b718938d754aa6cfc8ec918cc8d91072dab50",
+      "artifact_sha256": "625c079009cdf6cf981e42c1171f6a9943dd1629ee448bea1f9ea10895709eaa",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/StrongOperatorDerivative.lean",
+      "source_sha256": "80b6c5cb743f96c5fc793a9cfce32afa979026e1604458716459af173f5e8faf",
+      "artifact_sha256": "712320557f61e19467619360fab432155ecb3ec69a66ef540440e3ac6c7eee2a",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/CenteredSphereFormProductRules.lean",
+      "source_sha256": "b4aade274e78897e098d94d1372629748bcd43794ba92f0dea71ab64ed12e07b",
+      "artifact_sha256": "fc118a5e06a87a6accb1e4d7d28028841e856ff1c9f522844c29454aaad647d9",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/RadialGaugeRadiationIntegral.lean",
+      "source_sha256": "a32ce6583cecfdd0c5428a6a2aa3eb5ee53d07b71af44aa36edce91bdbc84671",
+      "artifact_sha256": "ef8993682dbcc2f22070b2197440f948a1e750447215f4ad87aa954ac425e2d7",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/CenteredSphereRadiationEnergy.lean",
+      "source_sha256": "9223288b5c3875457767eaae6466afe859e3a5353e2214b9cebc21016546dba1",
+      "artifact_sha256": "6422c0b541f186128105638d23db0b47717dfced8fa023503cd23f373c5cd3aa",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/SpatialBilinearDerivative.lean",
+      "source_sha256": "180468e714666894c6cf125a5bac6ca67ba7a4e4fc8406f2ad2712eba59977c7",
+      "artifact_sha256": "d5aaf1fbe999e5af522b53beb09b2843ee055ce5de0d4666fc83ac2936d617c5",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/CenteredSphereRadiationProduct.lean",
+      "source_sha256": "661a612bcb64c0a31fdc28e2d922fbb78a65aaa3cbc4647f80edb8d944f733c1",
+      "artifact_sha256": "43a9e112065f005b84f0d8813167baf29273ef257d97ea784d7af55fe84decbe",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/SphereCoreForms.lean",
+      "source_sha256": "c7713b2a874b8b6a729729cfc17044e7e0989ccd00385d26346113a160e04acd",
+      "artifact_sha256": "148e5bd93cd6be58339fe10dcf77ad6b718ee766ab718aadac83fafa9c3ab65b",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/CenteredRadialGaugeCoreRadiation.lean",
+      "source_sha256": "b3646e9c78c70fefaee47fd9ee5303d1a7983ea40e3a614301c6a3ef9ac608d4",
+      "artifact_sha256": "641a44bfb8e6235307a26b17365d465200fb54fb7dc4e5a46afa71888845c694",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/CylinderConjugation.lean",
+      "source_sha256": "5893226414a8d9cf83edf141692efc9ccd6d03a445654b90883612555c91fce2",
+      "artifact_sha256": "16216b6384d2ba2a3e4e9b7b0671f95f7cd6bef74219027d4bdbf9ed876d0e97",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/SphereCoreAlgebra.lean",
+      "source_sha256": "f810a677976da4745fc71743fbefd0c37a2d66baf88aeaa3ac94b33fbd07732d",
+      "artifact_sha256": "aae2f78f650e53354c2717f213f204e26b78e7dceab1b274c3d552afa270e987",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/SphereCoreConformal.lean",
+      "source_sha256": "98e288c40adf0038f2908ee3aa751287df1dee3da2472c58fadcfe111a00bc67",
+      "artifact_sha256": "682f45d8122aaefcd74f219312fd5f5053208113e3cf0b5f178aca7e38f86a4d",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/SphereCoreFormScaling.lean",
+      "source_sha256": "b9d16e5d1960ccf82cdbbb56ea410a634254724cf422900ba1a33b191e5eeede",
+      "artifact_sha256": "6b371a96517adb0cac615868bb355fe431837f9f50638599aac4cdad1c8123aa",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/PhysicalCylinderSource.lean",
+      "source_sha256": "77b2c79a91477e6b6a63b20ca35afb4cab191e175db81c51b9701431d8b67fe8",
+      "artifact_sha256": "d0a9226c1d4b50ad3d3f07f223033188919e5b1c437f21f2c010198c102dd8f4",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/PhysicalCylinderContinuity.lean",
+      "source_sha256": "991571ed7fc8d24b53c55c0495d3dadc669e2cc89ac9a5a263ce5f48c7962512",
+      "artifact_sha256": "0dbc75e8654a53aaa7918a468b41dbbd558a32941429a221df2f6de2bb3ef8f5",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/WeylCoreReference.lean",
+      "source_sha256": "8e0c7aefb3a50adfac4ef915a17d7f27d4c13188e28ff501b83781e44f19bd24",
+      "artifact_sha256": "38c33eaebb0a4443a8735883c316eaa4095c3c57ed9324e1ce3f1db3773bdbf0",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/CenteredRadialGaugeFormCore.lean",
+      "source_sha256": "9a85bd718109f91fd07e78b634fb357578a8dd1133e8ae7f4d709cd52feac1f9",
+      "artifact_sha256": "09ad4f1049e437b9a7d3758adbe78019444fe5b4913c42aef32747e1c106fad5",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/PolarSobolevChartAlgebra.lean",
+      "source_sha256": "a5feeee9699cc670607bec27edccc4c661855f2ea961052c0f95c2787017e562",
+      "artifact_sha256": "f1c93985cf4233303cfc70f6ea7d966b2157ce4ede6ea6c0f605b317d0bef78f",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/OrdinaryPolarSobolevChart.lean",
+      "source_sha256": "3ce4a0ca6e89b1af7584985507e7874e9b1804ce70a90f11c73aef556a7a0c1d",
+      "artifact_sha256": "171baaa8e41f47b6c11c2ccb6ed057a4f19d4e4a4647c9630e96eec27febb928",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/CompactSlabOperators.lean",
+      "source_sha256": "2c200b34f932e6dce8ee1fe144728fe5fac818226cecceb19a58a14f3e1d8003",
+      "artifact_sha256": "f319242fa4c0b768f6fd9356589711f9c96d5042da2516319d2c2340797e6726",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/SlabFormAlgebra.lean",
+      "source_sha256": "722901eed640a47daf19d5acdcdce7caf2cf4fbfff1d4d693860492bc40433a7",
+      "artifact_sha256": "79f731f6efa70bb44b6a192f490272661fd9c0659481712d7499f3e2e003cc64",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/PhysicalSlabForm.lean",
+      "source_sha256": "7d0a15ee7eceff680848e37106e331b68e5e21a1e1e5900b91835aa19bd28d48",
+      "artifact_sha256": "7b805aa9e6f83811bfcbb49adf6431fbce8cfd576dac224c9837bdc0410ad4f9",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/PhysicalSlabFormEvaluation.lean",
+      "source_sha256": "9f21a988173969efd616ecd12dec6788028a7e5ed68e3620ea2881f6bc93a34a",
+      "artifact_sha256": "5c609e7416e88997e9929c6a613c36bc7b6a78b0331eca857e9c0f1b857c084d",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/PolarChartAlgebra.lean",
+      "source_sha256": "6d500b96be788bd0f5c2a8415384e4e277a7f40dfa579e1c49b5b040c266e67f",
+      "artifact_sha256": "7aff7c5b189c6f8c26e3cdbcab84170c2a560934a4a6fa57002dd9ea154abdb5",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/PolarChartEvaluation.lean",
+      "source_sha256": "56eafd8b954eed0192c9dd4d5d24d9ece0b9ff7bcf2bce1545f5b3a15a61845d",
+      "artifact_sha256": "d02a797509e1f5dcdb898ac9b683c98e4a1e0f913b83d508336ec751fbfaa8b6",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/PhysicalChartCore.lean",
+      "source_sha256": "d733308ab0f79e31888d73ad3d8221a9e25cb6f23d4f097352ec7a0b9495f69c",
+      "artifact_sha256": "25afc640c4bc2d4b9f29e5a259588dffdf86ecc65be54d70b08f4225ecbe2d32",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/L2DensityIntegral.lean",
+      "source_sha256": "f14380a644696ec4623224c75a4c6724f057f4b6ef79daeaf39211527aa50eac",
+      "artifact_sha256": "6ff87ad0315fe7269da7ae2060965181bad54882be430c732416b9dd82c779be",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/SphereCoreRepresentatives.lean",
+      "source_sha256": "29ef2c7d4b82200b3c09dec332060a9896317609b0d10ec9ab3c82dc64e08653",
+      "artifact_sha256": "f97484b4bfeb5ceaf42fd0a17aa2dbb369d097b273638b0348d356b42cedad65",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/PhysicalCylinderRepresentatives.lean",
+      "source_sha256": "a58ef56fc24cac8cd5612437922100fb581193a34810b49f04d97181969845fe",
+      "artifact_sha256": "eb1927238f1149b5d78a5c040c002a7a2dc47659d6de59062562dd42e5b0a9a6",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/PhysicalSlabTestEvaluation.lean",
+      "source_sha256": "82ccc55c66908f1c1d39b20142b9114edf8cb3d1d7e4a0bc47e7d12894213035",
+      "artifact_sha256": "8cf5c3ca74fa4f8e6fa62d2e98a76f36b06f7ab810531b9720e525550868f0cf",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/PhysicalCylinderPairRepresentatives.lean",
+      "source_sha256": "3a5d5c552db176986f58a310e9288a426dc13a0dd2ccc50ad0aad9f6b6a898ee",
+      "artifact_sha256": "48eb5521083b0cdd29e8b8bf379a0fc05834c27f130d9dcdfbfd648964119303",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/SlabBilinearIntegration.lean",
+      "source_sha256": "4371df9882dbfacc3fd1246e8d6f61ca369da654ff8c54dcce4c53436ba25a12",
+      "artifact_sha256": "534799c554545272934c9976702a04ecb6767108d3fc57a5b8ed7e7094ff2b78",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/SeparatedSlabIntegration.lean",
+      "source_sha256": "2722ea1deb412d49939eb78a1ed2aac30bc409d3add135b7253e8c5b7f03ef20",
+      "artifact_sha256": "7f8415803f30db3915ddf81e905f8a225e707bd2a0d311647ae3afd02b396935",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/PhysicalSlabSeparatedForm.lean",
+      "source_sha256": "0f37877c74ab39400004922a40ba5c08d2ed676ab455f77947ec494baaf1dbb2",
+      "artifact_sha256": "fb952b1220c4fa42e48769202fe78d7a44719b8c541f131c197c2bf5eeb03e25",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/CarlemanSourcePair.lean",
+      "source_sha256": "66bb3abf5a7753a4f3727234e5a8d57b62082a13829397bd1e0598592fbffc3d",
+      "artifact_sha256": "9921f42c751af427e18971845475cf0a46e191f54597d0c16405a01ec40cd480",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/PhysicalCylinderSlabSource.lean",
+      "source_sha256": "31815747771d7310d004f4339a5fbfe80137c03a48de4e9cd524958482fb4231",
+      "artifact_sha256": "41717fae27a811e8b5e3801cdf4d7ec0315e54b19370f2f38ec90761646ac3fc",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/PhysicalSlabSeparatedSource.lean",
+      "source_sha256": "2918b9f6b94eb9d03742cfc3552228fb87edd94177168227b0da800d35d9c5d4",
+      "artifact_sha256": "1a2ff784454bca2f64d18fa132c2d933292503da9534b5f433dfd5a4f675cd75",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/AnnularPolarMeasure.lean",
+      "source_sha256": "208106d25335d73cd942976cac7b7fc25de08bc922501bef82f34bc22763dd43",
+      "artifact_sha256": "0d49895a48cab7d5b6b22821c114345cf27b606d8ff02fc9558e451292f1325c",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/PhysicalSlabCoreForm.lean",
+      "source_sha256": "116bb59e9605640e5a65aad85bd5a9e6fd9d3a47b936f0c1550cf5300e5ff35d",
+      "artifact_sha256": "7f56c3e2b1bb24d36812f7265a55fa54865a2310ea469c72f35952cbf7e775ad",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/PhysicalSlabSourcePair.lean",
+      "source_sha256": "9202346bd5e0114e7b847b36cdbc41e0d315c8d62a88ebefa85fbba6b9cfd239",
+      "artifact_sha256": "35c3a6c63cd12380d6c6f412da36cb6bc8ab0fcb4b728b8553db908f06a44499",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/PhysicalSlabWeakForm.lean",
+      "source_sha256": "e68d3346a996a0ac793a9546faefb075190db6291537516d997d0f551af409dc",
+      "artifact_sha256": "477a7a4ca1b0c0827ad29ec77fc17d0704a996b876443ed534fd27ec88eddeac",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/PhysicalCylinderWeakTests.lean",
+      "source_sha256": "a00923430611d428281a5bb23b303113149aeb670885446d70df7c5d2e3d87df",
+      "artifact_sha256": "d1934987d09815531826c3ce09116780e3821a26909125b789e69ce6027375a9",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/SphereCorePairContinuity.lean",
+      "source_sha256": "65a50f9ed0abb056d6bfb903eaeb34921c81ecb0c013e951916c1da5aa54b9ce",
+      "artifact_sha256": "3afbef92fc6be11ddf294a093d2263c4d50ab2f831b03d5731061af6e09436d7",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/WeakCylinderForm.lean",
+      "source_sha256": "53a77f9d33550ef1f764711245ccfbe4e0ccc9018eb886057a840ba8ccba2b7e",
+      "artifact_sha256": "e1cf47fa1b909531fbea88619758529aead6a9062a5e5d86d5b860e7d8ccdf34",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/WeakRadialEquation.lean",
+      "source_sha256": "c20adfe959cde7dedce46fb62f146016a874fa7433280e3fa3f80e704644811e",
+      "artifact_sha256": "71e45d149b0ab71458cb93340db49b68121338ffdf3091c985a1a4f3ef13e8fc",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/PhysicalCylinderAngularRepresentative.lean",
+      "source_sha256": "2e834aea5dd36f41fa922157dc6b51241a89aff41a48e828987525140dbd066e",
+      "artifact_sha256": "aded15a6c7aa6431516a03fb53496881b2732bab44f10427845fb2b0e18b1677",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/CylinderIntegrationConditions.lean",
+      "source_sha256": "0190ac7560639688de5ee3fd7b289b2dfc0f30cc964bc3ce1b1486e8ef356a50",
+      "artifact_sha256": "c7374924f33e8ca4c058c5fe822b40a4aee885c3b82454ca3c068ea9cb312823",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/CylinderPhysicalDensity.lean",
+      "source_sha256": "d0c701d3100b244809d8a529a10e72518a167af8f53084a2fb34f05f4557f3d6",
+      "artifact_sha256": "cb6fb35c9af7bd907041f54b650fe54f1917df6ac39547a8c2d7fa9e425217f6",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/WeightedCylinderDensity.lean",
+      "source_sha256": "3b4125f0ee832861afb82482e067be015181a282f7809fbd8810af6023cf7c69",
+      "artifact_sha256": "1dfb82e7c2492e9a0c6d9a1c83440c0896ba10e29a110fa2f66a1cd03852bb9b",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/CompactCylinderIntegration.lean",
+      "source_sha256": "12f77e360375efe2aa1e63f167860960d36b2b5c43535f7a60e33278d5c8bde0",
+      "artifact_sha256": "6638ec474fc723da7cef4ed900e91a22617c3e19b2f6c94b73a2bdd9b43f21cb",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/CenteredPhysicalCylinderBounds.lean",
+      "source_sha256": "86452db27eb268b4be46f65f266eba6ce4ceded8b0e82dfc90742079a78e2ac4",
+      "artifact_sha256": "2697d5cdd73058ce4d203c1fb35199114267946bfdd50938bed28d27f1dcf92a",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/PhysicalCylinderEstimate.lean",
+      "source_sha256": "1e63f18512687922c629a006ff991609f8815b373990ef89b2048790abaece50",
+      "artifact_sha256": "f99706b512b598ea10b992f810da8c41547c27fb2bda84de34acaf4efe91945b",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/SmoothCarlemanConjugation.lean",
+      "source_sha256": "ee5289b755ddfae90892e875e24a365bedcd7b27a89dd940cf5b6f0e247ddf7b",
+      "artifact_sha256": "55fbf92a8b8d918373e5b7a2d5d9b56ec389bf11df00a53eb4203e8793047cbf",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/SphereCoreWeight.lean",
+      "source_sha256": "759bc3df76b4e7b5530d9ab88c73eabead7a684fcaf1166382768919b489f3ab",
+      "artifact_sha256": "aa605096f774f761208cc816874677169b2f1bafeed04e68bc508834e4a36d13",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/PhysicalWeightedCylinder.lean",
+      "source_sha256": "fd4885346db1e623993d9dc084f5f2367add138abfc74faa587a0a89cea3c0b1",
+      "artifact_sha256": "c6b6acdfebe45b711b81e024b61eb6cf4e554ab17137aa4f881a2ee422b08043",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/L2StrongContinuity.lean",
+      "source_sha256": "ec6a9c7a5835ce8ac60b03a6142590f302c15838d632f62a12a2828bf3c9c1e6",
+      "artifact_sha256": "552497a1edc4024737b6976348507502449c689a19b55cfb2c576079cd4dd2de",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/L2ParameterContinuity.lean",
+      "source_sha256": "de983c74a542985452c517c7bbd67c847c0578c16d9c79447f59a76db4a1aa10",
+      "artifact_sha256": "b20df0f714bd11afca703ede16189e514986f10b45e20dc95e508804c6287817",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/SpatialFieldParameterContinuity.lean",
+      "source_sha256": "c9b0d7f8e43b0977edb11ef8f5cd5b392fed8de4eb1f96965e36e63f4fe62a95",
+      "artifact_sha256": "9f2bd7a89f00815a5682a89c6167be9fa7a49877be36c340df6a45592ba0ca07",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/CenteredSphereAngularContinuity.lean",
+      "source_sha256": "db100f9cedcc263e18e7366d9e127b9f722104d835b1f441903f1cb71e974ce9",
+      "artifact_sha256": "5de56c292a9f40e6427288ada69c41c6e322968f0603a40cd67ede26978076d2",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/SpatialBilinearContinuity.lean",
+      "source_sha256": "5c783bd005a9a1d45811f7fac6382c7b0f23a49479e8aa8f47fb4c0e0ffd85c6",
+      "artifact_sha256": "6b78623dc2948c3076fdda64b16f58b2312edbfe613abf739aa1824dada6f856",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/CenteredSphereRadiationContinuity.lean",
+      "source_sha256": "57cb546c88363fbc0db055c49cceaed556f9df593dec56d28435d15055ea3b85",
+      "artifact_sha256": "6b6d865e8b5845b347c33c01f6789e8a549a9a618bad9b94114e04f3787b523c",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/LogarithmicCompactSupport.lean",
+      "source_sha256": "5aa201f02d227a5ebc28ea6c74df65f9162c9731cae2298e38b39cd302084863",
+      "artifact_sha256": "931d51bc46b986e9ccc2cb13b1d45f3391bb562e734966692f91a51713333bfd",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/SphereCoreCompact.lean",
+      "source_sha256": "f8ec1ab610194896d91cd2a76c03d1edfaa322353bf10fa029f8ff1ac395091c",
+      "artifact_sha256": "5c6a3368c3f9a7c2e2af0ffbb22ad3a09bb5df72a3d6e072211fa751aff54e4d",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/PhysicalCylinderIntegration.lean",
+      "source_sha256": "6c34838ab29fcf435ed35f6094e7038ab7dea994e378f1f07fee4ed3811aeae2",
+      "artifact_sha256": "2ed7d0beca8c197965c19ef38d09cffb99b5a1f4fffc086050ed865ae1d3fc00",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/PhysicalCylinderSupport.lean",
+      "source_sha256": "4f964b1ad9eba345f5040186e46bf1f4c0e68cbcef57b2da0a98f5c63f33b479",
+      "artifact_sha256": "a0504a3a113bca8e88a6ffb713e1954f6741015156a4a4bfa40bda7e0aad2691",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/PhysicalCylinderCoreEstimate.lean",
+      "source_sha256": "95b209748ea739da86c9dae64b69dd6ac39c7828982a13c765c5516e6c9f3623",
+      "artifact_sha256": "f97a8600669e2ab44950dff992c84792b327b6dd78b2d168ff40b6e8d4a6862f",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/PhysicalPolarTransport.lean",
+      "source_sha256": "538a4b91ea7548c58ac717dc04811655675d24e408de9eb7d16019f951455780",
+      "artifact_sha256": "f72aa2260bf0d0b33125bd411d8615741045c52a786f7dfe2446754fd5bc830e",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/PhysicalCylinderEnergy.lean",
+      "source_sha256": "576d0d33360f0d071869e88154f37427ff2bf93576b86b202e628d771b4aac56",
+      "artifact_sha256": "49c52c5a4d5a30f95f9389a29c0e4fa0cdb9b631d2871af8f51cefe7e1f92d7c",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/PhysicalCylinderNormTransport.lean",
+      "source_sha256": "e011eae40b25087a4d4747bf32e193ac95ad717248182cbca51aaf23a4280f4d",
+      "artifact_sha256": "4927070c35a8f033692a1099894cb0ddc35d55fed3142d656892e724374e670a",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/PhysicalFreeCoreTransport.lean",
+      "source_sha256": "beb85ff69ec17973ec10b2d6f8ba2424a417f85adb1aeb4fe1fdfb076c11cea0",
+      "artifact_sha256": "38d99878731eaa999106e2b545aa0605f297087425640c84c1ff8089f20cbca4",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/PhysicalFreeCoreCarleman.lean",
+      "source_sha256": "bfbd07ffa58d0b535bdcca8e970d19a0b908cb3052ebb69f9cdc91ad6ad77139",
+      "artifact_sha256": "a3b638343dad9b24fddfc8149babf7cebbc8210e3bf46506e71b327f82a40da3",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/PhysicalFreeOperatorCarleman.lean",
+      "source_sha256": "ef41e0d7f81ca1177e152bf52d4e953589e9525792967f8c78c64afa99fb1f85",
+      "artifact_sha256": "04ed70ce6f83c48853d98177cc7322819fe9deb8271782fba3d35b05c2bb8b8d",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/PhysicalFreeCarleman.lean",
+      "source_sha256": "c5a6146d67b01acbaf9d294130b05e4f0246b5aa6739e68e38b49716da5ebd04",
+      "artifact_sha256": "abe56092ae33a3cdf3300797a3e7262390b98e7f1859db8c463b5081d8493e2a",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/PhysicalDyadicEnergy.lean",
+      "source_sha256": "25b754d28baf0a518b84949c7ab59c4231c9341cc8a103d97ea20a7259c77f36",
+      "artifact_sha256": "76f3890f88a80e14395b180cb906aef81911adca88d175db74ac5ef2deea1f54",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/DyadicIntegralBounds.lean",
+      "source_sha256": "db527efb89d18d8ab21647c4f02af337e20798eb82c07e6953c6a9ed1bc24f33",
+      "artifact_sha256": "7489513291e8364454e543ac065f99b1b58bd69cb626aa8da1d6348eeb767779",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/ScalarWeightedCommutator.lean",
+      "source_sha256": "5f8e165a9a532e52565a1b5bffbcde1ac948d0a655a84bc13c08be7513f46837",
+      "artifact_sha256": "2201da5e8dc4ccf9e3b5b04555f7354b0de7b3a596d351a6b7e959ae5a735aba",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/WeightedNorm.lean",
+      "source_sha256": "9aee4c235e32dd15f674487227e388f292345a401fdd1ef550eac8820a53b9b7",
+      "artifact_sha256": "52325eba01d17bc9b4d9c3e8fe4831f1312daeb94cc8be8d6c6c0eddbb42cd93",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/PhysicalDyadicGraph.lean",
+      "source_sha256": "bbc44b6f278f4f7922326a09d1805899618a7147d22a6e15449a20e26182dc48",
+      "artifact_sha256": "d30475770f10c24aa26711b4a3503a466c8fa0c8e0752ac78f76e564c1502c51",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/ComparisonSpectralAlgebra.lean",
+      "source_sha256": "d69f110e1c69d94f5ed98c1728b52b1ac8397d6e45fc3ce9b3f005cc76d36af6",
+      "artifact_sha256": "fc0c1fa863ce93a609af2f912602b79450253c4cbcc19b37ea8b62b5dd8533b3",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/PhysicalComparisonSpectral.lean",
+      "source_sha256": "99af8416672d52ac1db7c0f014c65c4c76650d19eae3542770f4784125703a05",
+      "artifact_sha256": "79f7940d93532bc3b8ef05f674890da5df5263da1773fc5d52d0f96e117e4d8d",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/PhysicalDyadicFractional.lean",
+      "source_sha256": "8b025f1b513f19456180599ce55534c7d6763b94a8f0251a80ef5e4d85814d33",
+      "artifact_sha256": "91472cf17ec8051f40512120e1dfff746d09f740f5b2e11300d67fca8fdf4f51",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/PhysicalDyadicSpectral.lean",
+      "source_sha256": "20f381285a792a5f1ba9045dc5cc86a95383a882d077b2e9392902e5418e1c9b",
+      "artifact_sha256": "c4c0901865d0774cb87003bfda0750fbe2ef3783d465bdfe8fb04b108dbce97f",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/PhysicalEnlargedFractionalCarleman.lean",
+      "source_sha256": "73afe04c78967e78dcede0d7abda8b8a16f87d149378dc5f24216f2c5ea4185e",
+      "artifact_sha256": "06e984a2a6b51e59e7dfe6201125782471938ee8bd123dfbceb9a4fe44099067",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/PerturbationSmallness.lean",
+      "source_sha256": "7636c0503e11b796350f84f217a84a385b6006eca9603b395049cc0b34386230",
+      "artifact_sha256": "bfe04feea4481d9a6da3a8d1e633ab596ada9ce4895d9500aca459474488025c",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/AeDyadicPartition.lean",
+      "source_sha256": "7f6ebd65eb08ddecf9b85718eb54daa0da19f3d353221d0d1aa54d0b6e59099b",
+      "artifact_sha256": "2a5e38dc6fd9c1367df72b153bf25a074a3c97d13b9a8e812bf9a97bc05372b9",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/DyadicScalarNorm.lean",
+      "source_sha256": "7220f9c8d166e206bb5c664fb3a7fc185b62cd6a8487a9ff767afb70a6a1c434",
+      "artifact_sha256": "f33f9cd9eb202a8d72eff9554eb267ee6e139493f9b032f3a6325f88378df927",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/WeightedDyadicFiniteSupport.lean",
+      "source_sha256": "b2295fd57af60cee8b2f39208993f0f9e98dcaf528b0e3089455264eeba056a5",
+      "artifact_sha256": "838158ceb11cc25c178cf16fb5ca92d24df547319e669625160bde7a1bb85ce1",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/PhysicalDyadicPartition.lean",
+      "source_sha256": "211b57293a62e54df6d06a35c1d9b5d16c5468596d960a349d90f7a2d4a3cd16",
+      "artifact_sha256": "97ded0436129d33cb04cd62a14f30dc121b5203254e81b2e748e0080a5e48efe",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/WeightedCovariantEnergy.lean",
+      "source_sha256": "c3eb412b0f85b962ede4d8e9a50b5ce80e2d3225452269823f92894d5783df49",
+      "artifact_sha256": "8acd1a5902b1e4409e35cd1fb0e03839714dc3fcf94d95a9b0bbc978ca87efbd",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/PhysicalExternalEnergy.lean",
+      "source_sha256": "65a6f3c92ed5e748e3615e07c3fc36ddd8f433b0bddd4074193a349460c1bd00",
+      "artifact_sha256": "e47bc269cab543f5965926084627c666fb3388a8fb1baf27e84c358236a0b5e2",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/FiniteWeightedSource.lean",
+      "source_sha256": "2d20b2add76e5fe740b35bd23dfaf0ece3fcca3d32eee3365762bede0282070f",
+      "artifact_sha256": "5c73f345dfecdbca00b2a0ee231a368eb036072a0f7155126ca9a45bcd60f9fb",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/CoordinateSobolev.lean",
+      "source_sha256": "0c381f2a95ad166e9d696f24ccdb4657196f121e33129ab8c1d583e7ba5803f5",
+      "artifact_sha256": "d39aa8bdee10d126fe9b8e55a42edeeda08e1ebf5c7614d1c43eb7180eb99b77",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/CoordinateComparisonSpectral.lean",
+      "source_sha256": "bdb275a3aa1ff5418f8944caa2508d14a36fd8fb2f3fd934b5ee34ac0715dd9f",
+      "artifact_sha256": "a783b19ac49a3d4042266b85b24f50b4816fcc1f2b19ffe3afac00af8a5d0bff",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/CoordinateMultiplierFubini.lean",
+      "source_sha256": "67a5f439766854a309d62dabfdb87e4dad567d58d46a9a1776eccca9ba12cdfa",
+      "artifact_sha256": "8a78c998467d40c4f5b4aac19ae6d9fcbf4b3887165b6866f51763c594438b1b",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/CoordinateMultiplication.lean",
+      "source_sha256": "f4b77790d39bbe0967c7d95dd8d4927b8020c730eb40e524b1ed7793e9ded5c7",
+      "artifact_sha256": "6c09433c6fdf27314637582dd7822c10d388172460167e97e2dd52aaba7e5e42",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/PhysicalPointwiseField.lean",
+      "source_sha256": "650f6b0fae097ab776b0be475f5f6e63b6aab7297fb5114b359e1530439196e1",
+      "artifact_sha256": "b2c5c968b6f2acbe14c6266c70e9c68970df6db5f60c5e7292b4853c29e3a227",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/MultiplierNormAlgebra.lean",
+      "source_sha256": "83c18c603fa2b0e09c41efbab4c6d03372a1e3935c78977bec320ef7793cab27",
+      "artifact_sha256": "62cf92dca55411b4222ee282a4a5453c9b6cbee70d3d406f8f7746b13e7e003c",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/FieldMultiplierNormAlgebra.lean",
+      "source_sha256": "36fb258d33ac479be086de258112d66b6a817d32d0e5b60cb5d2af349155e4c3",
+      "artifact_sha256": "0b74b8c4eb603ead129c3ad7ec59a12fed64f2038b0f70213f69ada0f6f02361",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/RoughFieldMultiplierAlgebra.lean",
+      "source_sha256": "d6a20e466765b43edce2705385a384b5f4042abe4d77ee749f2e4e64b46f7b63",
+      "artifact_sha256": "827c0be514bc73b1bc3bcc80b44243b367e9fb820346cc0616ffa6375d199e15",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/PhysicalMultiplierField.lean",
+      "source_sha256": "8ff3c37eb7385787e76ae1ac89985049f20c4fe9b133d3d790b79902a162553f",
+      "artifact_sha256": "ecd4f61222f652cfaa76a847b1dda9f0ed37cd65803d14faf84c10481ece7283",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/ScalarCoefficientNormAlgebra.lean",
+      "source_sha256": "a31edbac24cb0d33445d7a83e3caa233b160ffac4eca316574779032d9bec326",
+      "artifact_sha256": "c9478c36ef29e8a1305c0f6fffb184f6287c4fabb7e381bd8dfdb0bfe38dad93",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/PhysicalCoordinateMultipliers.lean",
+      "source_sha256": "7a0185d18a071ec981cc01d4f22a990103a0c0e44887a8dcb8aa5aef53f25628",
+      "artifact_sha256": "7d01a3ef6fdff9d27e4762af4a34983c3da2349ca2eaf04521e6bba146981962",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/DyadicProductRuleAlgebra.lean",
+      "source_sha256": "bca9b4e624506d9e812cd63ae0ad6e2da742296630e89007d00a0d6f73d05bc2",
+      "artifact_sha256": "c140e00fc1f73615ab9c93ad797b6470e9eed1817c06d2054e46ee7a00924b25",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/PhysicalDyadicProductRule.lean",
+      "source_sha256": "d6d10eb8ccae4467e92b42dae152cee906c2087766beabb04fe44fc5a192b2d3",
+      "artifact_sha256": "b87b5b6d08f008694209dc4579a6186223b25163653f4bc8bf9408121b1d95ce",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/PhysicalFractionalCarleman.lean",
+      "source_sha256": "eb104a0e24eb90f851f7032a517b02b7e64440264d37d0107b3b307e82b5e311",
+      "artifact_sha256": "a85f23071b55ebd3fa9e4e254a87468a04a3d40ea74ddfa66bd8951ef2ce202c",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/PhysicalDyadicScalarPerturbation.lean",
+      "source_sha256": "46ceb458bf8cad51e42d8719d3845730367af6d70fcf2d91322fc196af8f9706",
+      "artifact_sha256": "a7a75bf1b9ab6ed1fa157c11ddf07ecc3efd8d4df1f851a87af1c1bc956d310c",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/PhysicalDyadicMagneticPerturbation.lean",
+      "source_sha256": "3d9ce71a767ac66af2e4d8e0163b0dbb61ac14e3a4dfb12836a3e42f2c71888c",
+      "artifact_sha256": "0558b9bf8cadb082c39baf0f98864be2cd0f8f3142b375594a05b0fb44b251c5",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/PhysicalDyadicSpectralZero.lean",
+      "source_sha256": "a461d6106b176f01a9b3ab33181cbbe8a55d55e0067b042e3e53311108c086bd",
+      "artifact_sha256": "cea570ba3afac2e27cdb6d9e7ae40dad36c5ad6ee293e0a4748128c572caeeee",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/PhysicalDyadicCoordinatePerturbation.lean",
+      "source_sha256": "8ae172e43e3f35b38bd0777f7bf020367bef33ee49f7cd8811f48fda8d836bdf",
+      "artifact_sha256": "1bb02e7950dfd691c54ed5523163a787dd42926461be549328edf1b4fa77fbdf",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/DyadicWeightedPartition.lean",
+      "source_sha256": "505c189dc2c035556d7ab0ff39e4b62a4a16664acd06646a0ee6e977970375d9",
+      "artifact_sha256": "6f1a66baf5783ab7400c8a6f4b2a2a9dd078260938965a4c6f3337aace615a46",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/PhysicalDyadicKineticPerturbation.lean",
+      "source_sha256": "1a5ad80145bd573ae5d0fe2292094fa78e5535aa8c2a00a63e7247a1de399279",
+      "artifact_sha256": "cfa16c963771a5aa592d791a5a60848375afcd69c9a7613857c9e806771c0799",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/FriedrichsDivergenceBackground.lean",
+      "source_sha256": "14508af11182987098e77a90964147bf5417cc1457ac16f24de951f2732a8461",
+      "artifact_sha256": "f14fddf5633bc61312434386846b307583ac837afd2984c119fd982507845a2f",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/ExternalOperatorAlgebra.lean",
+      "source_sha256": "92996b1422fcb1f26c62e87135c72e13b735cd1d091031e3e47d9767b5c76c44",
+      "artifact_sha256": "9833793289f0002d2d5580e7a38330c02e4286bf21e2b089546c3d3fed76f2b0",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/ExternalScalarApproximation.lean",
+      "source_sha256": "539247c65a6ef5c7a589d35da5e0e4709a46c49602c873511e08019bb0bfd629",
+      "artifact_sha256": "a89ecaf6a5c41108b31f94b88042b29824d4dc9a2a56936de675caade1ae49aa",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/PhysicalExternalOperator.lean",
+      "source_sha256": "91c36d86ddf2763d186ba3c79102c56715d967fb83c6908d561317ae30617e31",
+      "artifact_sha256": "03ab3256a36d0b200583dadbd0204f28d7e0193c2442d7117089d672b285bad9",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/SignedScalarMultiplier.lean",
+      "source_sha256": "50ed30999544626faa031c286ec56ef93b8bdd7b9a894eee136e56155a530a18",
+      "artifact_sha256": "11d93e3dada862fcbf13c619ae0c761e8792ce24c0cb5082cda61d052872b3e9",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/PhysicalExternalCoefficients.lean",
+      "source_sha256": "64f12cbae69e53d2b852df7296397c031aa69bd9f74c70a61d45020c5a829f8c",
+      "artifact_sha256": "174533dbcc2d2fd7f7bf751a61b829c5b93ad4dfcfe9039dc86726b37ca97d0f",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/PhysicalExternalSource.lean",
+      "source_sha256": "1298e4e7f0298c7b24c02473029d953d1191983f462b59422551ae52ed885239",
+      "artifact_sha256": "00df7033a1836fec1440b207a005e4ba0792de0e267087aa92eaeb45ef81e4c6",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/PhysicalFreePerturbationData.lean",
+      "source_sha256": "aedb03f89f2ba907b0727f4f1cfe88ba8c78579a12fc3c121e2eeeeab7ce317b",
+      "artifact_sha256": "cb0589200605b45793cc961c93eef5fafb4ddc8e2811350b37e6ac021d07b22c",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/PhysicalMixedSeries.lean",
+      "source_sha256": "d5dffb13b757922f9237c1914c37890343a2d1ab3472f408d845e4e00dbdd405",
+      "artifact_sha256": "7dfe65a5bc947a1f6f7b9e5b025cf1b8ac6e2cfafb1e354462b5acdf8fa135f1",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/PhysicalSourceAbsorption.lean",
+      "source_sha256": "532dc50a1e78adcc1fd78a19a9c523e4e6fd8f94dd73626bb02eb79b4d2fdd4d",
+      "artifact_sha256": "c0fbce8f423dc6acb84734eb5f390fb16a7896915fbf252ad354eaeba6fc6a5e",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/PhysicalExternalCarlemanSum.lean",
+      "source_sha256": "c6cdfd413753dc79a5e06a1e832d20620cb116c894fa723dd647da0de0035a88",
+      "artifact_sha256": "fbcbf573d7927695b315027007d2c30ddb131e618213666f13b07126829ff57f",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/CoordinateMultiplierConvergence.lean",
+      "source_sha256": "d24e54b8f187ecd1a34d6e7f30842bd406a6a6c91c92235e99c5e0ae0ee769fc",
+      "artifact_sha256": "5d8c1284d7d8a8a9ffe520204d1bc2ce8cd9ca6a618079493312130ee42d0cd8",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/CoordinateDivergenceApproximation.lean",
+      "source_sha256": "eadf94122a5aa7ea4d20e2fb489edb9183bcaca04f93b70ade5390173f8c5ca9",
+      "artifact_sha256": "229ecd64268e0bf208ad4d45e6fbac1eef47b8bb5972c637a792c31830fa013f",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/PhysicalDivergenceApproximation.lean",
+      "source_sha256": "55e597ff19b1ba7b67e0b841c561fcdce3e2a9c9232b04e6b46ad1c4e7983bd7",
+      "artifact_sha256": "f2649f2daa344257f4c82e5125d0a33fba311578cf369257e3aec2f99574752a",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/SymmetricGraphExtension.lean",
+      "source_sha256": "a82ebdaff96f55631079bcfe4330e2b979f163eb23d187b8762c09d9c0e4c247",
+      "artifact_sha256": "957dec9de4e964ea54efadb060b64189c4a108f9e39c416646da686033e3a1c9",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/KatoRellichBackground.lean",
+      "source_sha256": "b6d64bc5ca99d13947091c8dae154a7b05a5bad56b079acaf53878aec707590d",
+      "artifact_sha256": "4fbf95ea32459a130fbf121e265a9e799d3e95e807050bf5b4a3c9956a9a0639",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/PhysicalExternalDomain.lean",
+      "source_sha256": "7204003d4bff7db4b783732fa8540a10c53c90fa1cb4db348b8ad7ff62823d17",
+      "artifact_sha256": "e32e235769d35f7d3be86ea8167140b17e9270689b1a249d95a193f15c28bbcb",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/FiniteHamiltonianSum.lean",
+      "source_sha256": "903d1578ed0cff26cd20a0f4c561d45c3d4f7b8f50086a12a105045c22860cc9",
+      "artifact_sha256": "8119f4d0a7a42c11edc0ff80b9d64301bce7aba36b85eeb87bc6c3f691cc9e2a",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/LpFiniteProducts.lean",
+      "source_sha256": "e594160ea40058fb0a8134148d327326016e3a70e3633c168fef75916a8ca08f",
+      "artifact_sha256": "ad983e5af88dd00b3aad3ba387bf69a741645b898433b4592517050b6d3dc66c",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/PhysicalRoughMultiplierSums.lean",
+      "source_sha256": "326068d966cf16f32b6283c2321235fca6ab717baeb973e7ce5f33c6e156e3b9",
+      "artifact_sha256": "326f4568c98eb0cf3cdef02c4f25f07dfd997b4dea53ab2b5b6e0704fbc55350",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/PhysicalExternalTermsIdentity.lean",
+      "source_sha256": "12a6b44d56ee9bf1c3a5bd7a551c2f66ba8e8512fa909d39c2c3440a4a5cca88",
+      "artifact_sha256": "f679fd3a46499c43b2af721a0ff268aada8a32395a47325b4d3c89e8cff19e92",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/InfinitesimalBound.lean",
+      "source_sha256": "71c2784efff0c3ddecbd42ee5785ec76a8764c290d4df9cd4432d799496030b1",
+      "artifact_sha256": "bf0639df70d5d2ac8f69ef9752f603a0a5ba03c4618d433f5816498213f1e788",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/SpectralInterpolationSmallness.lean",
+      "source_sha256": "32c148a2cdd05dbc268fb3436aa0cf80101373607eb6a14618243f61d1854013",
+      "artifact_sha256": "3ce7d6051094697a0f6b49e44f51b7f3da8f1eb9491a9c47a3aca89c3c77ed46",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/PhysicalRelativeMultiplier.lean",
+      "source_sha256": "d4707720f04b308bd706c6010c6f3ea39ed3b2d99aeb468c620574b09d6d446b",
+      "artifact_sha256": "1cdf4afb2693d6401fead4af91736039be6b0dcb0ecf50b7dfeb502e663a9360",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/PhysicalExternalRelativeBound.lean",
+      "source_sha256": "842ad97601e7edd15fe8919126dcb511ab026cf9a51402485d800ade0e143d67",
+      "artifact_sha256": "2c6870a3b9bde0ad0d7c9ed1b78b77575d6f7e1b5497a4b7b128fd05ac1ff605",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/PhysicalExternalRealization.lean",
+      "source_sha256": "765721ff7c077918992266e9937390851d11ae96e456f9828e85e52d67fd584f",
+      "artifact_sha256": "1a550558ddf2c57ae6be24217944c17dc19a6989f29b9404b2cb4756b0e24b41",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/PhysicalExternalCarleman.lean",
+      "source_sha256": "91e2358e22f6245620c0b2a106037a6832ae9ab449ca55fdb67986e02f1b803e",
+      "artifact_sha256": "fd15a0865a85d79c13d7cb16b8d47fccceac083d6b31f61b2b7aa1083856439a",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/PhysicalReferencePermutation.lean",
+      "source_sha256": "9c4c21e952ee7ddf2db01c20f39bf23f10f4f44bdcb48c70e9fd964ded58596d",
+      "artifact_sha256": "2823f6a8a3f267b5bdd90e670359c0287ad3236c629f040dc9dba2a07d40a3cd",
+      "verification": "rebuilt"
+    },
+    {
+      "source": "PfHk/FiniteFormReduction.lean",
+      "source_sha256": "5897a3ab7d4f78f44d256abc70b6602aa96fd9ad0515600c47233ff05b1fd3dc",
+      "artifact_sha256": "01fa5b8c3c1f7c0d0e616a2420516735d19b3b3cf5ee94f200609101471928aa",
+      "verification": "rebuilt"
+    },
+    {
+      "source": "PfHk/SignTwistedReduction.lean",
+      "source_sha256": "286509ac3172f42d4d01df80bec27286a430ecce20f6679a1a961cebaffd2360",
+      "artifact_sha256": "2987a2905eb89eec9df1ea6223881933491c382a971beebdb462b4e5b109fa20",
+      "verification": "rebuilt"
+    },
+    {
+      "source": "PfHk/PhysicalFermionicAverage.lean",
+      "source_sha256": "1fd94c272b41008392afa7e398f411666d536c2c08542dc4eab264f47d5ed914",
+      "artifact_sha256": "ad531b6c9b81f517c2f922124436535a5f252bb0b9ead0042ee29d08f1114b2f",
+      "verification": "rebuilt"
+    },
+    {
+      "source": "PfHk/PhysicalFermionicProjection.lean",
+      "source_sha256": "477e8d3be78586db7af41a2745a0b0d72c0d850fcbc09eca5dfbe0c223beed46",
+      "artifact_sha256": "ce9153d0b4f0c85d77ffcafb3bb75af9dd88b46b9f0979337982dde1e9d56644",
+      "verification": "rebuilt"
+    },
+    {
+      "source": "PfHk/PhysicalDiamagneticPotential.lean",
+      "source_sha256": "24d07711c279f23c0a4edea683af0f82017c3d03d7727f635c586f5728e87263",
+      "artifact_sha256": "9377d92ff16fd1786ddeacb2f4c3712d740f424dba0b5c93ab5a9515f41a1f26",
+      "verification": "rebuilt"
+    },
+    {
+      "source": "PfHk/PhysicalCommonFormCoefficients.lean",
+      "source_sha256": "f714bf09d899306d26a45f8f0cdcee5fc290d52b0e3473153b956c465bdbee25",
+      "artifact_sha256": "8f7ac65850e7caff533f6b13b299c3020bba2703901ff679c0fa9b4f2a918fcd",
+      "verification": "rebuilt"
+    },
+    {
+      "source": "PfHk/PhysicalCoulombLocalBound.lean",
+      "source_sha256": "8c74e8ea28b6546e628f6e69b8d6cd05937ef7ec09744d7ddb8aed6e27817714",
+      "artifact_sha256": "993042cc306466838fe0d357958980dbec0ff7ed79516937492efc0b6e446446",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/PhysicalCoefficientLocality.lean",
+      "source_sha256": "c32eac62fe7611466d887c000c5516a5ab2dd67f96eff846f9eafe8ba342a253",
+      "artifact_sha256": "1c2ace90dbc4408d7ccfdbd92007278ddf92bde90f3a8db50927dd1884b8d331",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/CoordinateCoefficientLocalization.lean",
+      "source_sha256": "9a178b00573376fc427a904bb08c02be7dbdd5712720ffba64b50fbace898ff1",
+      "artifact_sha256": "f8b992b2a57cdef764fdf9d149102c5f9ac373cb90024b033f06153191a2e5a8",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/WeakDivergenceProduct.lean",
+      "source_sha256": "88bf2ecfa4a16f8cb9e5e98f3c802a2fe6a373db48a9d10e1976f0a0ad61909e",
+      "artifact_sha256": "1d35262cfb57a203b06799f006203a28de68a3ef2ef3ecdd1530b037b7b580cc",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/LocalWeakDivergence.lean",
+      "source_sha256": "54953c1d0751d399eb62503a474241fc89903722fef91c4bf9b57c938e0808c3",
+      "artifact_sha256": "afc6c1834e675ebedb5b0825fe8e5374c7b26b8d7aa9ee243dc808ae299651a8",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/SmoothVectorTruncation.lean",
+      "source_sha256": "2ce4b2bf4cf93825a158fe2da9b7b10a09aeb4e7fa6301ea64c21fe098ebbfaa",
+      "artifact_sha256": "c3f4937f61e379f6fa49b5102e5cad2ee70c4079cfd174b438af0a85841ac099",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/PhysicalLocalExternalCoefficients.lean",
+      "source_sha256": "527f0bec33d4a4f7d081f75d21eefde7b7d4ba067847cddd029de95b4eea8a40",
+      "artifact_sha256": "399a0b4648ccacb09faf3c51547269b07c788618df9af9c5aea2e900d4ae5d00",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/PhysicalUCPCoefficients.lean",
+      "source_sha256": "a8eac931fc85653dc8f66690e3aba20490c381299c4cc06165a669f05077b7e0",
+      "artifact_sha256": "193843165cde53f5462c2d64f58fe7e7303da67e088bbc55c0f2950c8b9c8a4a",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/PhysicalCoulombUCPCoefficients.lean",
+      "source_sha256": "ca4aae38ba9fa2156b9046ed24fadcc4d7f58bd223e2058a2d2359a2c3d54ff6",
+      "artifact_sha256": "cbb6d260c40af3b10acb4cb9a9020b7a19205676e3df619afbc11ef3386f09c5",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/PhysicalFermionicCoefficients.lean",
+      "source_sha256": "1cea89d6193baacf7454330cfe4830136b48bde032c89a9d19ff7e2079f4a569",
+      "artifact_sha256": "2ef2ba597222c79ce62b444c56d9f570656577cbde2565e08a8368f4947161bc",
+      "verification": "rebuilt"
+    },
+    {
+      "source": "PfHk/ScalarMultiplicationLinear.lean",
+      "source_sha256": "c7c076602e5aa23474e930e17999699a9cd9c49fd16c13a470e60d040176341d",
+      "artifact_sha256": "9ea4d438514ad4b8485d9d1bf222a35d4e126ab94d6c6180dfd96189fa5af00b",
+      "verification": "rebuilt"
+    },
+    {
+      "source": "PfHk/PhysicalExternalFormLinear.lean",
+      "source_sha256": "936584559843bd48802985d28a5ea954d19398bec8109e02eb0e88125bfa7f4e",
+      "artifact_sha256": "3a8e5b930b9e2ea20cb779de8d89986a993003e2ee6fa2f1d19c83df00e9143d",
+      "verification": "rebuilt"
+    },
+    {
+      "source": "PfHk/OrdinaryCoordinateLpMultiplier.lean",
+      "source_sha256": "2733266629a4162699075559cef98a80ca03faa3aa3705e0124425de51acd3c3",
+      "artifact_sha256": "fadfa827ecce3b5fc47283ccc6cc23a16f03244d27e13539b12d88f2439fb8d5",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/OrdinaryH1Norm.lean",
+      "source_sha256": "bbc0f32f0aef4aef908b16bfde48298c3012c174490ff9769b024097175e4a43",
+      "artifact_sha256": "6a13906a83cd6876dfe1183b633698cf799e87836bee541b1b30b1258ce079b9",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/OrdinaryCoordinateH1Multiplier.lean",
+      "source_sha256": "d071aef3794d17e345d4773821312c0688b65c150975427240328e20d0b062a6",
+      "artifact_sha256": "de82f6a08aa2dce417f663b494be826c72fe33af9325f6a0d24d27ce5876c37b",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/ScalarLpDecomposition.lean",
+      "source_sha256": "6ed634cd3080f7e4e0291a1109dce9992a20b24d93dcc7c9729e863ae961d778",
+      "artifact_sha256": "0de99c6e62a83e91fdb564dcb77546eb0a70e8fca7f67286fedda5184f721d5e",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/ScalarSqrtLp.lean",
+      "source_sha256": "5d9f89a563d38031b466780ed935daeb2ca330e975536132dd00f3a71ea6528c",
+      "artifact_sha256": "c3ed9bb7562205924a27c41c441deae4edbd38d5cc04aa821693dea04a5f9825",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/ScalarCoordinateFormBound.lean",
+      "source_sha256": "03f9b3795d4a1c52537d7fbc20cea5acd20120c104d1aa82aa764d4ef0f1993a",
+      "artifact_sha256": "ab1b2e01c74974875d2f2317098fe3997ab55e3b3eefacce1284bcffb4dd6cfa",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/LpSumCoordinateDomain.lean",
+      "source_sha256": "a23bf85d496ccee550588e59fc28b0af0c0d315d818f757ed3c81d3a9ddc276a",
+      "artifact_sha256": "73aedbc5ed26c0bfa8b668f5ea4599a983a02681a98a96ab52d3d131b08ef3f1",
+      "verification": "rebuilt"
+    },
+    {
+      "source": "PfHk/CommonScalarDomain.lean",
+      "source_sha256": "69d9f51ae62692a4846694bcbe4c4d7239fefa8c550b19dd4c96bf38db1656fa",
+      "artifact_sha256": "35dfd9593139da5148136f6ffde0919517a2c8c194190e1e65c88838f73ef2ba",
+      "verification": "rebuilt"
+    },
+    {
+      "source": "PfHk/PhysicalCommonFormDomain.lean",
+      "source_sha256": "eabb8c2f291708e51ba128a3fb98c5d007d21a2c5e816ddec0b6a34aa3e51892",
+      "artifact_sha256": "c981fa6fa95f9beac9be87ff18f5c139c062d731e9c73020b9c8f68d3bb55691",
+      "verification": "rebuilt"
+    },
+    {
+      "source": "PfHk/PhysicalFermionicWeakEquation.lean",
+      "source_sha256": "6f678ee9c30e7aac78f543825d6f7211f1ffb239cfe7638d238ed82535af66f7",
+      "artifact_sha256": "49e818ca7b17104516cc49051ae7e169d5e1744022d26b5cd531b847f3354b79",
+      "verification": "rebuilt"
+    },
+    {
+      "source": "PfHk/PhysicalCoefficientPermutation.lean",
+      "source_sha256": "6ac1f875aa47904f22a5c7ff5744a96d6b68003c9fc90b6f1b18ddf196f31766",
+      "artifact_sha256": "d553c4c7e09c42c92131bf89fa23384ce7bb68988bea85356d05fa25c0207f92",
+      "verification": "rebuilt"
+    },
+    {
+      "source": "PfHk/PhysicalPermutationFields.lean",
+      "source_sha256": "983a7a8d0aa53edb0b3381132def81029fb69ee82f358a408b1fda81e752f318",
+      "artifact_sha256": "3217b5573476ab0dfe32c2bce130fd81b6ae0cdfbafd2f666812eb352092dee4",
+      "verification": "rebuilt"
+    },
+    {
+      "source": "PfHk/PhysicalPermutationExternal.lean",
+      "source_sha256": "5a79e4c05303326991ad29bc849f654eaea6c2adf499f1ae4d8fde03db47f2f8",
+      "artifact_sha256": "b8304d4a246f06b7e76880d3aeb3a2a50ab52d0b4b8934edf391e137011c0328",
+      "verification": "rebuilt"
+    },
+    {
+      "source": "PfHk/PhysicalFermionicReduction.lean",
+      "source_sha256": "4f5b6ec1275149bb7a3172d0e781b2f383bcbd414bac413ae370daf8943089c4",
+      "artifact_sha256": "fdc6245f5f0cd5b142db9888d10f858d31864df36d4cc32c0ddf1e6c3253114e",
+      "verification": "rebuilt"
+    },
+    {
+      "source": "PfHk/EnergyShiftAbsorption.lean",
+      "source_sha256": "4badd0204a1e485cb1a58b961f8114b400ec01e7979d8720339da3627e8cef11",
+      "artifact_sha256": "ea8bec8a2b94081236ef5c2e346dda15ea55a7da74b133ca543dec1abb5f6e88",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/PhysicalCutoffLocality.lean",
+      "source_sha256": "7003fd06a5c96d0d102fba7719b8baeb7f9b516a93fc6b77b33eb16945236287",
+      "artifact_sha256": "a6fe7685a0b0e97a0159d0d3203e8c33c9272708778319207d23201b573bb9ce",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/BufferedCutoffLocality.lean",
+      "source_sha256": "4cd42c73bc27042044a737f48c106b4c67038d0659c2af0d757a6dbe7ede023e",
+      "artifact_sha256": "767f6e47a2252d906fa79da3b27e933f7542ef2ea0b35cb8a2f4d58758f75bf8",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/PhysicalExternalDensityLocality.lean",
+      "source_sha256": "0752ffafeca4a57897f34e05da67d5dde0524e63fbd71fe5646b3a24594af6a5",
+      "artifact_sha256": "ed29f41f776e246a599f501600eaedb89fbcc4d75bf4015abc273783c0e6cefb",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/PhysicalLocalTruncation.lean",
+      "source_sha256": "90dbb5a70dcf6faecf35df9667e6f09384056c3168e1df6afcbb5ed62bcfa7dc",
+      "artifact_sha256": "0f07b0c8ab92056e84774df760cd603d6b561c4adc4813e7574420ff1d2d4734",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/PhysicalLocalExternalCarleman.lean",
+      "source_sha256": "23e767f7193c927e4b55dedf438adc1f78512b4680c32929c2667d681465fcf7",
+      "artifact_sha256": "ba52ad808b5b2f53c9b12e7c6fa02930b7da5aeced1333c0859af65f229e4e39",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/PhysicalOperatorCarlemanBridge.lean",
+      "source_sha256": "83bc75b3998518ef5df4891a1755f496273558e74b745c05cff67daf37814b37",
+      "artifact_sha256": "3a8cacd15cfe7707153faa75cabdf6dbf0e046ab8e0f2447ed86125b1fcb40cb",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/PhysicalShiftedOperatorCarleman.lean",
+      "source_sha256": "ff6f6c5e2a3ec6efc3c780ba6c0de76a4b7a23fd5b9b2f720077596a56c05563",
+      "artifact_sha256": "409cb3e05cb2a73fde49c5ee0a995c06e13578d98536bd3623ff05758971fed3",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/PhysicalUniformOperatorCarleman.lean",
+      "source_sha256": "0309c1855ac3c733d383823d63e9647d4d12cde5d31a54bfea2399116ff9bea6",
+      "artifact_sha256": "55fe6516ae85d18a3efd6a5db8fc74864da964e68e0b8d28ab05c05b0793cec3",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/PhysicalUCPBackgrounds.lean",
+      "source_sha256": "0a6936382ea50d95d73099c82869fc62e971342b28ada11ad847bf410c109e21",
+      "artifact_sha256": "3febf7c51dc0568e02bf668cc9ba5514d54a855a65e3dd91910393b9d8017809",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/ScalarPotentialSmallForm.lean",
+      "source_sha256": "ae265286562861aefd4d53c29a3040c036aa7b0c4dc35de42870272044df6989",
+      "artifact_sha256": "1372af51cfbae84527050298d2904d72513378bb0e1acee7daeb301435d311e6",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/PhysicalUCPSmallForm.lean",
+      "source_sha256": "aa24124a6cff9f4577775133d1a6e59ec5f3fc7c6020d215f3f75e1184666048",
+      "artifact_sha256": "bdf9e7b65c0e8cfbc7b23370e280756f70c246c14c70b34a8919d2ddf6b5911a",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/PhysicalLocalEnergyBumps.lean",
+      "source_sha256": "2d1842e2fed3157221b2eaf30a9ee7f48a5a168337dc852e32b71ce7d497b00d",
+      "artifact_sha256": "781a61e40be68e773f936774d4801a2b6f185860a6308c27cf441518bbe623f3",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/UniqueContinuationLIntegral.lean",
+      "source_sha256": "546690f78a3f1089219309f3b220c253e6e56bab703def2c0004d732f917ab52",
+      "artifact_sha256": "0dc781fb09d8464767f56fe1c1bfe3e5bbc9809b2966692840b6f3e5c9f48ad7",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/CarlemanCutoffPassage.lean",
+      "source_sha256": "763f97a6beca94cedee1230786eb9a93ab16e322b4869f781a7a9e602b3e3108",
+      "artifact_sha256": "aec661d2a1c2fd3651b6e59e4aa1a0d86ff06c060d3be96d39ab5a1757a9046d",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/PhysicalCarlemanCutoffPassage.lean",
+      "source_sha256": "968c62f64f86f24fdf9cb03d4429652371f55033771da76aa9cdb20230b53182",
+      "artifact_sha256": "bd274ad12f9766ed430979a94a2346e4066ce34f1be87924220276d85292133b",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/ScalarCutoffGeometry.lean",
+      "source_sha256": "99123e6490cb30940875e4f504cf16a845ac66466088663fbf9bece219727910",
+      "artifact_sha256": "5a95481990f560919d573c46fd441079cae6d860847db999b263b7f767cbd36c",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/PhysicalCutoffGeometry.lean",
+      "source_sha256": "703b5e05c9a795d5003278d1560bb7d15e1367a9580c72efcc2c5a91ba83299c",
+      "artifact_sha256": "094099a66f718ba35fd131c03c19e522e91864275af9eec8160955ff06086e14",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/UniqueContinuationErrorComparison.lean",
+      "source_sha256": "4bcdbc72f8b6fe8c256abef76f046d4a567844ffc35081fc6b3e9a451ffe5ad8",
+      "artifact_sha256": "77c20432749f0f269d7152ca8b753a29d95dad940f1817c7c0b008fbf210b5df",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/PhysicalCutoffCommutatorLimit.lean",
+      "source_sha256": "20fc549c2b340f471633e14d30b77ae5375802ffc2088198d14cdf263c87ef92",
+      "artifact_sha256": "5cde3e61db4487cc798df7b66ece6b5be88180db5022533cebcfece365084d9f",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/UniqueContinuationDensity.lean",
+      "source_sha256": "fb03be0cc02c52900699f730b4d23715f32ef1336e7a283869dba3c3d48d32ce",
+      "artifact_sha256": "bba52c84be7973e33d840b6f2b0c5643d2e4c7a088a922ab84f3743255b3e8bd",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/DensityFlatPoint.lean",
+      "source_sha256": "cf7c03f17b63102aa0b671706e81847ad2f4bba5adf3e7105cee2ef4410a1343",
+      "artifact_sha256": "446979c738b096e7587bc828119d27cf4962b4f637585fdd7479ca6367691776",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/InfiniteOrderMonotone.lean",
+      "source_sha256": "1dedf145e0f10c42120a7d9556627411968900e101c205e15d31fd6e5b123464",
+      "artifact_sha256": "b1dff373d4092e0bfc058ec961eed76126454a76dd4b053cfe32cfb8e9e69050",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/PhysicalScalarSobolev.lean",
+      "source_sha256": "bbca53819c43f21c4341e106f7ae79353f0ac905f660779805510d3565c3a68f",
+      "artifact_sha256": "262494cd584c5de0889424c341f57b517468fe5733e4dd50b7ba553f128a184d",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/PhysicalEnergyInfiniteOrder.lean",
+      "source_sha256": "42f1294041ed66e70b31a35ceeaaea89173d3c177837faeb3bd523f725d70ce4",
+      "artifact_sha256": "5ac489960d28b60bb0db31096a3445cda0f273f4b27ea5663f1b697b3641ecbd",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/PhysicalDensityInfiniteOrder.lean",
+      "source_sha256": "86922fd57082a9958c63702d0f7699fa0ee4ad8df509fc6ea731746c76c1d64a",
+      "artifact_sha256": "44f17adb4692e8af5c727d1f6b3fbfd1e0ddf695cd15f1a661bf8ae0cc9957f5",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/PhysicalInfiniteOrder.lean",
+      "source_sha256": "2b25ebc9b554aec98607db92119f97ec5a35e450ce7d0c2c7a1d01ee5c84b415",
+      "artifact_sha256": "b10c7b857dd35fd998c27fcaeb82ad65af7f56a102ceb9bb8284d87a1288022c",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/PhysicalCutoffInfiniteOrder.lean",
+      "source_sha256": "19621274880a8dab44a87e205a6ad393ff449927c810ae43c65a06b7ef444865",
+      "artifact_sha256": "a2fcadee9f00f0c60f57c05c1bc1e9cc37d1187e6b1e124026914d0f0cdad1f5",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/PhysicalLocalUniqueContinuation.lean",
+      "source_sha256": "c336779b185d8d828f9a3d995a37d1c5ce93a0c228e4b9b16d57e0aa02f1f47e",
+      "artifact_sha256": "59148afbd6ce98ccfe68f012d0a580cadd363ef72bbe962150e32260e8263af9",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/UniqueContinuationTransfer.lean",
+      "source_sha256": "e2c936b8251c64232899c4d7441558f34cf2641aa4647f3da383595a8be62ec2",
+      "artifact_sha256": "0b2d4ea4776e046bf69dda81e1c5b7e00031702c5306e982b274ec8b3266a998",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/PhysicalUniqueContinuation.lean",
+      "source_sha256": "b265f3440c0421473283392e9a1dc22642441cb23858ee6547722b82151aa736",
+      "artifact_sha256": "cd595307a8c952da335bffb3ba83012a0c717339531d42592c598ad000611e6d",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/UniqueContinuationFlatSeed.lean",
+      "source_sha256": "d45b0298a34acadebaa737a8dcc99e1528b1dbc2ca55a96898b854f039ced484",
+      "artifact_sha256": "169765edc6a1620e0329ade235341df7174b5f9532cb9ab2b0ed6adc3b7aebfb",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/PhysicalUniqueContinuationFlat.lean",
+      "source_sha256": "585ce3783f0d5737a0f9ea5966625cab44eddfb8affb3643d23e1b9fd0191ce2",
+      "artifact_sha256": "b3aa3013730621a3f2b658cbf6ed1858cb026d115af1030da7f04613c446930f",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/OrdinaryWeakSobolev.lean",
+      "source_sha256": "46d18360550bbc438a2498d443b3acdacaf0cc01323ed35c8873e074848b51b0",
+      "artifact_sha256": "026719fbb147664d00b272c6f7bdd83ef217769b2d82c9d2c5371c4aa58b1f75",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/ScalarSobolevNormAlgebra.lean",
+      "source_sha256": "6811649858284b5b7ea63e6e52a92b2a8e7709f1b80d0f1259777d3c7e7bea8c",
+      "artifact_sha256": "22e2a3d486274219d4b1031385643a823bdc14f32bcdac8c0c297db972c5cc81",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/ScalarSobolevFromWeak.lean",
+      "source_sha256": "73b5ab379034239b2c82bbca842b155babffaa6882474e2140f957355d0f6730",
+      "artifact_sha256": "79f73a3113f1c1a8d2e118b7d79d45fe70f8857e5f00879dab9d2b53f53d5ae7",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/PhysicalUCPConsequences.lean",
+      "source_sha256": "6bbb8ce90e96d5473523f08b0347c98e50bc554ef6abdf6c98181972cf644a3f",
+      "artifact_sha256": "3e2feb7a3665fdfc545fc7833704c2583e577c5893f35ae140d97ade85320e78",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/PhysicalFermionicUCP.lean",
+      "source_sha256": "73dad810ade3cc61823f85d5e6af3149312a38e0d5a7e6983e61c8653bab411e",
+      "artifact_sha256": "3a4b04791ef81430f2152078e344a257b45e95a67e14c67f2d83ba745039911c",
+      "verification": "rebuilt"
+    },
+    {
+      "source": "PfHk/FermionicVariational.lean",
+      "source_sha256": "84ff4fe6437c6de76170936d384f282fe69f69b7f6ae79e5aff483949aefaa08",
+      "artifact_sha256": "476acb25a7c4759e26bfe46142742d0f7f8a8d439945b05d947307a402b26e4b",
+      "verification": "rebuilt"
+    },
+    {
+      "source": "PfHk/PhysicalShiftedFormEnergyFubini.lean",
+      "source_sha256": "3b15f9191159c330e84342606b2faacd39e302918e1b1e0b4751818cf5fe9165",
+      "artifact_sha256": "a3dacb27ec66fd8202a67e23e8745fb3ae32d7498a6ec9a7d5276ce1dc8967d2",
+      "verification": "rebuilt"
+    },
+    {
+      "source": "PfHk/PhysicalParticleFubini.lean",
+      "source_sha256": "5c987c6678ab5c0af2f9f67bb2fee567f761468b438b29d8c3f39a8f15ca9f4a",
+      "artifact_sha256": "3323bb358b681d3e4968b64456c9e64676112248461f48e7521cbdb62c18b200",
+      "verification": "rebuilt"
+    },
+    {
+      "source": "PfHk/PhysicalReferenceCoulombEquiv.lean",
+      "source_sha256": "3b0289c8d24c7a9882a80c29ef8d5c0a3e14cafbd18729fc45bcbe80ced2f5fe",
+      "artifact_sha256": "679749d9ed23bb6695b2a76059c23b7b1b68b8ea9edeed4a1ee24b63597a0418",
+      "verification": "rebuilt"
+    },
+    {
+      "source": "PfHk/PhysicalShiftedFormEnergyLp.lean",
+      "source_sha256": "2905d2d53726ceb8428c65ab3c5663d18aad93a7471ffb91d0132386f3aa5cc9",
+      "artifact_sha256": "ea2da96efaa56cd22f1b98bfad808247771575ba51b4592757cf7f6c5c451c38",
+      "verification": "rebuilt"
+    },
+    {
+      "source": "PfHk/PhysicalShiftedFormEnergyBase.lean",
+      "source_sha256": "43091bee01c25d247ffa9e59a6b13e708dd919cab18a59f41c44d31a17017487",
+      "artifact_sha256": "495879a7332c61ad60f9c65dcd61913e4fbe7979c8573b9fe939e3c93039e7a6",
+      "verification": "rebuilt"
+    },
+    {
+      "source": "PfHk/PhysicalShiftedScalarEnergy.lean",
+      "source_sha256": "390f07e5ac897e4173fcddf0f940c6ea994e91ed1ba1f26705565e1dec29aec3",
+      "artifact_sha256": "d5a48fcbeb9e557c74bc42dd979dcdc3257123aa1bcba9177e4b03b385081499",
+      "verification": "rebuilt"
+    },
+    {
+      "source": "PfHk/PhysicalShiftedFormEnergy.lean",
+      "source_sha256": "97f24f6ad2506e33fb5215ded0eb8b6ccdac1b3cb8a58c1a4b8f98b9745d4fc7",
+      "artifact_sha256": "2b325323afa01a6d9be1a56fd1e6841029903cf67e6b4be3cdc98a294c6f3dee",
+      "verification": "rebuilt"
+    },
+    {
+      "source": "PfHk/PhysicalGroundStateWeak.lean",
+      "source_sha256": "1a3a389e70ba7953410144ac2c42c69684052982861707856e797b4c149c14bf",
+      "artifact_sha256": "0ba08dd16b341df2dcd8007eaee627a961c0ec067b8dd85854be09cfae5ffd13",
+      "verification": "rebuilt"
+    },
+    {
+      "source": "PfHk/PhysicalGroundStateUCP.lean",
+      "source_sha256": "761e8250ec3dbc16133ceda81d8f4a24fe795bfff1f6a5671a679272247a7914",
+      "artifact_sha256": "5cb626bffab7dd70daa72a8f414f1a567837264e51eb70061fc821d30ce76096",
+      "verification": "rebuilt"
+    },
+    {
+      "source": "PfHk/RadialGaugeRadiationPhysical.lean",
+      "source_sha256": "f91a6e216eea80ff64f38c572e47b28a8a4a29ec35d9c0af786065a00b04e477",
+      "artifact_sha256": "4d537c1b627150c73013eb96a5bf313150c7875805e86f40134981bf2a5dcc7b",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/RadialGaugeFieldControl.lean",
+      "source_sha256": "0e6d82b7d4bb73eec56ac346409303e3ef8e2442fb91bb0dd367889d18f13cd0",
+      "artifact_sha256": "ad865a261fda871139b25b4ca727407808e5c29bbda160f7c214148d66b34749",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/RadialGaugeAngularPhysical.lean",
+      "source_sha256": "9c87b77b1eea870f360f3b97a92869c99af8cd1ed4437ec599daa6cae6beaa55",
+      "artifact_sha256": "a7d2d681245f674074f495afa6a29b08544a1819e0d56028b7ddf0073f3c48dc",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/ScalarUniqueness.lean",
+      "source_sha256": "94b111e13283b4e2947556a5c52f40a31f9a4dd11d1202eaaf5b6ea9e2eac6f9",
+      "artifact_sha256": "e97c9dc66ece7f76a8d5d61f8b8d9c0243148f70ff8a1c741b37cdcc15db2d26",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/VectorUniqueness.lean",
+      "source_sha256": "630fbff3f2aa166121f9e192bc9210a294a7399aed2a6226d764d82ad8f31508",
+      "artifact_sha256": "f14681e2ce38a9680a0d4605367e2927e714fb2d578783c4966eaf12a10653a7",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk/WeightedDensity.lean",
+      "source_sha256": "ecea161ce8add6b2e458eafdbc583435428603e87998e90aabf1464fc220fce4",
+      "artifact_sha256": "b5c83ddb7d86008a2da2d1102fc285ecbe063e64778b86d6c1ec7e839c3e0a38",
+      "verification": "reused"
+    },
+    {
+      "source": "PfHk.lean",
+      "source_sha256": "a8a1baa23923ff0185b6c9b715c63de49940dfccd542118cc7a8fc20cffe1f81",
+      "artifact_sha256": "d68058dfec100d59c9678946f91ecd00d1f34b321f8b0db5b437a7eaf5877719",
+      "verification": "rebuilt"
+    },
+    {
+      "source": "ScopeAudit.lean",
+      "source_sha256": "3e2818f7906adf472803c70bf4d6e48352a81b4b2484dc2aec6b4805cf311f0b",
+      "artifact_sha256": "facb86ff04ef7ff661a06713edd79aeaacbee0bbee45fa6ee2e8f5f79421a9e3",
+      "verification": "rebuilt"
+    }
+  ],
+  "verification_log_sha256": "9e028d126784f8313b86c3c3f16ed3540e4f1703c3edbab611347a1195527112"
+}

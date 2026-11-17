@@ -1,0 +1,2727 @@
+{
+  "origin": "gpt_lean in the qedft_pf_hk workspace",
+  "selection": "Exact transitive GptLean import closure of PfHk.lean",
+  "upstream_snapshot_sha256": "9efe7d204b5b28bdf6ee2d387d429ce0795e246f673ffec7a2bde9dee7586b0d",
+  "upstream_assumptions_sha256": "6cb534f9fd0ecec46b0299dd0d9880c65c0459384fcab1f4780ab999971f8661",
+  "upstream_manifest_sha256": "3cf6258938aac4014b7f11dee13b247912436fae3206a24258405e784861d643",
+  "toolchain": "leanprover/lean4:v4.34.0-rc2",
+  "source_count": 679,
+  "sources": [
+    {
+      "source": "GptLean/AppendixAGaugeForm.lean",
+      "source_sha256": "84dfef8bdfd8b8b7f0b89eaea63d6463c8dc87cd005c504236893f74f10d4b7f"
+    },
+    {
+      "source": "GptLean/AppendixAGaugePotential.lean",
+      "source_sha256": "465e1926e7eb7af326310f0b892882b7d4faab7b0288fa292fa3501f06921fe9"
+    },
+    {
+      "source": "GptLean/Attainment.lean",
+      "source_sha256": "eb0e758eadcb2582d603953a8f65ca62c73972f2dba9f625d12d4f4ff3b8be75"
+    },
+    {
+      "source": "GptLean/AttainmentConstruction.lean",
+      "source_sha256": "879889497d18fbdf434a017bc83fa8033e639a4897d5bc7a4063fb492a39082a"
+    },
+    {
+      "source": "GptLean/AttainmentPhysical.lean",
+      "source_sha256": "8b813bbd10cc907b173c8993812c508cda0e161a66238b352f8146a1e4592a45"
+    },
+    {
+      "source": "GptLean/AttainmentPhysicalRemoval.lean",
+      "source_sha256": "01af2ab97d247af2636bfcc827fc6b7f9141db46e55f084c63909ea79e7ad12c"
+    },
+    {
+      "source": "GptLean/Closure.lean",
+      "source_sha256": "afafc5121a384254d054d63dcf4fd5ab29ebdc3c17b560513c06200658c13341"
+    },
+    {
+      "source": "GptLean/CoherentSobolevLimits.lean",
+      "source_sha256": "ffe88f535ecc6731bbe6e8629519740ccc8ed27c38200df15370c3ce8bfc6b34"
+    },
+    {
+      "source": "GptLean/CompactGraphProjection.lean",
+      "source_sha256": "bda7b0947ee152a66d3062d3cabed92f63de74e00e9611f458310137a5900bfe"
+    },
+    {
+      "source": "GptLean/CompactGraphTrace.lean",
+      "source_sha256": "6d1bc0fab5d188395d8deb79dc842bf790ee6a51f797ff77223665549286e229"
+    },
+    {
+      "source": "GptLean/CutoffProfile.lean",
+      "source_sha256": "fe71fb9f198e9e3155b624ac42fbf13f34bb3aefd1ad4d01917ae7e64e8e9879"
+    },
+    {
+      "source": "GptLean/DFT.lean",
+      "source_sha256": "c50c77d1685768f34e94162db1cc1985f86d9d259a49a3c47d4fb0bfe3f6d025"
+    },
+    {
+      "source": "GptLean/ElectronicH1Complex.lean",
+      "source_sha256": "27a53dc2069e62d01332f081eb5fc3efca12fe41c28dadb992e3ddfd74f88369"
+    },
+    {
+      "source": "GptLean/ElectronicH1Core.lean",
+      "source_sha256": "1a49d02c0abe09838d8e4e426ca48317b59fae42cbb98c39439356c7fc3218e9"
+    },
+    {
+      "source": "GptLean/ElectronicH1Cutoff.lean",
+      "source_sha256": "df36aa8457f09b92151bcf4200328a7445156f56ab21b827052db93e4ff6a99c"
+    },
+    {
+      "source": "GptLean/ElectronicH1DifferentiableMultiplier.lean",
+      "source_sha256": "94a8b4b646e1d87e800bc8fa20c021c4c8b5d95861ad1126120f6a531d4f1dd8"
+    },
+    {
+      "source": "GptLean/ElectronicH1Map.lean",
+      "source_sha256": "857f42c7ac7004d2b542b3034cbc5976aca228ea64273b5e0036445bbb487119"
+    },
+    {
+      "source": "GptLean/ElectronicH1Maximal.lean",
+      "source_sha256": "d59626e45243606bca9dd66bc7468d6810d44817209c92e6312b36e52113cf5b"
+    },
+    {
+      "source": "GptLean/ElectronicH1Momentum.lean",
+      "source_sha256": "1772a38bebd0a9c11140fe12a8cf4928698756a32f1330f37b690efa7deb633d"
+    },
+    {
+      "source": "GptLean/ElectronicH1Multiplier.lean",
+      "source_sha256": "c01fabec229595305b63f74fcb51671496ca47e46f9cd419a3294c42da64a1c2"
+    },
+    {
+      "source": "GptLean/ElectronicH1Reindex.lean",
+      "source_sha256": "56fcab58b4d2148d6629c9a52bee08f4a8ae02ccb00ecc7efb2f005a428ad153"
+    },
+    {
+      "source": "GptLean/ElectronicH1Space.lean",
+      "source_sha256": "cec00cfe735e8ff39f0caf7ca2fd6b047593358a4b0c52e79a710288d5106783"
+    },
+    {
+      "source": "GptLean/ElectronicH1Symmetry.lean",
+      "source_sha256": "4e890825e314ff5b019178d1376dd2a4c3ff725f4d0a65da7b181cc3ced5f24c"
+    },
+    {
+      "source": "GptLean/ElectronicLocalization.lean",
+      "source_sha256": "b41e22a72fb3f0178a01055d226a55de9274da134cb7c2276815c771a90b59ee"
+    },
+    {
+      "source": "GptLean/ElectronicLocalizationIMS.lean",
+      "source_sha256": "07b9e91731823dbd0b49a7341d4529e95a2441a39e147c921f9c1da364806bd7"
+    },
+    {
+      "source": "GptLean/ElectronicLocalizationMetric.lean",
+      "source_sha256": "7708920ebe327ae7fe3d5152ce5cffa538011ba003f8d538d856a5fe5b984359"
+    },
+    {
+      "source": "GptLean/ElectronicLocalizationPartition.lean",
+      "source_sha256": "65f0bafed1307280107145052d0a3f5bcdc9818d52ec46080ea00299bad7e346"
+    },
+    {
+      "source": "GptLean/Gaussian/CovariantSlicing.lean",
+      "source_sha256": "54aae1bf8053b56e969e2c68e2d4d73b272d8c8599b9757f3f4cc73f497876f9"
+    },
+    {
+      "source": "GptLean/Gaussian/Disintegration.lean",
+      "source_sha256": "d2b2ce7b124859048a1c6f0c92f3bbd2184aa5b261fbb0204de4b6d6a3329b89"
+    },
+    {
+      "source": "GptLean/Gaussian/FieldMoments.lean",
+      "source_sha256": "d7cc758380c4968c07314a8a9cb36385d5b82c41ed1c3c3316c87139a3506227"
+    },
+    {
+      "source": "GptLean/Gaussian/JointRepresentatives.lean",
+      "source_sha256": "40d4250aead672b4ae20715f3a5e170a772c233d3b6ea9d8b4376e29bc3ea15a"
+    },
+    {
+      "source": "GptLean/Gaussian/LocalMoments.lean",
+      "source_sha256": "4db6df4dae3125a2c2295928de1cdb7e10a2a9c035a0cb038c97aa97c8ac3c1c"
+    },
+    {
+      "source": "GptLean/Gaussian/ProductGraphSlicing.lean",
+      "source_sha256": "7c7ba0d537ca80fe1896c094ef3fa07c6a07fe0a96d2121a8179ca343366abd5"
+    },
+    {
+      "source": "GptLean/Gaussian/Series.lean",
+      "source_sha256": "0fbe40ef2f56b9c52963343ff89c33c45abb4f31047e924dbd7d807ab9c0b54f"
+    },
+    {
+      "source": "GptLean/Gaussian/SpatialField.lean",
+      "source_sha256": "9919228bace870c3db700a006d3803c151643ae855059e42293f98a2a1db2144"
+    },
+    {
+      "source": "GptLean/Gaussian/SpatialFieldDerivative.lean",
+      "source_sha256": "4a158d30c618c0dbb68f1efc6f883c6f705543cd8cfe9c349dfed115524ac2be"
+    },
+    {
+      "source": "GptLean/Gaussian/SpatialFieldIntegrability.lean",
+      "source_sha256": "ac0f264405acb84ee866612a96cb2206c22c1cae6c9635e444d3b5fd723cb4dc"
+    },
+    {
+      "source": "GptLean/Gaussian/SpatialFieldMoments.lean",
+      "source_sha256": "97091235ae4bb8a53f81da863e68b8fa81643bba195d23855cc0adbacc143352"
+    },
+    {
+      "source": "GptLean/Gaussian/SpatialFieldRealization.lean",
+      "source_sha256": "484deb6cae8b7f7a1d4e4ded804ae137ccff472c8445cadad23d692398bf712d"
+    },
+    {
+      "source": "GptLean/Gaussian/SpatialFieldSize.lean",
+      "source_sha256": "d5e8a3ea1dbd53f3ae5a132a74750611cf1902229d666606d55a7f9b5c228f7f"
+    },
+    {
+      "source": "GptLean/Gaussian/SpatialFieldSmooth.lean",
+      "source_sha256": "45753eee462b3d1d20357a3e8029394ef2fe784ce6e08657881eca8cc40a89a9"
+    },
+    {
+      "source": "GptLean/Gaussian/SpatialFieldWeak.lean",
+      "source_sha256": "b2f588348afcfc096c4e34e9b90fb2e57c820fb651e6ec9ecdea37b897cb8316"
+    },
+    {
+      "source": "GptLean/Gaussian/SpatialSingleSource.lean",
+      "source_sha256": "fb7184c9d104442b396000936376e0a1d0baf6cc58195b137b4caeb8ab1a77aa"
+    },
+    {
+      "source": "GptLean/Gaussian/SpatialVectorField.lean",
+      "source_sha256": "3006d97ddacb1862d66cee74d23db16deffcac9c148eb54a193572c893647204"
+    },
+    {
+      "source": "GptLean/Gaussian/WienerSegal.lean",
+      "source_sha256": "24922781cdef93ca6c5fe6fb2d60ed377daf960fc5ea81e5f159a795901f8f92"
+    },
+    {
+      "source": "GptLean/HardLayerCake.lean",
+      "source_sha256": "3e2a6e4cd98dcbcec57adab8cc82621392f6c0d13df5e256c1d1140110db8a25"
+    },
+    {
+      "source": "GptLean/InfraredRepair.lean",
+      "source_sha256": "214eb9eca65b1d337e5be92659285acea9e589da2f525e5632b757e268176ae6"
+    },
+    {
+      "source": "GptLean/LatticePartition.lean",
+      "source_sha256": "8dcd5c8bba749f1900fd96296bcab105f8377e4fd07b64f1e0a72d281df4d72e"
+    },
+    {
+      "source": "GptLean/LatticePartitionBound.lean",
+      "source_sha256": "88cadaa1d568ae29ae5d1011d23026dc69c190179226584f9164853ef9d60f99"
+    },
+    {
+      "source": "GptLean/LatticePartitionOne.lean",
+      "source_sha256": "1654606139fb7e20bceb3e303ea02cbc90fc45efeff7955f33b6836d9b284ebf"
+    },
+    {
+      "source": "GptLean/LayerCake.lean",
+      "source_sha256": "2eca51c21260099f99b55f96225f2fd9ae9860ab1b78ea0c32c9603dfc5d1e98"
+    },
+    {
+      "source": "GptLean/MainResults.lean",
+      "source_sha256": "7b27b5f65be17637d696f8d7b19f572b5a48b642f5069dd2685cfef5c91f747d"
+    },
+    {
+      "source": "GptLean/Nonattainment.lean",
+      "source_sha256": "a8fd1c2f262030a35d27709edab16bfc319e650fcc1ed26bb6e659c37c19e034"
+    },
+    {
+      "source": "GptLean/NonattainmentCutoff.lean",
+      "source_sha256": "973e134778904be9f1840c6034c0a3ead28dc9c4fa4ea6ab34f9544aa24eef9d"
+    },
+    {
+      "source": "GptLean/NonattainmentEllipse.lean",
+      "source_sha256": "b2a5f352b41ca2381a912c1d64480a5aae6c7d7425a71c9754dc20c9db4ff170"
+    },
+    {
+      "source": "GptLean/NonattainmentEnergySplit.lean",
+      "source_sha256": "81b53bcf2c35ca07967cbb65c7e95c82fbab80803fad7a8b5afe3a0dd94bad07"
+    },
+    {
+      "source": "GptLean/NonattainmentFlux.lean",
+      "source_sha256": "a4296ccf8a99f0dcbf0735db11f9ee203feac16d754116f0fceefda59f4bb94c"
+    },
+    {
+      "source": "GptLean/NonattainmentKernel.lean",
+      "source_sha256": "5ba2680998ac881369c0e1d1638497d1482468278789fc0741b10d3df8ecadd5"
+    },
+    {
+      "source": "GptLean/NonattainmentScales.lean",
+      "source_sha256": "e1c901fe2ced90fef03cd75f4ad136b97301d8a6270aff09ea6a2b72aa777350"
+    },
+    {
+      "source": "GptLean/NonattainmentTubeDifferential.lean",
+      "source_sha256": "2e7afd24c923a2bd370475c22cee671b788fad0c35febe0bfc952bcf739f1742"
+    },
+    {
+      "source": "GptLean/NonattainmentTubeFlux.lean",
+      "source_sha256": "9f0750d89d7784b3aafffc993a624c4f2dbcdc441dbea21ac49e77602b4c40a0"
+    },
+    {
+      "source": "GptLean/NonattainmentTubeGeometry.lean",
+      "source_sha256": "6cea2a359de43770e4ff4150ac054bd24cdb23a215aaee69c64d643647f340d0"
+    },
+    {
+      "source": "GptLean/NormWeakH1.lean",
+      "source_sha256": "0eae0759141e321992d6b930623bda3bebe1dadc1c2bce29a0e34ec9d4ea24aa"
+    },
+    {
+      "source": "GptLean/ObservableAssembly.lean",
+      "source_sha256": "043f9d90ad4c3ee555cefbb02142fb9ee17ba5fd1d489d464b810d3320d37803"
+    },
+    {
+      "source": "GptLean/PhotonCompactness.lean",
+      "source_sha256": "b2255aefafd86a7841c518e5d44f20f7f78cf8346b403a795941ad8d241081b3"
+    },
+    {
+      "source": "GptLean/PhotonKernelLocalization.lean",
+      "source_sha256": "114187de65429ca36d662b8a5d46199772322784119ec24505ea424c409bbcc3"
+    },
+    {
+      "source": "GptLean/PhotonLocalization.lean",
+      "source_sha256": "9f6e518e42d694662155709acc136f9785f049490efe9a104c09d21faec893fe"
+    },
+    {
+      "source": "GptLean/PhotonLocalizationChannel.lean",
+      "source_sha256": "cf55e08f1d8d335e0570ccb6f0f180d50e0783c295a2ff9efc4712d88914a3f0"
+    },
+    {
+      "source": "GptLean/PhotonLocalizationChannelGentle.lean",
+      "source_sha256": "e9ebd150e0bd4633b31a4442f2e4defea584f472a2b2a35d2b03ea6d845915e5"
+    },
+    {
+      "source": "GptLean/PhotonLocalizationChannelMeasurement.lean",
+      "source_sha256": "6ca177b6518f1fb8eca772bb40c9a1b64786cc44d2b32c4d581573ba0724f5e6"
+    },
+    {
+      "source": "GptLean/PhotonLocalizationCoarseEndpoint.lean",
+      "source_sha256": "ca74474641086849069256aa6ff851824cb2ff3cd8482742a53c56ea6478673c"
+    },
+    {
+      "source": "GptLean/PhotonLocalizationCompactness.lean",
+      "source_sha256": "eebfced4000d8d362286999f1a01cb06cc3636ec729ce776197d6cdfa2db2c64"
+    },
+    {
+      "source": "GptLean/PhotonLocalizationCompression.lean",
+      "source_sha256": "4ecf40dab34d10ddbd62d19842ccb6d61185f4325ad2b7653e3c07d5ab2def79"
+    },
+    {
+      "source": "GptLean/PhotonLocalizationCovariantGraph.lean",
+      "source_sha256": "2aa5192d68ca5bef2e4c73bc3e1e1f4c085917e1f44963ff6fcd7250b82dc814"
+    },
+    {
+      "source": "GptLean/PhotonLocalizationCurrentChannel.lean",
+      "source_sha256": "d8e83f3f6d722a29424dbadbc1d8aba0659bbc15a8e0f3b44fc26b1eead8f901"
+    },
+    {
+      "source": "GptLean/PhotonLocalizationCurrentCutoffPassage.lean",
+      "source_sha256": "7fbba2a734da1c8f2e5c9c2e739a5be732c4562ca1a3b1b9d4df472e4ad36a23"
+    },
+    {
+      "source": "GptLean/PhotonLocalizationCurrentPassage.lean",
+      "source_sha256": "3167e2723e831a6289885853fd70db130d3aa099a351cd5c793f6e4a734c0f52"
+    },
+    {
+      "source": "GptLean/PhotonLocalizationDensity.lean",
+      "source_sha256": "9fa505c8b67c640acf98b4c89bfebf0db55e06965db2b679f1adbf05d4072982"
+    },
+    {
+      "source": "GptLean/PhotonLocalizationElectronicCalculus.lean",
+      "source_sha256": "d6ffaf7886b5c5f58316d1bcb8bdf3d1901a5327dfe3d4b2a040d238ed382454"
+    },
+    {
+      "source": "GptLean/PhotonLocalizationElectronicPartition.lean",
+      "source_sha256": "267c95268c76506c46856ac268909c63e3925a5a15df699c6a6d51f10d384165"
+    },
+    {
+      "source": "GptLean/PhotonLocalizationEstimatesAssembly.lean",
+      "source_sha256": "bd2c6479b2da8a51156a782fd2b2707db099ae8f320611a22a1e1cab525a0974"
+    },
+    {
+      "source": "GptLean/PhotonLocalizationFockChannel.lean",
+      "source_sha256": "f7e72ef5854fd4602d2266a2a7c3c2e031d26d30c13cf4650dfc0ba0c742df00"
+    },
+    {
+      "source": "GptLean/PhotonLocalizationFockNumber.lean",
+      "source_sha256": "c32542000cbbd0d34c2f1b8124cad75bc316e5bd10d8b5cc92d0a8e777757669"
+    },
+    {
+      "source": "GptLean/PhotonLocalizationFockSupport.lean",
+      "source_sha256": "977a3a452fb40eeb4f78a8284cb2391b3d904173788ea608b18004bf40dbff21"
+    },
+    {
+      "source": "GptLean/PhotonLocalizationFormBounds.lean",
+      "source_sha256": "61adf476d1c57d1b077e2f4e7eb838feca4d55ef1b7994dc2785b34d50afa77a"
+    },
+    {
+      "source": "GptLean/PhotonLocalizationFormBoundsFock.lean",
+      "source_sha256": "d7b02bdebc6b2dd74629f43861ceeef191094904bc3b0ab5a2b2629a5bdf2e91"
+    },
+    {
+      "source": "GptLean/PhotonLocalizationFormBoundsLifting.lean",
+      "source_sha256": "74a918d2e6eaf8a6dc30397f17b52794923782303534e7e9dc4a25bef1d938cd"
+    },
+    {
+      "source": "GptLean/PhotonLocalizationFormBoundsSources.lean",
+      "source_sha256": "f103fa02136cab3b7c419ebe6aa864fddf7539ac82a5cfa87feb213e06f18ec8"
+    },
+    {
+      "source": "GptLean/PhotonLocalizationFreeEnergy.lean",
+      "source_sha256": "bd5a880271b79539b7fd9ab1173548774c08978026e83de7424a918df024eb41"
+    },
+    {
+      "source": "GptLean/PhotonLocalizationKernelCutoffs.lean",
+      "source_sha256": "0062ca6812b22aff0f5008a8d39e50e000ea6e821466205adaaeedc9f3f79673"
+    },
+    {
+      "source": "GptLean/PhotonLocalizationKernelDilation.lean",
+      "source_sha256": "f911b6395b282ca6dd4a0839d29e8d8989e7ac3a65df581f73639f542f385637"
+    },
+    {
+      "source": "GptLean/PhotonLocalizationKernelModel.lean",
+      "source_sha256": "7c09c4dd314909d31bcd66dd748a941939e7bfa097adc5037d281e624741d5b1"
+    },
+    {
+      "source": "GptLean/PhotonLocalizationKineticChannel.lean",
+      "source_sha256": "85ba3c781d04fc2c8a731e8619fd54d24a6981ef3e3e3b9c033e97edaa17b534"
+    },
+    {
+      "source": "GptLean/PhotonLocalizationLocalForms.lean",
+      "source_sha256": "986d3f303dcc752ba9b64b7153a0cf6d9c2ea2f8499f9695eb730bbe264be076"
+    },
+    {
+      "source": "GptLean/PhotonLocalizationLocalFormsCutoff.lean",
+      "source_sha256": "dd5b0fd3ca5f939043a783903435779a01b229f397bf257e8fb1116bb4f681d8"
+    },
+    {
+      "source": "GptLean/PhotonLocalizationLocalFormsOperators.lean",
+      "source_sha256": "6dcfa519d50a72e0692f5b91240531e75769bb2837c79f1d14b43aed1c58dc40"
+    },
+    {
+      "source": "GptLean/PhotonLocalizationLocalFormsSpectral.lean",
+      "source_sha256": "61a07ba3436a133d8d1d840f5c2199f278f8bd2d13592987abd84b4071436384"
+    },
+    {
+      "source": "GptLean/PhotonLocalizationModel.lean",
+      "source_sha256": "eba4ff05148a1ed98f1fb30ab795783c888f9a81943611c58d3993b8316fb1ff"
+    },
+    {
+      "source": "GptLean/PhotonLocalizationNormalTrace.lean",
+      "source_sha256": "ad0a9c05809f70ff4195883cd9c22d97fce55f6d3ed28a247e012ad3caab0ab0"
+    },
+    {
+      "source": "GptLean/PhotonLocalizationPhysicalCompactness.lean",
+      "source_sha256": "86030015dc70db239c8019673f1c4ff9858561c96133481fb43f974b3d6f565d"
+    },
+    {
+      "source": "GptLean/PhotonLocalizationPhysicalEndpoint.lean",
+      "source_sha256": "d6e87b4de1cf1de2a0fc829e738930ac31a5d29e5fe67d71ca5a4a9284442808"
+    },
+    {
+      "source": "GptLean/PhotonLocalizationPhysicalKernelDuality.lean",
+      "source_sha256": "ac099f24a42ddc5139d461eef940f21e8c5e41223576103e28e935f5e6e97d54"
+    },
+    {
+      "source": "GptLean/PhotonLocalizationPhysicalKernels.lean",
+      "source_sha256": "ed40fa394232df68b52ae218ecc4159042e839299806584974c0436e0ce02ecb"
+    },
+    {
+      "source": "GptLean/PhotonLocalizationPhysicalTails.lean",
+      "source_sha256": "bf9c6fcc13276407eae936e5556560ece8cb06b9ed976f20e0fbbf41726ad4d9"
+    },
+    {
+      "source": "GptLean/PhotonLocalizationPosition.lean",
+      "source_sha256": "3b9324f8849784e3621afb44c368e7702a3aca7e837db7e6454773f4f7be261c"
+    },
+    {
+      "source": "GptLean/PhotonLocalizationRadiationTruncation.lean",
+      "source_sha256": "56b9283ae8097c31b295dff82db46162c01376374ffd127b58ad3970ec587f52"
+    },
+    {
+      "source": "GptLean/PhotonLocalizationRellich.lean",
+      "source_sha256": "a4973e3d61adddcca9a8878e230ae1a2dbb4f6bc10b6ab62881eb445eb88f12e"
+    },
+    {
+      "source": "GptLean/PhotonLocalizationRellichBound.lean",
+      "source_sha256": "05fa8e06e2fd5c9cb522f436fb328d6c6925635c7dffe054bcc2680e299f2327"
+    },
+    {
+      "source": "GptLean/PhotonLocalizationRellichSpectrum.lean",
+      "source_sha256": "b7574c192f664965629b08dd2cf632ada897708e5007bf3739498cb35cd8b548"
+    },
+    {
+      "source": "GptLean/PhotonLocalizationRellichSymbol.lean",
+      "source_sha256": "260d0d5eebce4d902caa5126b02bd24ce6eed052b675a9863dd9d89a5410ed61"
+    },
+    {
+      "source": "GptLean/PhotonLocalizationSharpEnergy.lean",
+      "source_sha256": "c61eed2ac9302cd0d35039956f7920b8c9e1347105b5b9387c370815bb62ad84"
+    },
+    {
+      "source": "GptLean/PhotonLocalizationSharpKinetic.lean",
+      "source_sha256": "592e76debbff15dce43f35270910f57a33d4a40087c2cf9c61ec055d6352e175"
+    },
+    {
+      "source": "GptLean/PhotonLocalizationSharpRadiation.lean",
+      "source_sha256": "2fefc31214752949a325fe58ed9a45b4ce4fef80123bb77e66fbb2df33a010d5"
+    },
+    {
+      "source": "GptLean/PhotonLocalizationSpectral.lean",
+      "source_sha256": "3fdde8ae827a3fb12310dab20fca4981049b7fa2d5f6b05bb5a0ca6a0bc23f3f"
+    },
+    {
+      "source": "GptLean/PhotonLocalizationSpectralTrace.lean",
+      "source_sha256": "5153f796cc6a1e4531480cd3ff344a7f2152da3d826e0ac223c08c4a004b938d"
+    },
+    {
+      "source": "GptLean/PhotonLocalizationStateRealization.lean",
+      "source_sha256": "4cf74b9f7404428fad62b9e152fa40111ca581b03a1dc0f59e85e78fc9a9a05e"
+    },
+    {
+      "source": "GptLean/PhotonLocalizationStateRestriction.lean",
+      "source_sha256": "5e3b573eda039603d2e182efb2060fd0435bb13f493caff38434023f6e6ced8a"
+    },
+    {
+      "source": "GptLean/PhotonLocalizationSupport.lean",
+      "source_sha256": "bf393ee3eceb24ab5e9b08158e9d5b2309f1fd857095d4653bbfa062adfc8277"
+    },
+    {
+      "source": "GptLean/PhotonLocalizationTrace.lean",
+      "source_sha256": "c6861f211b1c1be75d494696a2f7807c75b9dba21249152414968fb7ac2c1273"
+    },
+    {
+      "source": "GptLean/PhotonLossClosure.lean",
+      "source_sha256": "564dd2cf12e689c6d45ffc6282c94191099a473d1c67a45af7deb019f1f74418"
+    },
+    {
+      "source": "GptLean/PhotonNumber.lean",
+      "source_sha256": "d2a7be254df1c13266ce5f05322a01fa6fe96edd31936ce6e27859263dec4eb2"
+    },
+    {
+      "source": "GptLean/PhysicalArticleCutoff.lean",
+      "source_sha256": "7b2a0be5abae426ef5717c693819780179b4c2407b5149072078f8990ca7ed5a"
+    },
+    {
+      "source": "GptLean/PhysicalAttainment.lean",
+      "source_sha256": "324b5ad65c07a4cc123812be208bdb88b65097db92acbd879dea97280ee45092"
+    },
+    {
+      "source": "GptLean/PhysicalAttainmentCompactness.lean",
+      "source_sha256": "823fa119ae174b77706fe1ba620580be57e09c20e5b838f6cbffadd8cbe69ed7"
+    },
+    {
+      "source": "GptLean/PhysicalAttainmentFunctionals.lean",
+      "source_sha256": "1d8ea28b46406a67275dfc429080b9c383dee08544e685f9ee4a2cdb280409c9"
+    },
+    {
+      "source": "GptLean/PhysicalBoundedScalar.lean",
+      "source_sha256": "4b13d8001f1aad151ce7519e55dcf7e3ee2164a11ec5301783f3b1c2f6b92ec9"
+    },
+    {
+      "source": "GptLean/PhysicalChannelDual.lean",
+      "source_sha256": "0594d7b9c803337cebda44cac67b0f4fe9f35db90a4ca1ca4a07b447c597b43d"
+    },
+    {
+      "source": "GptLean/PhysicalClosedForms.lean",
+      "source_sha256": "949f1aeb4d44710661566e9126415f499da2d6207c3deb7b870032b20a1e6a82"
+    },
+    {
+      "source": "GptLean/PhysicalCoulombBound.lean",
+      "source_sha256": "d629d0cf806884888583f171d880340d672307a77340f1457dd2ad2d82e41c8c"
+    },
+    {
+      "source": "GptLean/PhysicalCoulombH1.lean",
+      "source_sha256": "1d3c084da77e97c24f552a1b1103463aba7093e9d4fa3c35278a96813276d8d1"
+    },
+    {
+      "source": "GptLean/PhysicalCoulombH1Density.lean",
+      "source_sha256": "aad78eba43e183324904f7009c53df7538e79bfbec74d367fd9c6b08e1b3a84e"
+    },
+    {
+      "source": "GptLean/PhysicalCoulombIntegrability.lean",
+      "source_sha256": "7f0393e5caf8aaecd29446224dff98091352f296aaa7eaaa1c342703c2e64ceb"
+    },
+    {
+      "source": "GptLean/PhysicalCoulombReferenceCore.lean",
+      "source_sha256": "7faad0f29bab4fa7f290a03031bf1a68b8267f4bd299fce53aa4217a466d21e2"
+    },
+    {
+      "source": "GptLean/PhysicalCouplingKernelNorm.lean",
+      "source_sha256": "f5816b9e544a305bf3411eb7f9caccf3b60e43b71a246147d4ba058e0088a546"
+    },
+    {
+      "source": "GptLean/PhysicalCovariantJointDomain.lean",
+      "source_sha256": "8c0f5cc82dd5dedc963789a4a8098654f972871c6a5bd98aba0b0aca9484a1af"
+    },
+    {
+      "source": "GptLean/PhysicalCovariantKinetic.lean",
+      "source_sha256": "8b27fb961258de07dd070889afb985693e6616cfdfacbd4c920a12a1a26bc86c"
+    },
+    {
+      "source": "GptLean/PhysicalDarkFock.lean",
+      "source_sha256": "df86794d8686a8fa28e7fbc6db9aaf55f6a75645440c898e6c9803fb8233f363"
+    },
+    {
+      "source": "GptLean/PhysicalDipoleGaussian.lean",
+      "source_sha256": "d2668b6730f816684c93575ea2e862f389c865ce4a69020991e4910e2c998915"
+    },
+    {
+      "source": "GptLean/PhysicalDipoleKernel.lean",
+      "source_sha256": "3dfcb833b1d3c89cdaa0bcbf487c5229057fd1b86709eada1142b85aaae688cb"
+    },
+    {
+      "source": "GptLean/PhysicalDipoleLengthKernels.lean",
+      "source_sha256": "d5998ded1aebe371def75fd7d5116ed15baf19972cc3b354dec24df041c5ce5f"
+    },
+    {
+      "source": "GptLean/PhysicalDipoleMoment.lean",
+      "source_sha256": "212f0b792f8f3beca9a485f3fddcbda278364ec53a2bb98884973ccac9e30430"
+    },
+    {
+      "source": "GptLean/PhysicalDivergenceKernel.lean",
+      "source_sha256": "84959aa4e4bf769b486a7a89cdd655b06f3de1cc33d963cc56a8de370e8ce6ce"
+    },
+    {
+      "source": "GptLean/PhysicalElectronicDensity.lean",
+      "source_sha256": "2751a64b9cad10e95aeb1abd1c0fced6a6cd30b63949564f363c1e3c7a9665c1"
+    },
+    {
+      "source": "GptLean/PhysicalElectronicFermions.lean",
+      "source_sha256": "2845db7b1b4507a3144255f0ad1f9ad90f268485116a9d57cd8f1babb304fe09"
+    },
+    {
+      "source": "GptLean/PhysicalElectronicScalars.lean",
+      "source_sha256": "924c91595c507b07376efe483bcc16cb98077530e7e67e95318a2abac422ebce"
+    },
+    {
+      "source": "GptLean/PhysicalElectronicVacuumGraph.lean",
+      "source_sha256": "bf019cf22f765b33bbd4dc494f8e402b739b63592ebd82a5b5b4732fa3d3eb73"
+    },
+    {
+      "source": "GptLean/PhysicalEnsembleH1.lean",
+      "source_sha256": "ec5c3d66fb6ed8421d8dd8461db2f52d37910dddabb68c851f197a397f0700a2"
+    },
+    {
+      "source": "GptLean/PhysicalEnsembleObservables.lean",
+      "source_sha256": "e34c00772d87e6e741cd630c449a792e7438018e00ebdf3bb86114b99dcfcc51"
+    },
+    {
+      "source": "GptLean/PhysicalEnsemblePair.lean",
+      "source_sha256": "2d50817e4c02213295af45a817a4f19a94c6fb8feb4f46d9a804e0aaceddaff9"
+    },
+    {
+      "source": "GptLean/PhysicalEnsembleSource.lean",
+      "source_sha256": "b706db5651cd28c9a27fc303bdb7cc0604de97498b6077c7689c0dedeceb59c5"
+    },
+    {
+      "source": "GptLean/PhysicalEnsembleTests.lean",
+      "source_sha256": "d1c29a146487622c1cab39161987a7e597ef7ba075bca1808a5b289509d00d9e"
+    },
+    {
+      "source": "GptLean/PhysicalFermionicPair.lean",
+      "source_sha256": "48aec4430bd641cabae124e90fe3f438fdfbe09e6f3343fe5c1a0f78ff610175"
+    },
+    {
+      "source": "GptLean/PhysicalFermionicScalarSeed.lean",
+      "source_sha256": "563e4934bf7f331444a13cd01e288d2bbfbedac9de6ea4eaf47a0e5be229cfc7"
+    },
+    {
+      "source": "GptLean/PhysicalFermionicSeed.lean",
+      "source_sha256": "27e59aeeba2659c59f6c05ca03cf6864899da6cfe2fcee679458d537b64049f8"
+    },
+    {
+      "source": "GptLean/PhysicalFiniteSectorCoordinates.lean",
+      "source_sha256": "a7f727ddf99c35698f42947d9b71e021c0b99f381650d636a8e91230389e30d6"
+    },
+    {
+      "source": "GptLean/PhysicalFockAnnihilation.lean",
+      "source_sha256": "76cb478400fb2bc30380f8ce22069dadf030819004d7152d1537fb8a2c49f81f"
+    },
+    {
+      "source": "GptLean/PhysicalFockAnnihilationForm.lean",
+      "source_sha256": "212f256ec75aaf9e9a85b367f9cc2fc046133f42afe1bc26bfa59c029ab83f53"
+    },
+    {
+      "source": "GptLean/PhysicalFockCCR.lean",
+      "source_sha256": "2fc36bc709722a527b7eda6d13cb238677b61486f7ecf14075733e887286e9ca"
+    },
+    {
+      "source": "GptLean/PhysicalFockChannel.lean",
+      "source_sha256": "ef0dbbf7431cdf55bdf5691f32324ae5de5ecb2c89803c4b4530502e790ccbbf"
+    },
+    {
+      "source": "GptLean/PhysicalFockChannelAnnihilation.lean",
+      "source_sha256": "9f28c946483c7d1d5ab29b5a431982ae0256900be215bf41c92746b38cd3d21a"
+    },
+    {
+      "source": "GptLean/PhysicalFockChannelComposition.lean",
+      "source_sha256": "de281c1540fe2cc34ad1f4a823d32b8561ac07df4704b79297ae49b3cd9c54fb"
+    },
+    {
+      "source": "GptLean/PhysicalFockChannelCovariant.lean",
+      "source_sha256": "69156dee5a165a170efb17c859c013a9cb45be90a0f44fc6921c4260047ade05"
+    },
+    {
+      "source": "GptLean/PhysicalFockChannelFields.lean",
+      "source_sha256": "744fe2a1a92b375f49b6eed155cfc832c9b3f09fd43d0de83f7544f4841f8abb"
+    },
+    {
+      "source": "GptLean/PhysicalFockChannelKernel.lean",
+      "source_sha256": "309227357d5bce8922a42c478399b331604c411813c16179ac36b08d8a673a53"
+    },
+    {
+      "source": "GptLean/PhysicalFockChannelMoments.lean",
+      "source_sha256": "bf5d234cf1c5d034f1d10e544df29231862217e2511cfeedbbe465460b32f690"
+    },
+    {
+      "source": "GptLean/PhysicalFockChannelNumber.lean",
+      "source_sha256": "beb021ba3082a70e3bdaf83dac9fcaba676d0d20ce0e141c75a6b0a5d09c9cae"
+    },
+    {
+      "source": "GptLean/PhysicalFockChannelNumberL2.lean",
+      "source_sha256": "9fa12b76467504d525e3fcf9a56cb2b8d393fd477b692006e2313fee6a311015"
+    },
+    {
+      "source": "GptLean/PhysicalFockChannelProfiles.lean",
+      "source_sha256": "45422203606ccba6087598e6a5c5c807cfba9ae5474d8ba753e464b6489dbc9f"
+    },
+    {
+      "source": "GptLean/PhysicalFockChannelReference.lean",
+      "source_sha256": "0efac532d4d6b12be611ec39ed54735bb3ec51e3bb98a6482335659ade558241"
+    },
+    {
+      "source": "GptLean/PhysicalFockChannelSpatial.lean",
+      "source_sha256": "d36c2d287c5e724de479231a6e9302e71939ecdd9567e7f8b249ecc8c7e08fb6"
+    },
+    {
+      "source": "GptLean/PhysicalFockChannelVacuum.lean",
+      "source_sha256": "c968a3fa94c1f9c0cdd4ae99fa784c8c5fb20f5570632bfdedda9fd35a663dab"
+    },
+    {
+      "source": "GptLean/PhysicalFockCreation.lean",
+      "source_sha256": "69e9bdc88e2eec32245f50941a970675cabe6fc361c169e4e0a5b1a9cc9a8b8d"
+    },
+    {
+      "source": "GptLean/PhysicalFockCreationWords.lean",
+      "source_sha256": "5eca065c3c4ca6c58b738a12c19c73ecf067cfde1cc6828130a0d87bcda7ddac"
+    },
+    {
+      "source": "GptLean/PhysicalFockCutoffComposition.lean",
+      "source_sha256": "09c9c4907387606a768edc0d2e04a63d17279d497a1bd9e2cc7dbbe30d7b9a53"
+    },
+    {
+      "source": "GptLean/PhysicalFockCutoffRoot.lean",
+      "source_sha256": "edd6fe502887893f7632c1e176234497a5ca05052b569824bffbcc08aeabc878"
+    },
+    {
+      "source": "GptLean/PhysicalFockElectronic.lean",
+      "source_sha256": "1157dbe15038b55d95ff921c6676cb9b11f2db30f904f09b1e8b222e9ed23840"
+    },
+    {
+      "source": "GptLean/PhysicalFockElectronicComposition.lean",
+      "source_sha256": "2785a89a3b71bc8908e529c65936ee0579952eba3b4067fc8af64751ac32e7b2"
+    },
+    {
+      "source": "GptLean/PhysicalFockElectronicWords.lean",
+      "source_sha256": "3d32fb24d3b9469e3171580532c466e29ecdc1df96ab5e0e3e578aadfa3ce360"
+    },
+    {
+      "source": "GptLean/PhysicalFockExponential.lean",
+      "source_sha256": "80609ca31d69f669d6fc17369cf93055e141fc8ed47323560caf4e4d25b843fb"
+    },
+    {
+      "source": "GptLean/PhysicalFockFieldGraph.lean",
+      "source_sha256": "1ff5442f63b068f2ca218c587e67ab0347e106b84fbe21ff510cd9aa92e1c4ed"
+    },
+    {
+      "source": "GptLean/PhysicalFockFieldGraphMeasurable.lean",
+      "source_sha256": "a3e3bbe0d807fb8973779c7cf431f3afbed3155d62283ad0c8f36f22d9dddc6d"
+    },
+    {
+      "source": "GptLean/PhysicalFockFieldPermutation.lean",
+      "source_sha256": "ed493a28902c435d8c7758fab671cc417613873fc4b17931440c5e293a3c5e21"
+    },
+    {
+      "source": "GptLean/PhysicalFockFieldSymmetry.lean",
+      "source_sha256": "a5d4575a8a9fc556cde1d76a4d14dc3c833ac94002a37374f845b34868e9fc91"
+    },
+    {
+      "source": "GptLean/PhysicalFockFiniteOperators.lean",
+      "source_sha256": "ee138a5d0eec75bd2689f2cd7997af9f59143e359a6926150e5da25fc854dd85"
+    },
+    {
+      "source": "GptLean/PhysicalFockFormCalculus.lean",
+      "source_sha256": "5d0db37de01f376a2e7cb815af9b2d6d3b344e158cc80bd03f48343ebb0a902b"
+    },
+    {
+      "source": "GptLean/PhysicalFockFormFamilies.lean",
+      "source_sha256": "e6d2fec5a6f3a2f9ba53ff2a8ff5825958e7444bfea44861e365c08c41810e2b"
+    },
+    {
+      "source": "GptLean/PhysicalFockFormPullback.lean",
+      "source_sha256": "4606be52bff6fd2b7b4746784b312db305f0b0eec4ac57f7b56476000a3c428c"
+    },
+    {
+      "source": "GptLean/PhysicalFockFormTruncation.lean",
+      "source_sha256": "5b0738aab032ab2c59b1e71257510cbd5aed7314eaadb0fa75f7ef8875f9b532"
+    },
+    {
+      "source": "GptLean/PhysicalFockFourierField.lean",
+      "source_sha256": "499ad604795cb7700d61c7b5848493dce18afda70f9b1ae8d55e6572d75ecc4c"
+    },
+    {
+      "source": "GptLean/PhysicalFockFullFormCalculus.lean",
+      "source_sha256": "8a5ad45c098571f9ad59fb2b07616ec834e7d83c41ac038acc7594dd3e1a74a6"
+    },
+    {
+      "source": "GptLean/PhysicalFockFullGentle.lean",
+      "source_sha256": "ae9da992941a070d4d147c748ba6bdf62e9ae5ab293045d3e2f78019f1d9066a"
+    },
+    {
+      "source": "GptLean/PhysicalFockFullNumberLaw.lean",
+      "source_sha256": "b0e930ef736e15d1bd60d57bb9c06adf7b9a50d7ac8cf1bd1032717de3456b29"
+    },
+    {
+      "source": "GptLean/PhysicalFockHardField.lean",
+      "source_sha256": "d684d775a6f6dd9c023b03a92ce2776ed958e38f4ac1b8028a5859100937e55c"
+    },
+    {
+      "source": "GptLean/PhysicalFockHardGaussianGraph.lean",
+      "source_sha256": "bb5cb5c7199c5a5a684d81eddcd4fa17c471e645cee0204e95affd1e844efb16"
+    },
+    {
+      "source": "GptLean/PhysicalFockHardNumber.lean",
+      "source_sha256": "6a551e7fa092347c7b26e994c2b6b09bea09b9ebadf53364e8b9adf2fe7419b9"
+    },
+    {
+      "source": "GptLean/PhysicalFockHardOperators.lean",
+      "source_sha256": "4d16f386c3b38351d6b2f8da6d0e46d673986ddf012dfc7bcd85ef204879525d"
+    },
+    {
+      "source": "GptLean/PhysicalFockHardRadiation.lean",
+      "source_sha256": "35143991849b99271d726ddc07f90a2f2d1dc72a479ff06a7dc0440f0c432128"
+    },
+    {
+      "source": "GptLean/PhysicalFockHardRadiationBound.lean",
+      "source_sha256": "4f94fed13ecda98eee2e7990c1567f18858e6bb774a52d1bcd64ac0dc1169c96"
+    },
+    {
+      "source": "GptLean/PhysicalFockHardSoftVacuum.lean",
+      "source_sha256": "6d83f4c0300747f5b4b56a208064e9ab28e533f231dc63cb0f5d61c6eae030b0"
+    },
+    {
+      "source": "GptLean/PhysicalFockHardVacuumBounds.lean",
+      "source_sha256": "a34fee5a9556e1d09e88649f3264c860392443cbba4013dd7695f5c7db4af405"
+    },
+    {
+      "source": "GptLean/PhysicalFockHardVacuumTraceBounds.lean",
+      "source_sha256": "95ff1c8d590ecb51654bd370dab41fd3776bb611795f58dab9bc9d798e639066"
+    },
+    {
+      "source": "GptLean/PhysicalFockKernelField.lean",
+      "source_sha256": "9d8eb2821097b9feec1af62a1686e4dccfd08a19386016b16153aaa150587b65"
+    },
+    {
+      "source": "GptLean/PhysicalFockKernelLinearity.lean",
+      "source_sha256": "dc7a8e1482b7722fb29f1ea13197df7c3a232ffba45e5b819500f09b8f07c412"
+    },
+    {
+      "source": "GptLean/PhysicalFockKineticDilation.lean",
+      "source_sha256": "51aa505d0d545eda220651d94f5c62f7fa9468121dadc919099a252445cd7fde"
+    },
+    {
+      "source": "GptLean/PhysicalFockKrausL2.lean",
+      "source_sha256": "c1eb5ecacb939659bac43a9cf8ba962a1763fa58c60d1caeb380a0eb8af86626"
+    },
+    {
+      "source": "GptLean/PhysicalFockLocalizationData.lean",
+      "source_sha256": "cdf1c21f086c240cd81d139a634a1149f46f4c678815884555703797bc4557bf"
+    },
+    {
+      "source": "GptLean/PhysicalFockMixedCCR.lean",
+      "source_sha256": "63d827c5f44effe68b524f3650d1d82859606fb07550be2a9c27c9005af86e42"
+    },
+    {
+      "source": "GptLean/PhysicalFockMomentumProjection.lean",
+      "source_sha256": "d20b0c58fd948a9cad71aa34283f773903b439be71e25bf6bbab70736e5e1605"
+    },
+    {
+      "source": "GptLean/PhysicalFockMomentumSupport.lean",
+      "source_sha256": "8abd77f37be5bd16b4363e4ebd840eee99d73bf9cc57c1f9dd52649f48fb4ead"
+    },
+    {
+      "source": "GptLean/PhysicalFockMultipliers.lean",
+      "source_sha256": "a31eb1dbc59113b54d6c1db6a2984c4ec4cdc3e155b7d72a65975df8ea3f5ddf"
+    },
+    {
+      "source": "GptLean/PhysicalFockNumber.lean",
+      "source_sha256": "5df255003cd9ed1a90591f104789db0c69170ee70f68ab6964e672ea0a425164"
+    },
+    {
+      "source": "GptLean/PhysicalFockNumberMoments.lean",
+      "source_sha256": "abbadf5f5306d9450dd1bca2ce969f6959a935b027ddb451d624ebccbb27c221"
+    },
+    {
+      "source": "GptLean/PhysicalFockOrthogonalSplit.lean",
+      "source_sha256": "7dbfecc03260513008086a2d76d1fa9dd489dae6db8e693d92ebdcf2252f4aba"
+    },
+    {
+      "source": "GptLean/PhysicalFockPhysicalForms.lean",
+      "source_sha256": "481a3dd39d9867eb6030e4c10c55a906a26d12c72cb8f8607a4268d88417ce77"
+    },
+    {
+      "source": "GptLean/PhysicalFockPhysicalProfiles.lean",
+      "source_sha256": "8901c5d5e0168ac86d65a09e45efe2314ed582bd219f9842adf830f02a3bf9b1"
+    },
+    {
+      "source": "GptLean/PhysicalFockPositionSupport.lean",
+      "source_sha256": "368260339a4f19d2e68e9a97171a59708b8ccadf9bb0f81883a1e4d24f5d445a"
+    },
+    {
+      "source": "GptLean/PhysicalFockProfileDilation.lean",
+      "source_sha256": "055b79b0712527fea2f439a4d0e49079caf769319221778b70804d7d05b3dffc"
+    },
+    {
+      "source": "GptLean/PhysicalFockRadiation.lean",
+      "source_sha256": "a52c15bdee27361a2ce47ea14582eb2cfa87d936c0d943f70ed6d705b2905f0d"
+    },
+    {
+      "source": "GptLean/PhysicalFockRadiationCore.lean",
+      "source_sha256": "a89a1eeea9ac59256a10cddf930aba8e75af21108bc616d5d1e15670786ba46d"
+    },
+    {
+      "source": "GptLean/PhysicalFockRadiationCutoff.lean",
+      "source_sha256": "1f5dd26fe65cf9fb8b3777515b298d6186b1dccfc68d1d7562fc8ed9d0b7fb44"
+    },
+    {
+      "source": "GptLean/PhysicalFockRadiationDomainLocalization.lean",
+      "source_sha256": "16d33f282a817da175a3b6acf66612c1dded0236ab3a373fd782b476c520151c"
+    },
+    {
+      "source": "GptLean/PhysicalFockRadiationFamily.lean",
+      "source_sha256": "2492010b3f952f27c449f686d5ce3d5c9b62f371c54f60a501d81a4c91ac114a"
+    },
+    {
+      "source": "GptLean/PhysicalFockRadiationField.lean",
+      "source_sha256": "42c5bdd4fef1bb8553bf2683784515ec3ae22ff31bdb39cd9be0fe1dd6625d34"
+    },
+    {
+      "source": "GptLean/PhysicalFockRadiationFrame.lean",
+      "source_sha256": "12512cdf899a6d9fb09b450f1308aaf4126e6beba2c101eb0e7c506ff053d02a"
+    },
+    {
+      "source": "GptLean/PhysicalFockRadiationGraph.lean",
+      "source_sha256": "20c1128e05b88a1f3713497ec35b4e1d5fb12e3a83a2debfa8cbe95957d0eb4e"
+    },
+    {
+      "source": "GptLean/PhysicalFockRadiationLocalization.lean",
+      "source_sha256": "7bf4d83601f9cc239afa12df0134758e51b6d1d0898d75399fd9eac087bc19ff"
+    },
+    {
+      "source": "GptLean/PhysicalFockRadiationSlices.lean",
+      "source_sha256": "b3269406a6ada3528d58fd5fb38e8ea8972289ffcea9790a788d4d0cf7a406dc"
+    },
+    {
+      "source": "GptLean/PhysicalFockRealStructure.lean",
+      "source_sha256": "ad94b8243a3f9d7db2e094610a621d01e03f62bc3960346f0d37696de2cc01ff"
+    },
+    {
+      "source": "GptLean/PhysicalFockSectorEnergy.lean",
+      "source_sha256": "53455a8b7e4733a031f1f952996d5a37be48e6250c170c4d007e2ab73dc3ab04"
+    },
+    {
+      "source": "GptLean/PhysicalFockSectors.lean",
+      "source_sha256": "7cb90e21ca69a388a0f738c78025162f4e47c605d1d640267e66d260f6006963"
+    },
+    {
+      "source": "GptLean/PhysicalFockSeparable.lean",
+      "source_sha256": "15c6fdca61cc57f78af4e2e90907e45a4871c3de906141e627cab01bc461a9a8"
+    },
+    {
+      "source": "GptLean/PhysicalFockSliceContraction.lean",
+      "source_sha256": "972503bd83b5a23207e46446a7a3950bbc4841be41d62383600489cc5b6e77bc"
+    },
+    {
+      "source": "GptLean/PhysicalFockSlices.lean",
+      "source_sha256": "c7b5e9bd0352bdb90f75700458a4fd224cb857a1e47068a93e54c3c2193e3d42"
+    },
+    {
+      "source": "GptLean/PhysicalFockSoftGaussianGraph.lean",
+      "source_sha256": "b848efedcdccb323468e0c744419f9ee9468fdd8aec67c7ac42548132d5640b8"
+    },
+    {
+      "source": "GptLean/PhysicalFockSoftRadiation.lean",
+      "source_sha256": "433ae4f03d20e56e0ab2c3268ffbfc19f66ad8a5e8a8d5e625547b303869ad01"
+    },
+    {
+      "source": "GptLean/PhysicalFockSoftRadiationBound.lean",
+      "source_sha256": "fc3e8daae5ba40ec696298a945d720c9236256d8428a5bd08723547ee8cdd728"
+    },
+    {
+      "source": "GptLean/PhysicalFockSoftTag.lean",
+      "source_sha256": "5ba47d8b3d088506e6c38b7248a870de61eadde7e24eaf7647b42a99415eb75e"
+    },
+    {
+      "source": "GptLean/PhysicalFockSoftTagField.lean",
+      "source_sha256": "adab542a50b740fb3cc94e9cbf934b155147177d86501cdd53d6187b45f20910"
+    },
+    {
+      "source": "GptLean/PhysicalFockSoftTagSum.lean",
+      "source_sha256": "a6ecdc4d43014ad3b3a6389629930b088153b3933bbf49d7a17323af388411ab"
+    },
+    {
+      "source": "GptLean/PhysicalFockSoftTagVariance.lean",
+      "source_sha256": "caa2c7c08334ec12535506311077c9d8646d44dd0833d89dca81b88a458b3254"
+    },
+    {
+      "source": "GptLean/PhysicalFockSpace.lean",
+      "source_sha256": "1eff6f39c46b9d65fe4ea51e91df3e1d367b77bb439c32541d17f9dd5e067953"
+    },
+    {
+      "source": "GptLean/PhysicalFockSpatialField.lean",
+      "source_sha256": "0b79807adbb7adcb0533c255ba3ca9e718c8a5fb4f032445d62b503323ed6d42"
+    },
+    {
+      "source": "GptLean/PhysicalFockSpatialFieldParts.lean",
+      "source_sha256": "2bb1d591ffd297e4117917fb17efb0608b329f43b4f85f8e5ea4ad7311c14e4c"
+    },
+    {
+      "source": "GptLean/PhysicalFockSplitCoassociation.lean",
+      "source_sha256": "ed247457d18965915af8fe98d8901ada6aaf9c49f123c96e5281fd77015afdf1"
+    },
+    {
+      "source": "GptLean/PhysicalFockSplitContraction.lean",
+      "source_sha256": "edb3c8a623471769759c44ddd4b460238123ea4cc5f61a7025adc6eaa42710b1"
+    },
+    {
+      "source": "GptLean/PhysicalFockSplitFlip.lean",
+      "source_sha256": "fcf3dd5b4bf70706546763f8480e120d03dd12da6bc027f99b9b909c06e0a168"
+    },
+    {
+      "source": "GptLean/PhysicalFockSupportLift.lean",
+      "source_sha256": "e1f8fbc9df813c0f91f004d11e2478902825d5917a1a380c53669b495c5a0692"
+    },
+    {
+      "source": "GptLean/PhysicalFockSupportedSubspaces.lean",
+      "source_sha256": "6237d2b9b5d65ff71d27b572ceb88aa8652e3f7b18f2561d5405f6d0d0c680b0"
+    },
+    {
+      "source": "GptLean/PhysicalFockTailPermutation.lean",
+      "source_sha256": "dd9a1ef8fb5baa4edbd4ccc82d12fcbc1607ce62c29ff603710dd1dab4ef8d5e"
+    },
+    {
+      "source": "GptLean/PhysicalFockTensorAnnihilation.lean",
+      "source_sha256": "b3fab72cfeeacce61ec107a7e4921f7b3c680eac175c00dedb89a386e3bd8a96"
+    },
+    {
+      "source": "GptLean/PhysicalFockTensorCoordinates.lean",
+      "source_sha256": "2eabecb3fadbec842f404a4e4d101d5c5f560e91fd2f49d4c620ff05ec833af8"
+    },
+    {
+      "source": "GptLean/PhysicalFockTensorSectors.lean",
+      "source_sha256": "f91352e60ff99b6fb1b9bf733f8f8b7ba2ffd0e76a6881050d80169490fead6a"
+    },
+    {
+      "source": "GptLean/PhysicalFockVacuumFirst.lean",
+      "source_sha256": "455c2798d2fcc1fc1ed71a47dfecb6b7019bf3b5e66d4f327a070b615b2da5f8"
+    },
+    {
+      "source": "GptLean/PhysicalFockVacuumGeometry.lean",
+      "source_sha256": "fbababc9746a311b7a2eef32d376af41ee872259c59fb7630694e75b898ec9e8"
+    },
+    {
+      "source": "GptLean/PhysicalFockVacuumOperator.lean",
+      "source_sha256": "298d5cf82ac0c1d5d3ce04493f055d2fd26c7720695f49bbdb475ab82b5b3de7"
+    },
+    {
+      "source": "GptLean/PhysicalFockVacuumPositive.lean",
+      "source_sha256": "aad8589bdcc3721170b0dc7d870e6139eaf4280e1bcbeb465e1089d8452f8b3c"
+    },
+    {
+      "source": "GptLean/PhysicalFockVacuumSectors.lean",
+      "source_sha256": "d10174489fb24e0185afbf63f394a3dd3a5575853035aecec6177a50dacb1da9"
+    },
+    {
+      "source": "GptLean/PhysicalFockWienerSegal.lean",
+      "source_sha256": "ddd87bf68fba966c167d6c2cc5ddc7710a9b3e54926ea1fc6a52a1bbbc6761df"
+    },
+    {
+      "source": "GptLean/PhysicalFockWordComposition.lean",
+      "source_sha256": "04450caa3d06b1be5d965b2bf5b5fe912a693e5264ef04efea687c1d7dc740d1"
+    },
+    {
+      "source": "GptLean/PhysicalFockWordContraction.lean",
+      "source_sha256": "ab89a9a88398e92293af94c18a16860800c2c11848892833f2c42f96aedad59a"
+    },
+    {
+      "source": "GptLean/PhysicalFockWordGram.lean",
+      "source_sha256": "79c93d69113b7707ef70d56517a1b1a77dce9afb71879dfc4d103aa643708286"
+    },
+    {
+      "source": "GptLean/PhysicalFourierFubini.lean",
+      "source_sha256": "d7d31483675b0ddfa3b6f76392c258d8d844d815de82e926ce82c6604752c3ed"
+    },
+    {
+      "source": "GptLean/PhysicalFourierGraph.lean",
+      "source_sha256": "1dd9369c09824775ab6469b69b5bb9bf606f68570ca265e4f5547cfc4584311d"
+    },
+    {
+      "source": "GptLean/PhysicalFourierProduct.lean",
+      "source_sha256": "23f53b0e53854aeabfbe6b752efd1f6d7692613f057cd37ab323d0fc9a578e82"
+    },
+    {
+      "source": "GptLean/PhysicalFreeDecomposition.lean",
+      "source_sha256": "d122a4bf4326cb92f2c39bafdd992d754afe61d6cd7d299bf34b8e40dffa7ae1"
+    },
+    {
+      "source": "GptLean/PhysicalFreeForm.lean",
+      "source_sha256": "77124f2b076db9b79fcc4b69a885f7652f3787da997cbc5e20afd6a79baec291"
+    },
+    {
+      "source": "GptLean/PhysicalFreeHilbert.lean",
+      "source_sha256": "fc547fa0d35b85341332832f70c8b4e9aae8195f97aba30f21b2451b6d46b700"
+    },
+    {
+      "source": "GptLean/PhysicalFreeReferenceCore.lean",
+      "source_sha256": "ed4deeaaac3dd504be5dad90ea750dcdab5f92325ab2588bd0e2733945bfe838"
+    },
+    {
+      "source": "GptLean/PhysicalFullVacuumVectors.lean",
+      "source_sha256": "757010a30a3d7ffa46552147e7100d4ec61e67b5e3e038abbd1d07ce8c753d99"
+    },
+    {
+      "source": "GptLean/PhysicalGaussianChannelObservables.lean",
+      "source_sha256": "f85562f6876950f9cd5dbd3048445965dfb2c9406546c341cd00e34543c36ba2"
+    },
+    {
+      "source": "GptLean/PhysicalGaussianCoordinates.lean",
+      "source_sha256": "a8b25f0cda23488a27dbf382f3e7d001f33ac16ee8f5e438cb17dc21ba794d63"
+    },
+    {
+      "source": "GptLean/PhysicalGaussianGraphSource.lean",
+      "source_sha256": "2c7240cc79095d80e932e2361a5987cfccfc220664f705de1f80b4311291e699"
+    },
+    {
+      "source": "GptLean/PhysicalGaussianGraphTransport.lean",
+      "source_sha256": "422c9185bb230f6a3182f96bc5d0e59edca8a91f93c574b532f088badadebec5"
+    },
+    {
+      "source": "GptLean/PhysicalGaussianH1.lean",
+      "source_sha256": "b0cc1725102f9c1ed91afe56fa88f67b95ab562d7fb1d5402463d4bb28836a5b"
+    },
+    {
+      "source": "GptLean/PhysicalGaussianLabels.lean",
+      "source_sha256": "3b59db91ed70bd2152f7895aa03e74fe42d3d20d8318255c787f834425ac2c6f"
+    },
+    {
+      "source": "GptLean/PhysicalGaussianObservableTests.lean",
+      "source_sha256": "7e562166f33b0f5a1c9d54e1021d5a4c760bb24b25c8f6b25d4a122e3a04b5e8"
+    },
+    {
+      "source": "GptLean/PhysicalGaussianObservables.lean",
+      "source_sha256": "2d69051454858d8b8e4c7bd7ef4e8ed0fe1af81a1263f742d5ad0be188f70933"
+    },
+    {
+      "source": "GptLean/PhysicalGaussianPFGraphs.lean",
+      "source_sha256": "aac5750b75f1b4dad7d0aaa04435572a81d1edfecfb1850974f4aa0c0764e400"
+    },
+    {
+      "source": "GptLean/PhysicalGaussianPFSource.lean",
+      "source_sha256": "8c56886cf0611942b6617ddc7a931ba66e9d2a880d728cb7e2422f560784c2ba"
+    },
+    {
+      "source": "GptLean/PhysicalGaussianParticleField.lean",
+      "source_sha256": "a310e1a1e8ce5a9474d209b84b72ef0ec84c1ef4a823d7056c60aa7233cef151"
+    },
+    {
+      "source": "GptLean/PhysicalGaussianProduct.lean",
+      "source_sha256": "e2d6d736c16c97b6f24ac50d5afde8cd82fa4634e593e3c68f4f6dedd313f224"
+    },
+    {
+      "source": "GptLean/PhysicalGaussianRadiationOutput.lean",
+      "source_sha256": "b54f215dca7e7bdbd5fee3036a34f5b263427038bbb99837262954ba209e9778"
+    },
+    {
+      "source": "GptLean/PhysicalGaussianRealTests.lean",
+      "source_sha256": "36ec1e56ea8232966067ca16c0fe633f0b424f6c57bd0b186ea1879d09239cba"
+    },
+    {
+      "source": "GptLean/PhysicalGaussianScalarTests.lean",
+      "source_sha256": "c90889555f99264037405d80a7a4c63cd2184649318fadffce95e6b623c1ce79"
+    },
+    {
+      "source": "GptLean/PhysicalGaussianSource.lean",
+      "source_sha256": "326b58eabd00d064d2be446bccc3b95a3fa02b7d2373c1f810ba9a786647eaf1"
+    },
+    {
+      "source": "GptLean/PhysicalGaussianSourceOperations.lean",
+      "source_sha256": "b3899ec930d547ee9a8c5e6a25fb9c7994b92574257122548b284b1331ba226a"
+    },
+    {
+      "source": "GptLean/PhysicalGaussianSpatialGraph.lean",
+      "source_sha256": "4d381fe00abfa0d200483732df7ed80769b0218471d78ec33b0dd509478fa37d"
+    },
+    {
+      "source": "GptLean/PhysicalGaussianTensorFields.lean",
+      "source_sha256": "8a4430b07e3182e5a7e2c0c371dd226dddcd1428f3232f4b44175593c31524fe"
+    },
+    {
+      "source": "GptLean/PhysicalGaussianTensorForms.lean",
+      "source_sha256": "a661cd500a4b53864b07146c83faf043d52b726d3b7e58ee61ce9d5efdb1be94"
+    },
+    {
+      "source": "GptLean/PhysicalGraphChannel.lean",
+      "source_sha256": "65694cd5910110c3658709f2551dae715c603c3e061aba0c2214a443f287774c"
+    },
+    {
+      "source": "GptLean/PhysicalGraphCompactness.lean",
+      "source_sha256": "35e5fbdffb2a73ec094acea30854ad5c47037c236124df2dee51fb943675b8b0"
+    },
+    {
+      "source": "GptLean/PhysicalGraphCross.lean",
+      "source_sha256": "06d031ddfc351e5e7419336132e7cc408d531a7d4bf558027c2508402a2e6c7a"
+    },
+    {
+      "source": "GptLean/PhysicalGraphCrossObservable.lean",
+      "source_sha256": "ce78c7d1ca55dd541fe58e55ce4c96d629686902e16833c7d21cb14f21684c44"
+    },
+    {
+      "source": "GptLean/PhysicalGraphCurrent.lean",
+      "source_sha256": "7f27d6df5a65982f1152f7d895ccb005beb760d895469225345010ae542a3f81"
+    },
+    {
+      "source": "GptLean/PhysicalGraphCurrentMass.lean",
+      "source_sha256": "6d41323fade21c68135dfb263662f1d08b69a59dc99013c6546889a36f6169ea"
+    },
+    {
+      "source": "GptLean/PhysicalGraphCurrentObservable.lean",
+      "source_sha256": "d3370eadf381394fd865434bca1924708db022433cb548c095a8ac3ddf015769"
+    },
+    {
+      "source": "GptLean/PhysicalGraphCurrentPassage.lean",
+      "source_sha256": "54e1914c58158a8f35b901c28edcbbefe8d438430d17c69f3c00bf0298bfbda2"
+    },
+    {
+      "source": "GptLean/PhysicalGraphForms.lean",
+      "source_sha256": "d83e5bd69d5c927d998f663888052587b00f698007165c6c940d9d4b6f6a6b47"
+    },
+    {
+      "source": "GptLean/PhysicalGraphRegularization.lean",
+      "source_sha256": "ee67385d1bf74956bc5bedb5be733fc0b2536bf97591d4cfd4c44fe006add166"
+    },
+    {
+      "source": "GptLean/PhysicalGraphSourceObservable.lean",
+      "source_sha256": "965223b8737fdcfb9360cb10831760f12dbc4df10974e2527efbb0cf0ae8d90b"
+    },
+    {
+      "source": "GptLean/PhysicalGraphSources.lean",
+      "source_sha256": "8a664b0acd78329a00416d90757dc90b172eef28799ef06598693f93e2809438"
+    },
+    {
+      "source": "GptLean/PhysicalGroundState.lean",
+      "source_sha256": "b1cca778df2ce073cb57da63bd2e3ebba1b390c730e2ffeec158579de4a324ce"
+    },
+    {
+      "source": "GptLean/PhysicalGroundStateAmplitude.lean",
+      "source_sha256": "f54b97325246ca75fbba785f78bda00b563fb8623177d1289cbe0b05398feb87"
+    },
+    {
+      "source": "GptLean/PhysicalGroundStateReversal.lean",
+      "source_sha256": "dfb69a206435beecdf5bcde9a1745daab2a50a06e6255c8ac9e5b655b57133b5"
+    },
+    {
+      "source": "GptLean/PhysicalH1Fiber.lean",
+      "source_sha256": "1afaeceac1e35305d837134838b61e74c2dbba01b302abe8156e23893e562b3e"
+    },
+    {
+      "source": "GptLean/PhysicalH1Fourier.lean",
+      "source_sha256": "78869b503136360dd4624bebb788a778dc60f5fc1a8964bda974354afa0c8e1e"
+    },
+    {
+      "source": "GptLean/PhysicalH1FourierEnergy.lean",
+      "source_sha256": "0e2ef5acc5faadfb2e791614e06659277fab7a3c7c7c3b28f5a4f3dfcf338348"
+    },
+    {
+      "source": "GptLean/PhysicalH1Permutation.lean",
+      "source_sha256": "8d0ae017690ada83ec502048fccc32df4381d43ea0bced8fb5cfaef6d5725578"
+    },
+    {
+      "source": "GptLean/PhysicalHardSpatialRadiation.lean",
+      "source_sha256": "f8bbe9fc853409aa5decd9700dcbdce31696d7440aa87de0d006e68649195b72"
+    },
+    {
+      "source": "GptLean/PhysicalInfraredRemoval.lean",
+      "source_sha256": "23a2d80d9816359c07140f2940c018e82caff7a005146979912ea9ee5fa75660"
+    },
+    {
+      "source": "GptLean/PhysicalInvariantProjection.lean",
+      "source_sha256": "623fa2cd6fe1cb73f9e5fc4e49fe23dc9fd3c5156392fe666ed676083bb67aa7"
+    },
+    {
+      "source": "GptLean/PhysicalKineticForm.lean",
+      "source_sha256": "fc9d32f4270c7fac5bfd76b2ef616a0b9b46500bd54365b86e7ceb82336bc8c3"
+    },
+    {
+      "source": "GptLean/PhysicalL2Countable.lean",
+      "source_sha256": "87a45986f6f51b2f4f7a44e30bf49736b391298d4fd54f0635ecc726ab744a0a"
+    },
+    {
+      "source": "GptLean/PhysicalL2FiberSum.lean",
+      "source_sha256": "350d46272ff95054204529b4d832f7763b0e0e949b926a4787d4a0b9d7ba812a"
+    },
+    {
+      "source": "GptLean/PhysicalL2FourierTransport.lean",
+      "source_sha256": "935aa08a5d00ecfaf688c7967102180b79544cd70a46bef95da0133351ce553d"
+    },
+    {
+      "source": "GptLean/PhysicalL2HilbertSum.lean",
+      "source_sha256": "e308dd3880416f9880d887b59e8dff635e3aa53d042e2ca7337d6a8039040550"
+    },
+    {
+      "source": "GptLean/PhysicalL2QuadraticSeries.lean",
+      "source_sha256": "d308a22acb8e72e808150e51aace9a3ae35296f52ab41f2d423e5a4457dc5e11"
+    },
+    {
+      "source": "GptLean/PhysicalLocalCompactness.lean",
+      "source_sha256": "d8656ec8b8e4e241a106dba1f3eb17275105a38452bcf75683397423a68265ac"
+    },
+    {
+      "source": "GptLean/PhysicalLocalFreeGraph.lean",
+      "source_sha256": "0beb9c7c84722811465ccc39aa0572cdd553f4078b3182ff6e9eb155b12d805b"
+    },
+    {
+      "source": "GptLean/PhysicalLocalRellich.lean",
+      "source_sha256": "20139d0c5e5f9d1e15d44025e34df7af23b1e430d9fcc30e4d208c2b34c6c885"
+    },
+    {
+      "source": "GptLean/PhysicalLocalSupport.lean",
+      "source_sha256": "b17939863b3a5389fbc45e86040f139f888748c20bd0f34b899571b7aa3bd275"
+    },
+    {
+      "source": "GptLean/PhysicalLpUpgrade.lean",
+      "source_sha256": "8a063eaa7d788e7a8e720fb3e82101fdec241f7f2c9c199df6cbd7e5456a65f1"
+    },
+    {
+      "source": "GptLean/PhysicalMeanFields.lean",
+      "source_sha256": "f6f025f7c7e05ea975829a6252eb1e0540dc8a78809af2ce9a378fdafe9e5f79"
+    },
+    {
+      "source": "GptLean/PhysicalMeanFieldsGauge.lean",
+      "source_sha256": "869e3c939327aaa6190f60ecfdf6bf6426510bc5fda2a9145854a47609cc73cf"
+    },
+    {
+      "source": "GptLean/PhysicalMeanFieldsWeighted.lean",
+      "source_sha256": "8e541e5a7612ab41101868461f19c78836219d9ffb7dd62212c3e6c6da0b0627"
+    },
+    {
+      "source": "GptLean/PhysicalMeanFieldsZero.lean",
+      "source_sha256": "2ae46885f685f108be50ff84e62e705e9294ea3bf0eda9ff5ac54493611062ac"
+    },
+    {
+      "source": "GptLean/PhysicalMultiplicationGraph.lean",
+      "source_sha256": "3c1f82864dcc84b99fad26d4d5943f632d3035c91d1f0092a8f8020dc59511e0"
+    },
+    {
+      "source": "GptLean/PhysicalNonattainmentFluxKernel.lean",
+      "source_sha256": "956b06abfeed540975eb12722f6fe70919dcae656629a12010902d3a1a95a74d"
+    },
+    {
+      "source": "GptLean/PhysicalNormalCompression.lean",
+      "source_sha256": "24a843091d70ac474d2009b3450eaa96354d143c7b664b326d2c30fe48797012"
+    },
+    {
+      "source": "GptLean/PhysicalNormalCoordinates.lean",
+      "source_sha256": "8d724a691b6198cf83ee17ebae1db2c3b4f815a7b6a052e8aaf3d28b1449baa5"
+    },
+    {
+      "source": "GptLean/PhysicalNormalElectronicDensity.lean",
+      "source_sha256": "67a718b47c4079139e78aae59819741632bd6aea7ea3d6a5cdea7fa8f1f94570"
+    },
+    {
+      "source": "GptLean/PhysicalNormalFormOrder.lean",
+      "source_sha256": "7ae2901534e35c52ba11f1a2ea5a6c3eab424859b3119e2ecda77c1c01fa5cb4"
+    },
+    {
+      "source": "GptLean/PhysicalNormalSpectral.lean",
+      "source_sha256": "8051f817300bf3744c1d4b28c5ddb554c3930de6887123968244f6cad34bc688"
+    },
+    {
+      "source": "GptLean/PhysicalNormalStates.lean",
+      "source_sha256": "ee57ce1bd0c2866b674bf69b1894c80edfbd48c9055a2fb7d3e0705e3a4f7377"
+    },
+    {
+      "source": "GptLean/PhysicalNormalTrace.lean",
+      "source_sha256": "3cd92c99f67bb11538e3354e842bbee215d687cf37571117314ac4d57416d9bc"
+    },
+    {
+      "source": "GptLean/PhysicalOnePhotonFourier.lean",
+      "source_sha256": "8e757cb363e878a814215d51a9b0ae47adc2d38f63ddfb00e32f5e0bcf851ca8"
+    },
+    {
+      "source": "GptLean/PhysicalPFClosedGraph.lean",
+      "source_sha256": "71e2064357deaa2102f77960ffec9356d8fa7e32325dee24fba3c908cf10555a"
+    },
+    {
+      "source": "GptLean/PhysicalPFCompactness.lean",
+      "source_sha256": "5c0d841ce00b383a4f787193331108a7ff1cb6e6aa104f4a413d619cf81e419c"
+    },
+    {
+      "source": "GptLean/PhysicalPFCompactnessDensity.lean",
+      "source_sha256": "6edbcfcb122d4b9c4dfaa26e9e5236b332bba37b3de7b45b6c14b1e4b0585eaa"
+    },
+    {
+      "source": "GptLean/PhysicalPFComparison.lean",
+      "source_sha256": "f656cef7c1ad8f2db7128c019ce3a35c5a25502c2dfa1704f67ca3498c372994"
+    },
+    {
+      "source": "GptLean/PhysicalPFConstraintRealization.lean",
+      "source_sha256": "cc588495b46caf4f3906f575f2467809e20d63d98fc752cbb44235cb395c5cde"
+    },
+    {
+      "source": "GptLean/PhysicalPFCovariantSymmetry.lean",
+      "source_sha256": "a96c74fa24c4b4cb87350fe7a34389c0686d3f7b7afb298cad54eff9fae66959"
+    },
+    {
+      "source": "GptLean/PhysicalPFCurrentBounds.lean",
+      "source_sha256": "c139b921a38cee7b265704437b0f8c814c943a2329dea6a09d88863752a55b6f"
+    },
+    {
+      "source": "GptLean/PhysicalPFCurrentControl.lean",
+      "source_sha256": "3650a43164d1fad00d2155cf35759a1c4c6b3d9ce6e5269f3938dbbf694aa5df"
+    },
+    {
+      "source": "GptLean/PhysicalPFCurrentEvaluation.lean",
+      "source_sha256": "e86bc531a49f26aded289c8d5a0a7113282a3066747af6502c39e08842533c28"
+    },
+    {
+      "source": "GptLean/PhysicalPFCurrentPassage.lean",
+      "source_sha256": "5974caca17f3b2d2ad2a1890d81af4f5bed5e2411005ad0f821c8ba10963ca7e"
+    },
+    {
+      "source": "GptLean/PhysicalPFDecomposition.lean",
+      "source_sha256": "5e674c5c4cb50dcd2b03ffd70ecb6b3f72e01667139f9b658735c69b46bf62dc"
+    },
+    {
+      "source": "GptLean/PhysicalPFDomain.lean",
+      "source_sha256": "0d62b611aa2bd67a7f1287c30640de9ba1fce3e11ac8d23effe26126a401c930"
+    },
+    {
+      "source": "GptLean/PhysicalPFElectronicCutoff.lean",
+      "source_sha256": "28b21c963ac0d09ded9bed69232afb1477bd49a237dd3fa81e662fd2adda98c2"
+    },
+    {
+      "source": "GptLean/PhysicalPFElectronicIMS.lean",
+      "source_sha256": "9bf4864e6460d79575e5ba0bef4c42c499a3ec311a49af736a3975e0cd827cd6"
+    },
+    {
+      "source": "GptLean/PhysicalPFEnergyTruncation.lean",
+      "source_sha256": "cb8c38d7db040da6dba5676ba4f7c4d796c912ca1914a6411c95f20a34ff0496"
+    },
+    {
+      "source": "GptLean/PhysicalPFFiberMap.lean",
+      "source_sha256": "102e091a1e1be59310f8a7d06c50736fe434712a3a49a74270543b8a4112be05"
+    },
+    {
+      "source": "GptLean/PhysicalPFFieldTests.lean",
+      "source_sha256": "a6d89804f87fa594f2cd069803d63287dd145f5f7eabbde75d59f9ad5ab99efa"
+    },
+    {
+      "source": "GptLean/PhysicalPFForm.lean",
+      "source_sha256": "ee0ffeef2b2c269f5a22b8282623fcfb50bd195b2c034136eef75174d01891b6"
+    },
+    {
+      "source": "GptLean/PhysicalPFFormEvaluation.lean",
+      "source_sha256": "7e2fa808606ce9d859f57824204e7ea2df2561da0ce2ad9a87d7a3c1692d7f3d"
+    },
+    {
+      "source": "GptLean/PhysicalPFLocalizationCommon.lean",
+      "source_sha256": "4cea8580692180d368e747f04746e63a50f498a1d70d1c8f6807736411ed8429"
+    },
+    {
+      "source": "GptLean/PhysicalPFLocalizationControl.lean",
+      "source_sha256": "e79f13b1b4641139bc4f82042620655d83687b80202f0d3d07daeed860ffcc57"
+    },
+    {
+      "source": "GptLean/PhysicalPFLocalizationCurrentSource.lean",
+      "source_sha256": "8edbd4108b73386253d29f75629b4aaf12284482fe54304ee98c45a5298d9001"
+    },
+    {
+      "source": "GptLean/PhysicalPFLocalizationForms.lean",
+      "source_sha256": "25d8e519fc84739aa47ffde6ed9f29b91ac06174320eb872e927b8de437a12a1"
+    },
+    {
+      "source": "GptLean/PhysicalPFLocalizationKinetic.lean",
+      "source_sha256": "338a00e78949b3690c9cf7090017a7bff0bd020b40bdbd1874908a6cd2806642"
+    },
+    {
+      "source": "GptLean/PhysicalPFLocalizationRough.lean",
+      "source_sha256": "6ffb4ae421290df3384fad578228c3c4c8b7c382c20c607fcf103be26cf75b04"
+    },
+    {
+      "source": "GptLean/PhysicalPFLocalizationSelectedSource.lean",
+      "source_sha256": "f05e24bd6c99274b0d7a583f6407fe2a6f900e544cb7cd9ff530f1e6fdda7964"
+    },
+    {
+      "source": "GptLean/PhysicalPFLocalizationTestedField.lean",
+      "source_sha256": "eaaacb3487e6a7d11009e2744aac5aff70148606ae327ec9f753aaad7775a22b"
+    },
+    {
+      "source": "GptLean/PhysicalPFLocalizationTests.lean",
+      "source_sha256": "c4499312fdcddda21c32df76ac70a9692fed392ff6fe25b3be36e5a14446694e"
+    },
+    {
+      "source": "GptLean/PhysicalPFMixtures.lean",
+      "source_sha256": "14b3af6def72409278909b502e311adc70a9313226c954dbec332cb0f9890e67"
+    },
+    {
+      "source": "GptLean/PhysicalPFNormalObservables.lean",
+      "source_sha256": "1489560aa73223eaaf8698f821d3c8e78d84d43af53bf301d9e43cd6083354f4"
+    },
+    {
+      "source": "GptLean/PhysicalPFObservables.lean",
+      "source_sha256": "ab5d1905a95797ae7b8b986fc3cefdf3c49161459cde3425b3289fec7dba07af"
+    },
+    {
+      "source": "GptLean/PhysicalPFPair.lean",
+      "source_sha256": "6192c730799169ddadf6a2fb6283ac2fa1b9bbf1aee41bf410d7d007996b85c4"
+    },
+    {
+      "source": "GptLean/PhysicalPFPairSeries.lean",
+      "source_sha256": "9343b67c133deb9c8a0e5b4b2103ff2c24bedf110a52f02bdbac9abc95a3cecc"
+    },
+    {
+      "source": "GptLean/PhysicalPFParticle.lean",
+      "source_sha256": "e3791d6a537e97669fae579d03f41d4a92ae902a1c4acaa6d1d8702546fb3f81"
+    },
+    {
+      "source": "GptLean/PhysicalPFPurePair.lean",
+      "source_sha256": "88104f853ca70c5704e106bdf7dc087016e4daee855890d0963126013f2c872f"
+    },
+    {
+      "source": "GptLean/PhysicalPFRadiation.lean",
+      "source_sha256": "936dc70e0cb787f0ba324e839de74e34d40d81c6c1484009c6ba8a8e2ebacf0f"
+    },
+    {
+      "source": "GptLean/PhysicalPFReference.lean",
+      "source_sha256": "4b0bb14287c033cece9db4e1d10567012f716ca6b89a8cf08cb08dcfc950bd7d"
+    },
+    {
+      "source": "GptLean/PhysicalPFScalarMultiplier.lean",
+      "source_sha256": "d0209615c5641b3bb170c5c2b088093b4149731aeca97962cace1a67b3d9487b"
+    },
+    {
+      "source": "GptLean/PhysicalPFSeed.lean",
+      "source_sha256": "e51abafe397948e932b7c97dd2fe33169b11f85c3ac1815486e816baf718e4b6"
+    },
+    {
+      "source": "GptLean/PhysicalPFSmoothTests.lean",
+      "source_sha256": "63f1275c28d3bc196cf8d0d5e5f9c31b2dafbaf4b7fe73251cedadb0989ae5cf"
+    },
+    {
+      "source": "GptLean/PhysicalPFSoftTag.lean",
+      "source_sha256": "d130c85d5d7fe5e29286e9612d25aca760044f0d3441bb5fa69359fba4d6a99a"
+    },
+    {
+      "source": "GptLean/PhysicalPFSource.lean",
+      "source_sha256": "8b102f7ca17614ffe884a97ba61550cd4fbc47f1d14e47587d74b05e7003dc61"
+    },
+    {
+      "source": "GptLean/PhysicalPFSpatialObservables.lean",
+      "source_sha256": "b4beef5d0d9d8795c8bf33c7c51a1ab3272a0139282ffdfd033345c564719970"
+    },
+    {
+      "source": "GptLean/PhysicalPFSpectral.lean",
+      "source_sha256": "af57ff92dcaffb5f8c64c60be1c5b195e7d76e39fb19021febe50caa041cf8ce"
+    },
+    {
+      "source": "GptLean/PhysicalPFSpectralPair.lean",
+      "source_sha256": "b6bfc4936f88f8e74a6c24d9eec639f6fafa8ee6193b93a03e4b11e9a3f85a3e"
+    },
+    {
+      "source": "GptLean/PhysicalPFStates.lean",
+      "source_sha256": "f5cd1435eeb82a7bee2945e4ecf37aeddd24237df4dcec8d13234a9127313efd"
+    },
+    {
+      "source": "GptLean/PhysicalPFSupportedSource.lean",
+      "source_sha256": "b293dc324d72dced0eb8b0a2a59369efaed047d101533d44e722cd6b27547d29"
+    },
+    {
+      "source": "GptLean/PhysicalPFSymmetricCurrent.lean",
+      "source_sha256": "4c4edd9665c28d871e94ef167388902d6768ec62a91f6fa812555d0c74a8edaa"
+    },
+    {
+      "source": "GptLean/PhysicalPFTestControl.lean",
+      "source_sha256": "20434abe19a1670aff5f87b8ec2eab91c0c55ea7053af76dbb034c3c0f9104ae"
+    },
+    {
+      "source": "GptLean/PhysicalPFTraceData.lean",
+      "source_sha256": "434ee52ced2a5b24f67dd5f5b0c2a33d15e1ac50a5e6417a534e0c427f372a0e"
+    },
+    {
+      "source": "GptLean/PhysicalPFVacuumEnergy.lean",
+      "source_sha256": "97f02b199189b4e7127b5a9de0d2e97f47e4f34fcc017bc8b8e2431ab3c3cb80"
+    },
+    {
+      "source": "GptLean/PhysicalPFVacuumForm.lean",
+      "source_sha256": "bbc841db7b1f611479eeb57de6d3884b9d449e326db43645fe0e23b2364c616a"
+    },
+    {
+      "source": "GptLean/PhysicalPFVacuumInsertion.lean",
+      "source_sha256": "e3f1f5c5aa135b1c6ead91d803faf61313f8aa241dd0708f908a133c5de1c359"
+    },
+    {
+      "source": "GptLean/PhysicalPFVacuumMoments.lean",
+      "source_sha256": "aa1a3d9065f557a87422912eb1115c4e08eb24b52f2973bd0a82a5504b6b6727"
+    },
+    {
+      "source": "GptLean/PhysicalPairBilinear.lean",
+      "source_sha256": "691d2fffe2d60847a3562dbc5fb8cbf974d6df09f91f06312001e49ef340c2c8"
+    },
+    {
+      "source": "GptLean/PhysicalPairDerivativeBounds.lean",
+      "source_sha256": "ca3130543acd45e9899c0d30509b165b9f9e53a42c71a19600640d529889fa49"
+    },
+    {
+      "source": "GptLean/PhysicalPairDuality.lean",
+      "source_sha256": "3d9f644d6d8dcaaf2266f0deacd3b21169679ae84b58b212c547505038810951"
+    },
+    {
+      "source": "GptLean/PhysicalPairH1Sobolev.lean",
+      "source_sha256": "5e368ac0c138a66b49facc80af9c85117c9ecab022135788616d8b4050ad5d64"
+    },
+    {
+      "source": "GptLean/PhysicalPairIntegrability.lean",
+      "source_sha256": "042baad36850ff0aa43f8caf2d51c5c4a1b75857626f5558f23aff990a2d3beb"
+    },
+    {
+      "source": "GptLean/PhysicalPairRealization.lean",
+      "source_sha256": "d9a53862d966c66c41e2c48f52c051d935beb28054897f22f1caa60fdfe35817"
+    },
+    {
+      "source": "GptLean/PhysicalPairSmoothTests.lean",
+      "source_sha256": "c7b61c87f8daf1c1a2ba47755422f2e3a20999a635040d0a65122085859f5019"
+    },
+    {
+      "source": "GptLean/PhysicalPairSobolev.lean",
+      "source_sha256": "c0f4fe9dc269a4a610690b66531902a85014390dcc8d63232db6ca648488fc7a"
+    },
+    {
+      "source": "GptLean/PhysicalPairSpace.lean",
+      "source_sha256": "ba7285df1b1cee7ca7bf0e11edeaa8700ae0cfe7373cdf308abb66371f751df3"
+    },
+    {
+      "source": "GptLean/PhysicalPairSpatialTests.lean",
+      "source_sha256": "ec666ae5142284e63de78f8d5199da25a7e57882dfe49f56a761036c163b49bf"
+    },
+    {
+      "source": "GptLean/PhysicalPairTests.lean",
+      "source_sha256": "f58264447a56a0292cccc379ae417c5dc8563aad3efd5530f3477df2043795fc"
+    },
+    {
+      "source": "GptLean/PhysicalPhotonDensity.lean",
+      "source_sha256": "346855d25ebca7d31cc85032e17aad4d9bf576fc3bc87947ab1b9c5a748cdf89"
+    },
+    {
+      "source": "GptLean/PhysicalPhotonGaussian.lean",
+      "source_sha256": "6d073bb0eb1f7192891a5e245005ae8a7f912c3e0366a0f9cab5b931824b73c8"
+    },
+    {
+      "source": "GptLean/PhysicalPhotonGaussianField.lean",
+      "source_sha256": "2cbdf55d8aae88b5cde9adc0132d4931b4a3ac75a19e8098ed7bce0ff8eba843"
+    },
+    {
+      "source": "GptLean/PhysicalPhotonGaussianRadiation.lean",
+      "source_sha256": "b6785eef300afacee0dda65544c2040e9296080b11a7f064ed29da9f70f0daa4"
+    },
+    {
+      "source": "GptLean/PhysicalPhotonHardSoft.lean",
+      "source_sha256": "1f2440e0b0a42df1ef7a74e3900c408b9e310cbf30a7e38356b23c9ba7c4878b"
+    },
+    {
+      "source": "GptLean/PhysicalPhotonLocalizedNumber.lean",
+      "source_sha256": "30f22c95cb16f3333d01a2c0f077f1279aee2a150a9ef3a2abddfec18343df12"
+    },
+    {
+      "source": "GptLean/PhysicalPhotonMarginal.lean",
+      "source_sha256": "b16f81c99af5ddf916484848df854395ecb1b8ed0554382a10c2d0cd88fa3274"
+    },
+    {
+      "source": "GptLean/PhysicalPhotonMarginalMoments.lean",
+      "source_sha256": "2a3a36e7cbc8058e2ff5645f8e9f3d114414d80b0c47965b8dfb9e7bb0906e20"
+    },
+    {
+      "source": "GptLean/PhysicalPhotonMoments.lean",
+      "source_sha256": "e94ee4e907b51ce71b1a271d6d6587668bcaf2e9a9f421c80c0b99cee3130a59"
+    },
+    {
+      "source": "GptLean/PhysicalPhotonNormalMoments.lean",
+      "source_sha256": "978bb9f43bbe2f0bd46a5f0938df59eaf5c8384e15c81ca493738d6151c14cc4"
+    },
+    {
+      "source": "GptLean/PhysicalPhotonTraceForm.lean",
+      "source_sha256": "f35517bca94ae27fd4259e18088519f23373cfb36213d184893163f1c97834d1"
+    },
+    {
+      "source": "GptLean/PhysicalPolarizationFrame.lean",
+      "source_sha256": "099d810c686d01ef116da5a6b915f8e2da3df9d1ba287abc23ce3d523113453a"
+    },
+    {
+      "source": "GptLean/PhysicalPolarizationRealStructure.lean",
+      "source_sha256": "e4722bb1682bb721aa6f7dc928e82bcc357ee8817c4c71ac28eaaf82eedc8348"
+    },
+    {
+      "source": "GptLean/PhysicalPureFunctional.lean",
+      "source_sha256": "0a1bdc4017229661d7a463af930054a3361eb4c481b7c6e08c3270a4f7a2a83b"
+    },
+    {
+      "source": "GptLean/PhysicalRadiationCross.lean",
+      "source_sha256": "77e6d7c8dc675eb77a34894fa4242db224e44814d1c540edda5b58853037e071"
+    },
+    {
+      "source": "GptLean/PhysicalRealObservableParts.lean",
+      "source_sha256": "775ae8cbde4562ef3bd2b2c281be54a9165cd65ddfab17bb0b539736537f01f8"
+    },
+    {
+      "source": "GptLean/PhysicalRelativeCoordinates.lean",
+      "source_sha256": "d0d3edaa62cbefc30e38ac6fa7b1a533398f4520398c5d0777f09fd1c6c9d6d9"
+    },
+    {
+      "source": "GptLean/PhysicalRelativeObservables.lean",
+      "source_sha256": "16b879d6771d070f69d9623df5c205192075f855e468a5c42329b58dcddd59a8"
+    },
+    {
+      "source": "GptLean/PhysicalRellichFourier.lean",
+      "source_sha256": "f7fcef282633e5613f5c70b7c877b2ba6b69d448df996abccb12b804cedcfb61"
+    },
+    {
+      "source": "GptLean/PhysicalRemovalFermions.lean",
+      "source_sha256": "3a1c36cf47155f8b63c8d0a78461c868cac3338015b13a8037f9e4a104b0b7a9"
+    },
+    {
+      "source": "GptLean/PhysicalRemovalHardTests.lean",
+      "source_sha256": "be7e46bf44f2c1cad93fbb996f1521f5494dbeaab1cb7510077c1c8870f9792f"
+    },
+    {
+      "source": "GptLean/PhysicalRemovalInput.lean",
+      "source_sha256": "ce02c42768ef8e555626cdc49d26aa69b02fa26b4926544d162297eea76c9cd8"
+    },
+    {
+      "source": "GptLean/PhysicalRemovalKernels.lean",
+      "source_sha256": "db2ce5d723afe8a5bf686fdaca842e7968e5a014955f7cfd570f1f5c7b38eefd"
+    },
+    {
+      "source": "GptLean/PhysicalRemovalMarginal.lean",
+      "source_sha256": "0c9c0ec5507cfacd6864a55d120235e05f3e55e11e387f4869fe4214dd0deded"
+    },
+    {
+      "source": "GptLean/PhysicalRemovalNumber.lean",
+      "source_sha256": "161b6bfa0143d315f54ae5806b6e0bcbbef2aba8d3a2482574899684e6ec6eb3"
+    },
+    {
+      "source": "GptLean/PhysicalRemovalObservables.lean",
+      "source_sha256": "40a0554765beb881d2387f0252e797c0ff3eab9dfa351094fdbb3a94ca8fc92c"
+    },
+    {
+      "source": "GptLean/PhysicalRemovalOriginalTests.lean",
+      "source_sha256": "37089f554fe48014cce6f6d34803adcaf0e2b6928e5c1d36e6fcbdc97bc14919"
+    },
+    {
+      "source": "GptLean/PhysicalRemovalPair.lean",
+      "source_sha256": "dfe3c068e7003738f57b83bfdb54d34e2a72889bdf1eee6811e5bf2d76a4508f"
+    },
+    {
+      "source": "GptLean/PhysicalRemovalSpatialData.lean",
+      "source_sha256": "de4f0af44c11b10e6b2ef8c9ae20ece23a3eb15978ddb71dde46240fac275256"
+    },
+    {
+      "source": "GptLean/PhysicalRemovalVacuum.lean",
+      "source_sha256": "6b4d0f016cde175ba8f4db99e28693dd77b3744f7a9a42a894dc3d1ce4e115c1"
+    },
+    {
+      "source": "GptLean/PhysicalSectorCoordinateIdentities.lean",
+      "source_sha256": "192fd98f8d15f9021a5f3ade0c804a6d9d2a0a02273bc2061cb0832b8ece798e"
+    },
+    {
+      "source": "GptLean/PhysicalSectorCoordinates.lean",
+      "source_sha256": "461356c37bef59e8a76e9885591adb727135754dba64d94186634d890bd3191f"
+    },
+    {
+      "source": "GptLean/PhysicalSectorFourierEnergy.lean",
+      "source_sha256": "b9e3e1306407fc73847bed110903c25b95b6e3a0ad3b53fa5ed09599569efa62"
+    },
+    {
+      "source": "GptLean/PhysicalSectorHeadCoordinates.lean",
+      "source_sha256": "4585bdfcdf2158769141ee0a5c9b57649242bb8183fe6b150fbd681a572af6fb"
+    },
+    {
+      "source": "GptLean/PhysicalSectorMeasures.lean",
+      "source_sha256": "9a779290a0b448a5e3f8673a28c59305c70e682e9263bbcaf87674e0d8e59729"
+    },
+    {
+      "source": "GptLean/PhysicalSectorMomentumEnergy.lean",
+      "source_sha256": "e99bc13a11418bc75c42ecf2aa77cdbf7a8cb2d6353041044b6d7097754443d7"
+    },
+    {
+      "source": "GptLean/PhysicalSectorPositionComponents.lean",
+      "source_sha256": "0d95eba5487b81969559e00e28d0bd0b92b5f102bd005a9a4d44d8b0ac3b8729"
+    },
+    {
+      "source": "GptLean/PhysicalSectorPositionInsertion.lean",
+      "source_sha256": "3f2f5a895bed55099dd635a4dfffed0e6782a0f6a3afb9bf81bbc5dc88a7f91d"
+    },
+    {
+      "source": "GptLean/PhysicalSmearedCurl.lean",
+      "source_sha256": "50bedd237b38c2e6dc1499d5d96de897b1d4b8649ac93e376becfa61fa40f5da"
+    },
+    {
+      "source": "GptLean/PhysicalSmearedKernel.lean",
+      "source_sha256": "f7abd1588a5c122f686c0bc131ffddec7176b9f4d24ed236417006047a3e60c8"
+    },
+    {
+      "source": "GptLean/PhysicalSmoothMultiplier.lean",
+      "source_sha256": "c12f3d776b1b95567b160c15f68069f52cb9e563c29242551bd4c2e26c5ba236"
+    },
+    {
+      "source": "GptLean/PhysicalSobolevRealization.lean",
+      "source_sha256": "aac8871fe2e3711c19dfb470831c70539e0d38a3a7e9d639e9b7ab3f7ea2d97d"
+    },
+    {
+      "source": "GptLean/PhysicalSoftDerivativeKernel.lean",
+      "source_sha256": "9311cff8d1d74497a02050655458b872c81802983b248ae606603187c722b68a"
+    },
+    {
+      "source": "GptLean/PhysicalSoftPhotonField.lean",
+      "source_sha256": "d522218f798a7f273721b0a5cfeb370c00fb302378d9ef848f14f888e00c5747"
+    },
+    {
+      "source": "GptLean/PhysicalSoftPurification.lean",
+      "source_sha256": "26d4e24e6b5a0f94243d094dcb3ceaa72d9c2daeea876801044dee5da27af070"
+    },
+    {
+      "source": "GptLean/PhysicalSoftSpatialEnergy.lean",
+      "source_sha256": "61c1e7afebe43d406b7dac707fc718ab3b4358683bf6e478b73ae63f8bf3f3bd"
+    },
+    {
+      "source": "GptLean/PhysicalSoftSpatialField.lean",
+      "source_sha256": "b2b929c9b60288d56fab0647d903cbe765d1e5cca9b0ded7d810decdf9b98600"
+    },
+    {
+      "source": "GptLean/PhysicalSoftTagCount.lean",
+      "source_sha256": "f2e783116273c1fbb3f76467453ee77c1b6d678a0d9faba809e49fad692762df"
+    },
+    {
+      "source": "GptLean/PhysicalSoftTagModes.lean",
+      "source_sha256": "0e3c3974cc18f040271f1647c9f5a00653063062669cf9254506ab16f4b99586"
+    },
+    {
+      "source": "GptLean/PhysicalSoftTagNumber.lean",
+      "source_sha256": "9e8776c7fde35fc4110e8dc8f34cbfbebb1e261323bc51a48d86419ab997cda0"
+    },
+    {
+      "source": "GptLean/PhysicalSoftTagging.lean",
+      "source_sha256": "0278f2e087fe73ee675116ac0f06bd242963a838e9997041cf99dadcb4710c8f"
+    },
+    {
+      "source": "GptLean/PhysicalSourceCoordinates.lean",
+      "source_sha256": "83e9490ee46b3d63515e67b8e127441c75ab53b3b4fa882c0f73da6f2d7fd119"
+    },
+    {
+      "source": "GptLean/PhysicalSourceCurrentBounds.lean",
+      "source_sha256": "3ad73a3e0dd59b7937d7d734cfcb8b243ab015de314b980f3e2c136eeb53679c"
+    },
+    {
+      "source": "GptLean/PhysicalSourceFubini.lean",
+      "source_sha256": "51583a1022d03e7239e54263747edc93b7e161128d26c0ffa7f829c20a168e40"
+    },
+    {
+      "source": "GptLean/PhysicalSourceFubiniEquiv.lean",
+      "source_sha256": "5a5fa61e827da2b70d89d81549305783e45d317e9943caa37caeaabc5bfffe9f"
+    },
+    {
+      "source": "GptLean/PhysicalSourceH1.lean",
+      "source_sha256": "bce83f0811137f470efede7c0cd88be9ba0d563fc81176e07fc0fd20173138fd"
+    },
+    {
+      "source": "GptLean/PhysicalSourceMarginal.lean",
+      "source_sha256": "b0ba3388987454b6e1fc8b02c46ebcd2546d208b7f0c0a57311656111645778f"
+    },
+    {
+      "source": "GptLean/PhysicalSourcePair.lean",
+      "source_sha256": "7240228f768426b6a207cb55dcb2c1046eb150407245dbe8df5c96a14bd4907b"
+    },
+    {
+      "source": "GptLean/PhysicalSourceTests.lean",
+      "source_sha256": "797d54b9f88c455945454c7ef65cd12af3bb7ebd8a94dbfe3ec83d513eb09bbd"
+    },
+    {
+      "source": "GptLean/PhysicalSourceWeakTests.lean",
+      "source_sha256": "3e7e32f8665095f4b0a973aa3a125eeb65779efd0430d222d95d03469ff97f2b"
+    },
+    {
+      "source": "GptLean/PhysicalSpatialPotential.lean",
+      "source_sha256": "4b4f838e5eb361f64f9f2dd02754d8a7d6621da0fc538e1c5b803b61de0a86c3"
+    },
+    {
+      "source": "GptLean/PhysicalSpatialRadiationDomain.lean",
+      "source_sha256": "b8815e83ead4cf03fd32b0e62fa48772ac5a3af9bfbfc77b81d2258d9110ad91"
+    },
+    {
+      "source": "GptLean/PhysicalSpatialRadiationLocality.lean",
+      "source_sha256": "0add15b0919911ab13d3d6605dbb231dd21b6b27269f8f3e7284911e14fefa32"
+    },
+    {
+      "source": "GptLean/PhysicalSpatialSectorFourier.lean",
+      "source_sha256": "732fe695beb2e5c382e08625c3ad0f7805082b8a96ed047e7e79e0b9184f37b6"
+    },
+    {
+      "source": "GptLean/PhysicalSymmetricFamilyClosure.lean",
+      "source_sha256": "cfa1caa196e0c102a737a851ef747bfa0c0bbbe37849612c7604110ec077c56f"
+    },
+    {
+      "source": "GptLean/PhysicalTraceMetric.lean",
+      "source_sha256": "eddb37b799640051f69702e9672ab1549a15c2625080c3f7e55dd2784ca33c9f"
+    },
+    {
+      "source": "GptLean/PhysicalWeightedCurrent.lean",
+      "source_sha256": "f5a5f6925f7817aa61b1b74f1cc5e05659af108ed92c1dfb00fbb0c5084946aa"
+    },
+    {
+      "source": "GptLean/PhysicalWeightedCurrentCore.lean",
+      "source_sha256": "0f13e6060d3dddb931756c5c873a85db983068d2350eb9e04bdf23072289fd14"
+    },
+    {
+      "source": "GptLean/PhysicalWeightedDensity.lean",
+      "source_sha256": "ff03d53bc39e93bab487d90311d5584705a260b99a4d7fb5a2c7af411639e50e"
+    },
+    {
+      "source": "GptLean/PhysicalWeightedKernelSplit.lean",
+      "source_sha256": "bf9f5e2a0b875626d88ee9f472b01498c49e8a43d3b3ddb40ee703d9f5144ef4"
+    },
+    {
+      "source": "GptLean/PhysicalWeightedRadiation.lean",
+      "source_sha256": "43866b45a3491d71fc0699c79e6c96d4da4b74a6674611eb4fa3d60e7e841626"
+    },
+    {
+      "source": "GptLean/PhysicalWeylIntegral.lean",
+      "source_sha256": "a0ed4722c372aab88e51b10354a71acf604276377a213f89804b3d2400e32b20"
+    },
+    {
+      "source": "GptLean/PhysicalWeylIntegralGraph.lean",
+      "source_sha256": "1464139310891091569356c093151f16f764d1792ac3c30412c76e0543981563"
+    },
+    {
+      "source": "GptLean/PhysicalWeylRadiation.lean",
+      "source_sha256": "00221969090a076d5bc6ff8a5b1e54dc8ba53f369ebe302d5d125dcf1246f3c3"
+    },
+    {
+      "source": "GptLean/PhysicalWeylReference.lean",
+      "source_sha256": "53c28b1251c911fb36db514af30780aa1004231efbb6489af084a4c14fe04caa"
+    },
+    {
+      "source": "GptLean/PhysicalWeylStates.lean",
+      "source_sha256": "c59ad13896b82e73b322da5445ddca088f644f5c3765f9b79dbfb671323b6362"
+    },
+    {
+      "source": "GptLean/PhysicalZeroCurrent.lean",
+      "source_sha256": "b66067572b4f09fbf9bdf5b4c9594153a11634f81ba00eeb69b127e44342afa9"
+    },
+    {
+      "source": "GptLean/PositiveForm.lean",
+      "source_sha256": "d51d1d444442d6f8f4b4a16b1d4d9dd4679b7988d4bc00a4cb44466b6e4cf914"
+    },
+    {
+      "source": "GptLean/RemovalAssembly.lean",
+      "source_sha256": "a9318f3f600746f8cd872eaf1db1b79938f432095df34aff3ef75ba07deecc68"
+    },
+    {
+      "source": "GptLean/RemovalChannel.lean",
+      "source_sha256": "542e11edcd5550ed75cc11475325b2fc415f886be92d40a8121ac7c92dba71ab"
+    },
+    {
+      "source": "GptLean/RemovalChannelConstraints.lean",
+      "source_sha256": "1ca7732944376c6ae6d3d7e4636da095e0c0668b0fda3daffd622d2bf9387067"
+    },
+    {
+      "source": "GptLean/RemovalCharacterOutput.lean",
+      "source_sha256": "fa10cefa78a2e63841e62c20036dca0fb5b7481ad565f55dc278002e2deef1b6"
+    },
+    {
+      "source": "GptLean/RemovalClusterChannel.lean",
+      "source_sha256": "d452ae7ee0d93f474204d81a2f39a1b1a4ec3d03050b16245a0445f24e7b39e6"
+    },
+    {
+      "source": "GptLean/RemovalClusterFields.lean",
+      "source_sha256": "d34b3e8a350f1c5328873ac2964f870fe377dcfea9323757b23bc0d94db7ef60"
+    },
+    {
+      "source": "GptLean/RemovalClusterMeasured.lean",
+      "source_sha256": "549e5bb9d2b926e9a175fe9d7fdfd9fdcb7dfd5a47aa6342be4058a500889a18"
+    },
+    {
+      "source": "GptLean/RemovalClusterPhase.lean",
+      "source_sha256": "bc98983400b73e44194432267eee8fc6662e2899d410a1c9c35c5c82eb85b8fe"
+    },
+    {
+      "source": "GptLean/RemovalClusterRepair.lean",
+      "source_sha256": "a61709a8e8b4f4a61f5e9d4342344a05b24b90904b265e926a3ca9f4cd5fced8"
+    },
+    {
+      "source": "GptLean/RemovalClusterSymmetry.lean",
+      "source_sha256": "89bf57f83bb7ebf7b0608cc7eb5e817539b7964af0fb24e9e0028289edb6962b"
+    },
+    {
+      "source": "GptLean/RemovalClusters.lean",
+      "source_sha256": "f21fe6f443ba4ad760c5963280dc23de59ae4f85d86f396d9677c481c4de9815"
+    },
+    {
+      "source": "GptLean/RemovalConditioned.lean",
+      "source_sha256": "df794cb55ea8513096e37a48935d1d356027fef41ae6bf7c270dbb2853d7524c"
+    },
+    {
+      "source": "GptLean/RemovalConstraints.lean",
+      "source_sha256": "350305f1c66a5fcc6fdfb3512e4c67b58fc2b10956589fc3d9a38867228a58c1"
+    },
+    {
+      "source": "GptLean/RemovalConstruction.lean",
+      "source_sha256": "d96ad699e5a13c73739ea440a9d35837a2f93068f0463c6f83b296134a68dd3d"
+    },
+    {
+      "source": "GptLean/RemovalCurrentTests.lean",
+      "source_sha256": "5a8e37df18f1db2986dce1140372105649a381f0c8788a9fe91543bbac219f96"
+    },
+    {
+      "source": "GptLean/RemovalEnergy.lean",
+      "source_sha256": "c445c92b65d9a86bfe4c0498c51eb2919cabca1a998d1c24c9e9e0cde3f694b3"
+    },
+    {
+      "source": "GptLean/RemovalEstimates.lean",
+      "source_sha256": "22b4a57767317226e540b33ff614e24cec0a5c6b8b8634be55eb8358c06ade2e"
+    },
+    {
+      "source": "GptLean/RemovalExactConstraints.lean",
+      "source_sha256": "fc864aeab28aec92bf57b4886357970dff71867e7c1726d865c207c664fb0a21"
+    },
+    {
+      "source": "GptLean/RemovalGaussianChannel.lean",
+      "source_sha256": "e0c20f23a0d2817870a5147a5a7ecbf010ce6bd6318aa67cb22e826409bd241e"
+    },
+    {
+      "source": "GptLean/RemovalGaussianCharacter.lean",
+      "source_sha256": "5a01415025840df20c2b819d625dbd473f437fb3c0c7e8105acbf0f7fdcb68e9"
+    },
+    {
+      "source": "GptLean/RemovalGaussianLatticeSource.lean",
+      "source_sha256": "0dcc1823a9f8da6189e122fe104dd279a98a2bda98fe32652f9d46dcb8b42463"
+    },
+    {
+      "source": "GptLean/RemovalGaussianLink.lean",
+      "source_sha256": "4319a4c8703ac1b517760572f7be7f6a28142256b3cdf990c91a8a7bd89e5465"
+    },
+    {
+      "source": "GptLean/RemovalGeometry.lean",
+      "source_sha256": "7732b4205f88abac9bec0797fdef2f395b3529fcb9075f3c510233afb6106b29"
+    },
+    {
+      "source": "GptLean/RemovalLatticeCoreData.lean",
+      "source_sha256": "88854ec5e47de973daff50296f7aa5a3a80200f6c2e097632f8e9e6a7403783d"
+    },
+    {
+      "source": "GptLean/RemovalLatticeFermionic.lean",
+      "source_sha256": "856aa36792fc7ac97f65c14a4268a13a45360d9ccf53c7cc7b3bc96e7596de52"
+    },
+    {
+      "source": "GptLean/RemovalLatticeOriginalSource.lean",
+      "source_sha256": "123b6db12e2e35e15227837361cc4be031d1ec3e6fbf7f9af43b170bffd78ce9"
+    },
+    {
+      "source": "GptLean/RemovalLatticeOutput.lean",
+      "source_sha256": "a86c935e127eb956e88850fe1763342e1048a51cedc849f340cdaa220ed69165"
+    },
+    {
+      "source": "GptLean/RemovalLatticePF.lean",
+      "source_sha256": "cb457e91a039ba1a517451b4a8336909778eb3606e37b9d5364e19e5dbd5fd57"
+    },
+    {
+      "source": "GptLean/RemovalLatticeSymmetry.lean",
+      "source_sha256": "8430aa60680a9d6d92456d27f736c009336ff65ba961ad37f12da2e38c3de32e"
+    },
+    {
+      "source": "GptLean/RemovalLift.lean",
+      "source_sha256": "755d05f2b2488f9990f61d9b28d6f91905f105ebc89f0449018cd4544bdd8b62"
+    },
+    {
+      "source": "GptLean/RemovalOptimized.lean",
+      "source_sha256": "17ef7c5905d56b8b02adbd66518d1ae9568cd9eaefdc399c1c16dfe1aa0ec860"
+    },
+    {
+      "source": "GptLean/RemovalOriginalOutput.lean",
+      "source_sha256": "607d0f0dd6424495dc608ed3dc621d9c8173d5d2076675b491f974d1c6201947"
+    },
+    {
+      "source": "GptLean/RemovalOriginalOutputState.lean",
+      "source_sha256": "27d72359289cde207515f794d2ac1e3f8f18e65938eb2ba4ca9278441ac004b8"
+    },
+    {
+      "source": "GptLean/RemovalOriginalPF.lean",
+      "source_sha256": "58727da354caa769e80f598b61645acaa4908e37ba13f5b0cf0c056cb7071edd"
+    },
+    {
+      "source": "GptLean/RemovalOriginalSource.lean",
+      "source_sha256": "431207ba35a1fcea0a40ef31a4dde503a6696fd9fba7a860134040109ea459ab"
+    },
+    {
+      "source": "GptLean/RemovalOriginalTests.lean",
+      "source_sha256": "e8fddfe003b231326df3a7ebae63d385c4786d17e4ca69e527ab5f2985bdb9d1"
+    },
+    {
+      "source": "GptLean/RemovalPFLocalization.lean",
+      "source_sha256": "b730e4c5a4ebbb938ad5aa85e352ce12e33699ad4f3aea95ff319018eb68b527"
+    },
+    {
+      "source": "GptLean/RemovalPhase.lean",
+      "source_sha256": "8c5e462cad2c19366ffac5b2820ed465d6ee271a16fd4698acc289b4622797f0"
+    },
+    {
+      "source": "GptLean/RemovalPhysicalChannel.lean",
+      "source_sha256": "987e03b70be6a1ddd297506b3d1dd41ce15f433d6e4b3807a5ca6ca3cb27373e"
+    },
+    {
+      "source": "GptLean/RemovalPhysicalConclusion.lean",
+      "source_sha256": "8b4e3561435396869781f31f0155da96e3cbd2a1447639948f1afd6ab40e89e2"
+    },
+    {
+      "source": "GptLean/RemovalPhysicalCurrent.lean",
+      "source_sha256": "79aa0f2733660fb6a32489fefa04a8e9f832626130b5671840afd30f13d21e62"
+    },
+    {
+      "source": "GptLean/RemovalPhysicalCurrentSource.lean",
+      "source_sha256": "da3d447dcd01d21b57ff1fd3a160bbb0038f7a052fab330a6e96d75986279a5e"
+    },
+    {
+      "source": "GptLean/RemovalPhysicalEndpoint.lean",
+      "source_sha256": "986681d2df67c606c76d7eb37baa9d2ce48d2b335f82c56ef218e69ea20be61c"
+    },
+    {
+      "source": "GptLean/RemovalPhysicalLink.lean",
+      "source_sha256": "21ed0c5bb71781b99ae1fd47d27551639efbc7c51149ede181b6179b5bf5a4cb"
+    },
+    {
+      "source": "GptLean/RemovalPhysicalPair.lean",
+      "source_sha256": "5ad738feb28a0fb7949a26660e84f61037a2bb94f15b48ea952479d1cd23e26f"
+    },
+    {
+      "source": "GptLean/RemovalPhysicalSoftEnergy.lean",
+      "source_sha256": "1df572880550e444e1a2caadc5687d90646d0d0a20e1c3afc3330f6a6a2599d3"
+    },
+    {
+      "source": "GptLean/RemovalPhysicalSource.lean",
+      "source_sha256": "8f3255c00950634eb7a39a300723c978fd00bd40a993092ff99c861dcdb4e7cb"
+    },
+    {
+      "source": "GptLean/RemovalRealization.lean",
+      "source_sha256": "d12ff7c5053dadc462e17e91341a2d903a11dc99fba64ffffe86b9e1d3231dfc"
+    },
+    {
+      "source": "GptLean/RemovalRepair.lean",
+      "source_sha256": "fe22bfa8041b02b4552a9c915b9de852913b47cd99d76bd2739c1a85bcb2a5ad"
+    },
+    {
+      "source": "GptLean/RemovalSource.lean",
+      "source_sha256": "f6d0e54e39a0e5b66dc733d4108bd216b52a38c7b7320b3c1362a6607c3ee198"
+    },
+    {
+      "source": "GptLean/RemovalSourceConditioned.lean",
+      "source_sha256": "f6be347a949f278f945516f17e32aeb3f4c091824094ff55531165418964aa96"
+    },
+    {
+      "source": "GptLean/RemovalSourceConditionedEnergy.lean",
+      "source_sha256": "3a21f7dd90a59cc3780d151df9cdc5908e025e096f4d025f4fcc97db51ef4097"
+    },
+    {
+      "source": "GptLean/RemovalSourceIndex.lean",
+      "source_sha256": "0e1359331091f3f56a7c7343dd167fc097d85b8a97cd22c03d5009a624154fb5"
+    },
+    {
+      "source": "GptLean/RemovalSourceLattice.lean",
+      "source_sha256": "64c80627bd5c2241ec904f26ada88668e4102c7bd1de48900372833250f06790"
+    },
+    {
+      "source": "GptLean/RemovalSourceLatticeRepresentatives.lean",
+      "source_sha256": "3c0c25253ffcf673db16afe41db91576ab56efe262d3c1e211f96edc9b30ee37"
+    },
+    {
+      "source": "GptLean/RemovalSourceLink.lean",
+      "source_sha256": "060134e0c409e091a6730c8a1a6dd74484ded6e7ee3eac7a26ae059415ad5b32"
+    },
+    {
+      "source": "GptLean/RemovalSourceMarginal.lean",
+      "source_sha256": "d161096293774047fbc4ca1c6b113b2fd92c5478d248dc30571663825ba9ec59"
+    },
+    {
+      "source": "GptLean/RemovalSourceProduct.lean",
+      "source_sha256": "0fd21b366b75daaaff32ad95f950b43c887db87188fd027711fdd525c6f1c10d"
+    },
+    {
+      "source": "GptLean/RemovalSourceSupport.lean",
+      "source_sha256": "e0ecd508f4579efee81536025c31a29e611c4d8c6ad01c0f34b0b9f7d185e284"
+    },
+    {
+      "source": "GptLean/RemovalSourceSymmetry.lean",
+      "source_sha256": "7b47d6768f28d795be3cc97eac449a61ead8e1ba2e01e7300f32f76a82332eba"
+    },
+    {
+      "source": "GptLean/RemovalSourceTests.lean",
+      "source_sha256": "a9a6eaa222b1eb349bf92526e134459277468a6953c20774c4360451f8b17a54"
+    },
+    {
+      "source": "GptLean/RemovalSourceTrace.lean",
+      "source_sha256": "c5a31e026da60bd8d98acd29a9e2566234013fd48fe332c506149893e21963ca"
+    },
+    {
+      "source": "GptLean/RemovalState.lean",
+      "source_sha256": "ff1bd07b0eed4cba827e0a2b7af5a72b6b79b9dfc0966ca901e594429ce12952"
+    },
+    {
+      "source": "GptLean/RemovalSubspace.lean",
+      "source_sha256": "5c95954fe7ede3ad627617df3acd19506e7afb838ed30db28355f4e19870db46"
+    },
+    {
+      "source": "GptLean/RemovalVacuum.lean",
+      "source_sha256": "f8b5c9c0473aa2161ff613b722d267220994640cc4bb3fb7026d70285cc2b151"
+    },
+    {
+      "source": "GptLean/RemovalVacuumForm.lean",
+      "source_sha256": "894b1fea64c0fa7e6a5feff6872a824eec9397da09b0c7e974ee3375d0736230"
+    },
+    {
+      "source": "GptLean/RemovalVacuumKernels.lean",
+      "source_sha256": "0f1bc5aa2f47c4391d833b5724cad9739615bbbd9ace2dc804705a565fd56026"
+    },
+    {
+      "source": "GptLean/RemovalVacuumPhysical.lean",
+      "source_sha256": "822943bd8b19ba01fa760d0164e8f71bc63565ca17c720c51388e2d6370f4e03"
+    },
+    {
+      "source": "GptLean/Repair/Channel.lean",
+      "source_sha256": "25fffb463e8e61b15d1ef77f71a9d074874eda4896a5ec28e25ea6d3c7dc2bbb"
+    },
+    {
+      "source": "GptLean/Repair/ChannelFormEvaluation.lean",
+      "source_sha256": "ce207343f53b631c38c108646896df696a963cd1dc7d4a43d9e30b5842138976"
+    },
+    {
+      "source": "GptLean/Repair/ClosedCovariant.lean",
+      "source_sha256": "a4f63bf087901edfc34a68a4eb3f7482e4af4d73f13ebfd3a4e234a780136eb1"
+    },
+    {
+      "source": "GptLean/Repair/CoordinateChannel.lean",
+      "source_sha256": "27fcc117ed4455e5382854da195ee9bb05d257dc2cb6aafa3a583e560e1aaf5a"
+    },
+    {
+      "source": "GptLean/Repair/CountableFrame.lean",
+      "source_sha256": "418bfecf19e9cb1831f64a3d5174d057ed499a26669781022761668bc1b76963"
+    },
+    {
+      "source": "GptLean/Repair/CovariantHardy.lean",
+      "source_sha256": "6357a1e297898336fe77428569864125e8694338de41ac2c0604a9a59662db4d"
+    },
+    {
+      "source": "GptLean/Repair/CovariantProduct.lean",
+      "source_sha256": "f850de79dbafac313dc20e50f0f71a722d83f87664192e64dc472e9111cb6a03"
+    },
+    {
+      "source": "GptLean/Repair/FiniteCoordinateMollification.lean",
+      "source_sha256": "0b89ac9d10671e8d79d50d99441375dc857086f41f2fb8a76ee336c269b206a8"
+    },
+    {
+      "source": "GptLean/Repair/General.lean",
+      "source_sha256": "6cb2689304ccaea935200f26829436611b0745de7a8a3af3ac8daa872e4e5938"
+    },
+    {
+      "source": "GptLean/Repair/IntegratedChannel.lean",
+      "source_sha256": "c4fefffc98dff95d0b58cf6f3e0013c1cd922b59cc21e93255f94cd8131da945"
+    },
+    {
+      "source": "GptLean/Repair/LiftChannel.lean",
+      "source_sha256": "6391244cfe84b1008d692b317a004ab9a61889b426e4359c23424ee8faec969a"
+    },
+    {
+      "source": "GptLean/Repair/LiftSections.lean",
+      "source_sha256": "9dfb16284a186459f7d8f21775854cdc6872a3de8ac1190c45847f68bf9ffa61"
+    },
+    {
+      "source": "GptLean/Repair/LocalCost.lean",
+      "source_sha256": "8128a8046c3a87add9155616fe6ab26cddc7e18d71a191aacd82818b617204a9"
+    },
+    {
+      "source": "GptLean/Repair/MeasuredTag.lean",
+      "source_sha256": "3d65677b5f75b030df9a0ea9840c6c69d8f72a2628eb2df8bc0168641ae85270"
+    },
+    {
+      "source": "GptLean/Repair/MeasuredTagSobolev.lean",
+      "source_sha256": "76682137ec0c06e69eec246523bf18f573d3e3b7c2957c6eaac5c5bc6f26a98d"
+    },
+    {
+      "source": "GptLean/Repair/Multipliers.lean",
+      "source_sha256": "1e3c570812966bb241369d3fcc51f652dcb9a2342559afdd4e0f8ae959b748fc"
+    },
+    {
+      "source": "GptLean/Repair/PairHardy.lean",
+      "source_sha256": "03c4f5e1b89196e2b24b800acaf88cebc7cfdfcd9cc6e057c68c5ca4728dbd69"
+    },
+    {
+      "source": "GptLean/Repair/ParameterSections.lean",
+      "source_sha256": "c9b448e635bbe3559916e54ad615977dd1772f8b18bf642b1e243f9a1cf7555c"
+    },
+    {
+      "source": "GptLean/Repair/ScalarFormOperations.lean",
+      "source_sha256": "081a94655409f5776c9bc192dd663a368c872a9cd2c5d3f7ada1d5ffd7e5a742"
+    },
+    {
+      "source": "GptLean/Repair/TraceChannel.lean",
+      "source_sha256": "7d24c56cb5e89a1b07e6c1fb18a9c615963aa8e1fb7679cc8769dc7cf080c774"
+    },
+    {
+      "source": "GptLean/Repair/WeakMultiplierProduct.lean",
+      "source_sha256": "815b20375064566ac5ba63b99121d7310b9095404fa3028455172f3c2665892b"
+    },
+    {
+      "source": "GptLean/Repair/WeightedFormDomain.lean",
+      "source_sha256": "70514ab9e50b279430f78460a77c49ef59859e071002ef2d6f27b2c8e05d7ab1"
+    },
+    {
+      "source": "GptLean/Representability.lean",
+      "source_sha256": "4de631b69d062049883eb804a82ff466d7fa9448f8d6440307ea525e10951ebe"
+    },
+    {
+      "source": "GptLean/RepresentabilityAmplitudeMeasure.lean",
+      "source_sha256": "11acb7e7d3439e2cf93fe6c402568e7d3532e736441370e11543e85a047bb016"
+    },
+    {
+      "source": "GptLean/RepresentabilityAmplitudePullback.lean",
+      "source_sha256": "0bbf9005970da463cfe540646fe4549b1a5ece2383d8ce6b9cf2fcb640bb1959"
+    },
+    {
+      "source": "GptLean/RepresentabilityCoherent.lean",
+      "source_sha256": "d38c9507da460179b6dbad95df21645ddac8742e9c874e1696bcd114609d67f6"
+    },
+    {
+      "source": "GptLean/RepresentabilityCoherentBackground.lean",
+      "source_sha256": "0be411e7756e34ce35da177b26630536bcc6d2ed5fcd70f462054c6e9359b720"
+    },
+    {
+      "source": "GptLean/RepresentabilityCoherentOnePhoton.lean",
+      "source_sha256": "033c9eaec7ea0a19227f123f80b8bd40ff0609f399eb18e5b372bc2d202cfbe5"
+    },
+    {
+      "source": "GptLean/RepresentabilityCoherentRadiation.lean",
+      "source_sha256": "207db39da76d669e47fd261424a941d80c504eec0c51efe0d9eaadf760ecbc84"
+    },
+    {
+      "source": "GptLean/RepresentabilityCoherentSobolev.lean",
+      "source_sha256": "ccba974301a5bd1d44667521e63a5f688a4b3efe7743a7b86aeda94ad6d2149f"
+    },
+    {
+      "source": "GptLean/RepresentabilityDensityMeasure.lean",
+      "source_sha256": "157db52b7cb9ad958bc89859d17af0995c53e0983b05bb36804f42b9b6308178"
+    },
+    {
+      "source": "GptLean/RepresentabilityDisplacement.lean",
+      "source_sha256": "ae0003e618149e8ca108d35c2f0a45f1bbaf6f39e6e6cd53f2774d9ec2eb6b46"
+    },
+    {
+      "source": "GptLean/RepresentabilityDisplacementEstimate.lean",
+      "source_sha256": "7a2e12561007c089deff9197c0db21320cc8c23729c26f97650970242f5998d4"
+    },
+    {
+      "source": "GptLean/RepresentabilityDisplacementSobolev.lean",
+      "source_sha256": "c90ea760b86fd96142bfc4726f5e6e5a5ce58f053d146a1be8574fc1298fa87d"
+    },
+    {
+      "source": "GptLean/RepresentabilityFieldEquation.lean",
+      "source_sha256": "f832f14e618804eaeeec61ce577a76732747080c8ae712a189b8d886cb0fc1b0"
+    },
+    {
+      "source": "GptLean/RepresentabilityHardy.lean",
+      "source_sha256": "b8f174596e903d5193017df9ae887e349bbfd100d83dc070fa98d755ab872731"
+    },
+    {
+      "source": "GptLean/RepresentabilityKernel.lean",
+      "source_sha256": "9c61ac2343f91ef5f488a10557e2b86c19a13a0f127284857a6566902e806412"
+    },
+    {
+      "source": "GptLean/RepresentabilityOnePhotonTag.lean",
+      "source_sha256": "c599e20e1cb85e9a01e21ef76d757f191ff2544da49b78b46a48897fa56320cb"
+    },
+    {
+      "source": "GptLean/SoftPurification.lean",
+      "source_sha256": "9494496f3cc42882126cf4d68f886d296576f09b49db0a6bb13620d695ca929e"
+    },
+    {
+      "source": "GptLean/SoftRemoval.lean",
+      "source_sha256": "6034566f6b90aa26986ae6be557c723debea43c3763100f16f2201f7d86b0a75"
+    },
+    {
+      "source": "GptLean/SymmetricLift.lean",
+      "source_sha256": "232c1e9b036e4c12e0965a68a48967160ee1752c8a0372bd96f6d4ad33f7c323"
+    },
+    {
+      "source": "GptLean/SymmetricLift/BoundedMollification.lean",
+      "source_sha256": "0226ab13413505fe60c4b5fe2a717f3c863e9e121917b2921b1768f138ab1c9f"
+    },
+    {
+      "source": "GptLean/SymmetricLift/BoundedTensorMetric.lean",
+      "source_sha256": "7a1639a9220c380253448adf5f7e887820c58251639c498fbf8e794c3672d822"
+    },
+    {
+      "source": "GptLean/SymmetricLift/ChartExtension.lean",
+      "source_sha256": "24531564e5a580b6999d20a621dcc6c6141bca86bd976c5e72cb95b9f0c86ee3"
+    },
+    {
+      "source": "GptLean/SymmetricLift/CoincidenceBlocks.lean",
+      "source_sha256": "50f424f5486d8d99b00fa5d2ca7f11e7ab749358cbb33f8de0aa585d635ac254"
+    },
+    {
+      "source": "GptLean/SymmetricLift/CollisionGeometry.lean",
+      "source_sha256": "74f9a4127bdab6432e8cbd9273d277a150daa243bdd0a8e97405536986f570b4"
+    },
+    {
+      "source": "GptLean/SymmetricLift/CompactTest.lean",
+      "source_sha256": "cebbef00184a63324ddfbcb487c54fccae6b739ec72321c5952e32d0a39330af"
+    },
+    {
+      "source": "GptLean/SymmetricLift/CompletedTensor.lean",
+      "source_sha256": "be8211fe95815fc478c5886fe2daa9f59e50c0ecc79e0185233b45f6d85370e1"
+    },
+    {
+      "source": "GptLean/SymmetricLift/Configuration.lean",
+      "source_sha256": "2a89ad44aa7fb6b0eee2f10e541fa088608ce51d89700854e680c0ea25da0cd8"
+    },
+    {
+      "source": "GptLean/SymmetricLift/FullConstruction.lean",
+      "source_sha256": "e1749240c5d00246dc9d92597b3ebb1bed79299dfcf7c97976168669c5d8648a"
+    },
+    {
+      "source": "GptLean/SymmetricLift/FullH1TensorLift.lean",
+      "source_sha256": "6c3b405983a2984de4d266243663d706e80703670dd39c78c1cea60662385b86"
+    },
+    {
+      "source": "GptLean/SymmetricLift/FullMetric.lean",
+      "source_sha256": "9f181d4da7b58ef86609235d209473c96662dbcc98832314338271fb9ac97605"
+    },
+    {
+      "source": "GptLean/SymmetricLift/FullSmoothTensorLift.lean",
+      "source_sha256": "ee5672152e3b314875e48f03de8b92190dcd77f3bd7d80d1fbf5490d2d766fed"
+    },
+    {
+      "source": "GptLean/SymmetricLift/Geometry.lean",
+      "source_sha256": "8c9c1c44d2735c096d9a72d688960c5d062fd877a4ead5d2f51bc386d8b7c749"
+    },
+    {
+      "source": "GptLean/SymmetricLift/GluingDerivative.lean",
+      "source_sha256": "d7feb0e563df966fbdabda28c01aac7ba0827a8e0c30d8e3541d8fd2f83aeeb4"
+    },
+    {
+      "source": "GptLean/SymmetricLift/GluingProperties.lean",
+      "source_sha256": "cb4a46f1423154295fede3e24f65a27705fc3d6d9864e8d5d500cf004eb56fbb"
+    },
+    {
+      "source": "GptLean/SymmetricLift/Induction.lean",
+      "source_sha256": "1442569840b1d58b8233f74313042cd61c47ad143f99e986c9f57c553f09f2b0"
+    },
+    {
+      "source": "GptLean/SymmetricLift/L2Dominated.lean",
+      "source_sha256": "a657cdd34b84d61770d0ab25de92d70abe81c82caa6fda6285d67697773039e4"
+    },
+    {
+      "source": "GptLean/SymmetricLift/L2Mollification.lean",
+      "source_sha256": "08607b16b8d6f558adfc30d51b1f86d795263cc1a644fa17608daef0e85cff16"
+    },
+    {
+      "source": "GptLean/SymmetricLift/LiftH1Approximation.lean",
+      "source_sha256": "8ba47e45bb09168ab08526324b3e5b1326585fdd94f69317b01764ecc907b6b7"
+    },
+    {
+      "source": "GptLean/SymmetricLift/LocalL2Pullback.lean",
+      "source_sha256": "4acc1fd89bad38770b8460acb92ffc84a6cf7bd4f2b72172bd1895841fcaba14"
+    },
+    {
+      "source": "GptLean/SymmetricLift/LocalMollification.lean",
+      "source_sha256": "7d50b63efe006696768a0d4ce80fd5592391338e7524ec2a498b2ef697e4c3fe"
+    },
+    {
+      "source": "GptLean/SymmetricLift/MetricGeometry.lean",
+      "source_sha256": "fe9ffb7f13bf436477324667cde41a7136351678146906a7c167fe400719f744"
+    },
+    {
+      "source": "GptLean/SymmetricLift/Normalization.lean",
+      "source_sha256": "7e30e8b583748cbec2d1e529c332c99330dec4ee6de2fdab5ce71d3058d4d0ec"
+    },
+    {
+      "source": "GptLean/SymmetricLift/PairEnergyIntegrability.lean",
+      "source_sha256": "29e267a14733ddda35cd25a992f4054bc9a4b5fd55116127071a7a4ea8fd894e"
+    },
+    {
+      "source": "GptLean/SymmetricLift/PermutationGeometry.lean",
+      "source_sha256": "68cf6669292dffc7451007a0aa98c84370b773d6c6efedbeab64121cf4fe60ef"
+    },
+    {
+      "source": "GptLean/SymmetricLift/PermutationMetric.lean",
+      "source_sha256": "d5238fd7c0321a7f884220133e74877d1c7b31d93aab07e9dead08749d0de3e1"
+    },
+    {
+      "source": "GptLean/SymmetricLift/RecursiveCharts.lean",
+      "source_sha256": "eca8f4bfc24a6d8e50915018d5cec32518cc2e8c4b5b11c43d79c94cbb543b11"
+    },
+    {
+      "source": "GptLean/SymmetricLift/RemainderEstimate.lean",
+      "source_sha256": "da409798a9e6a885a30337164bdf936f990660f82fb892842bff727e87bfb01d"
+    },
+    {
+      "source": "GptLean/SymmetricLift/SmoothGluing.lean",
+      "source_sha256": "2839b1035d1f6947dac46aa4da455929af92ea4a7efeae7f3d5500a25359ab70"
+    },
+    {
+      "source": "GptLean/SymmetricLift/SmoothLiftWeakDerivative.lean",
+      "source_sha256": "eb3f1f9d6108f722bd9608ddd502a6b15730568269c572956b57c15fd5eee969"
+    },
+    {
+      "source": "GptLean/SymmetricLift/SmoothPartition.lean",
+      "source_sha256": "910315ba925896f61e07e9a90b30d74a972ceb50b12ddb2c16ccb1b33aaa3b46"
+    },
+    {
+      "source": "GptLean/SymmetricLift/SobolevLiftClosure.lean",
+      "source_sha256": "10b089ce10ed40009079089ae7306fe95c9a0ed06d26689e4e119498420d8883"
+    },
+    {
+      "source": "GptLean/SymmetricLift/SobolevRemovability.lean",
+      "source_sha256": "899603036c8db9c76b27c05fca402e8581b113ddb8baca5646c33965d17153aa"
+    },
+    {
+      "source": "GptLean/SymmetricLift/SupportedGluing.lean",
+      "source_sha256": "0b71d462d9cd5e113f9336a9569fab432b03ae6b592907fa19377b4aff32344b"
+    },
+    {
+      "source": "GptLean/SymmetricLift/Targets.lean",
+      "source_sha256": "a20d4ef51f6e69f8d9c3b4abd6a9f0a4c3f5874cb190c8c1122bfa11752f20eb"
+    },
+    {
+      "source": "GptLean/SymmetricLift/TensorApproximation.lean",
+      "source_sha256": "58bb9ac4992fe93465c7fb99015c39afae68ee246466aee4bc214bc45a9e627b"
+    },
+    {
+      "source": "GptLean/SymmetricLift/TensorBackground.lean",
+      "source_sha256": "80e99f36b10bd1132b080c9f9fc9d7d7a9509f6f1b33717a255294814d9e5cb1"
+    },
+    {
+      "source": "GptLean/SymmetricLift/TensorDerivativeApproximation.lean",
+      "source_sha256": "346bc84d7e0b7d33ac032d0110091c85506dd778708ec95a8f307a08b8630086"
+    },
+    {
+      "source": "GptLean/SymmetricLift/TensorProduct.lean",
+      "source_sha256": "87d8c71a9a971dda251630b45a3b59e083ee3721688062e5cc525c57f005c725"
+    },
+    {
+      "source": "GptLean/SymmetricLift/TensorSmooth.lean",
+      "source_sha256": "18e08d074700aaf296aa7f8c4c272318b76b75e47654052525dcb8e0e061e257"
+    },
+    {
+      "source": "GptLean/SymmetricLift/WeakDerivativeClosure.lean",
+      "source_sha256": "598cad2ce515c9935928feac8c9c0e35b6675b547400d13de1ebedb7bca1cb28"
+    },
+    {
+      "source": "GptLean/SymmetricLift/WeakMollification.lean",
+      "source_sha256": "62bec123df7d7cea197c738fb149ae2ecc3727a9f3f11b3ab8b6e03921c281a3"
+    },
+    {
+      "source": "GptLean/Theorem48.lean",
+      "source_sha256": "a0fac6aa152b41b2f99f4a7edcb7d90928c1ff4e28e73130521c6c4ae67eb00d"
+    },
+    {
+      "source": "GptLean/Transformations.lean",
+      "source_sha256": "ae04035969bb9b13de795a0350b933431b26ff949d0394b0742d3d26d33916e9"
+    },
+    {
+      "source": "GptLean/TransformationsAffine.lean",
+      "source_sha256": "2186945ac4e57c253bde8a6ccc095664cc7d7b83678d5f16076b7043c880bb61"
+    },
+    {
+      "source": "GptLean/TransformationsClosedForm.lean",
+      "source_sha256": "89da0e523c434a9e7ece411c8930c43ebe5d589e38a0a9cedea8fef477ae337a"
+    },
+    {
+      "source": "GptLean/TransformationsCoulomb.lean",
+      "source_sha256": "c7418dd793743a3f36ae364b8cd758188d7623a8dcd874bd92d8bd40ace2226a"
+    },
+    {
+      "source": "GptLean/TransformationsDilation.lean",
+      "source_sha256": "c7a311ac724959f60696cc30080355a829ff9705284a9577d5d0c854eb4b9a74"
+    },
+    {
+      "source": "GptLean/TransformationsDilationReference.lean",
+      "source_sha256": "8e2f5b9839b8ab85f970348f4efee8354d6b7be965cca53f56cdcd85fbf940f3"
+    },
+    {
+      "source": "GptLean/TransformationsFockFamily.lean",
+      "source_sha256": "86d75e77b1a22a4f5e55702b5531f366ec2c8c78cb3c1d7a70a7d844c47713f7"
+    },
+    {
+      "source": "GptLean/TransformationsFockMixing.lean",
+      "source_sha256": "afd82d36ec380ff122b766cc480901db0e220fd1547c0def93bb07884df9acca"
+    },
+    {
+      "source": "GptLean/TransformationsFockPointwise.lean",
+      "source_sha256": "143ca31c5d5cd999fa4b7a5e3eb727198da61d7a822aeb8aae91498f695a20d9"
+    },
+    {
+      "source": "GptLean/TransformationsFockScaling.lean",
+      "source_sha256": "50523ace899625013a7437696495d892383fcd0b23989f2407e7a6241d450b53"
+    },
+    {
+      "source": "GptLean/TransformationsFormOperator.lean",
+      "source_sha256": "ae7707e21db2b9e28c388e4dbe532dfee0fd6ebc20a7e69e01a1c8b24c65c901"
+    },
+    {
+      "source": "GptLean/TransformationsGaugeH1.lean",
+      "source_sha256": "9a0f53b52b4e71f99b5270aaa5194aeb617b71c42e2a7b47692c1dca7a1a51f9"
+    },
+    {
+      "source": "GptLean/TransformationsGaugePair.lean",
+      "source_sha256": "88e84ef81aecaca5a8cbd8fd2b0dc9211f2db86d1d2c9fa94653212f43515e24"
+    },
+    {
+      "source": "GptLean/TransformationsGaugeReference.lean",
+      "source_sha256": "e319c40e91e7bd1e8a366ccfe0cd4634466ee65773576f7138334540b67e865c"
+    },
+    {
+      "source": "GptLean/TransformationsGaugeStates.lean",
+      "source_sha256": "fe700c09eb72585b913cf08d1dba58ce0d9e9a16b404f86f0818a7707c72b478"
+    },
+    {
+      "source": "GptLean/TransformationsGaugeWeak.lean",
+      "source_sha256": "f325b8e4608c4d3d7e39031ea8122bcccdbfa6058e031297bfdaffa7ae235baf"
+    },
+    {
+      "source": "GptLean/TransformationsGaugeWeakConfiguration.lean",
+      "source_sha256": "640968df386f8fad740406a194e55d8923da85c82da6c516c3d6bcaafc8b5d8d"
+    },
+    {
+      "source": "GptLean/TransformationsGaugeWeakH1.lean",
+      "source_sha256": "ada0b0b526f2179398bf11931440853d64d6dd47984a14cb5c89ffd681d0340a"
+    },
+    {
+      "source": "GptLean/TransformationsGaugeWeakPair.lean",
+      "source_sha256": "c96faf8bec51bd7477609b00437bb9b7eef7d452baa525d57bc54720d2826001"
+    },
+    {
+      "source": "GptLean/TransformationsGaugeWeakPairCovariance.lean",
+      "source_sha256": "e6eed1566152588a528a42b158d8c31b95adcabc72cc210675cd7e8e18f0d91f"
+    },
+    {
+      "source": "GptLean/TransformationsGaugeWeakReference.lean",
+      "source_sha256": "f478c134e1442c47dfa73891c9d18f9d8718a47169d58de1e65644d64d668dd1"
+    },
+    {
+      "source": "GptLean/TransformationsGaugeWeakSources.lean",
+      "source_sha256": "9b401c4d07bbae7c200d4e6f8ab50f1f7ba9048594a5dc933b18e47e1c596764"
+    },
+    {
+      "source": "GptLean/TransformationsGaugeWeakStates.lean",
+      "source_sha256": "6f31cc9e2d2620a891e226c10e32fa1de87583700017940463d5107cedb7df1a"
+    },
+    {
+      "source": "GptLean/TransformationsIsometryReference.lean",
+      "source_sha256": "cf03c3eb712af578229dd4159b1efd5b077c402b3880f2b2d71bdb126c4c4998"
+    },
+    {
+      "source": "GptLean/TransformationsKernelCovariance.lean",
+      "source_sha256": "83f3284c90597409e647bd7c615b1c6b50c9b030f2567684db3b33c35d72a87b"
+    },
+    {
+      "source": "GptLean/TransformationsPairIsometry.lean",
+      "source_sha256": "d349584754075160efaac2fe2e1115ccc88ca0e3c650810515a6beb016403910"
+    },
+    {
+      "source": "GptLean/TransformationsPhase.lean",
+      "source_sha256": "d5cb1124184639d706b3e5e8ae3c095ebbdc53ccb099cf26e334d2dbab844e35"
+    },
+    {
+      "source": "GptLean/TransformationsPotentials.lean",
+      "source_sha256": "2db218256dfdff718d7d417600ada734800d7fdf2371d7e88e1569d3edd84d3f"
+    },
+    {
+      "source": "GptLean/TransformationsPureStates.lean",
+      "source_sha256": "ec63f68890fcf0363cdf220751083dc6548586d263296b5a1b394af9d36e7c28"
+    },
+    {
+      "source": "GptLean/TransformationsRotationFrame.lean",
+      "source_sha256": "91d9b53418c0e1ceaa6cb71d39bb9d84bac21dcbdd3afbdb1c10e80df883a495"
+    },
+    {
+      "source": "GptLean/TransformationsRotationPhysical.lean",
+      "source_sha256": "17ff3b487acbcf1a60a15e226da33ad2f492162a40977bc121eff49bc69eb3e1"
+    },
+    {
+      "source": "GptLean/TransformationsRotationStates.lean",
+      "source_sha256": "106479234faaa42892e9549b07bd0c414225d6967b55fe33d8f6e9078401946b"
+    },
+    {
+      "source": "GptLean/TransformationsTimeReversalForm.lean",
+      "source_sha256": "d6c62140293d03095fb17832bb862b1bf9b4da5c60cacd38eb1dd7e09ac7b110"
+    },
+    {
+      "source": "GptLean/TransformationsTimeReversalFrame.lean",
+      "source_sha256": "c786d8de91c0a8f0e43a658a247e984095cf598f32d4b19b0959fe436c89cbbf"
+    },
+    {
+      "source": "GptLean/TransformationsTimeReversalReference.lean",
+      "source_sha256": "557e40e78dfb2eb925c0ed3020ea78dba30d6c1cd3735863d2043cd227c7a507"
+    },
+    {
+      "source": "GptLean/TransformationsTimeReversalStates.lean",
+      "source_sha256": "dfd26699580a355cecd8bcf757699e8c8f1544c34371820d65dd6467e9c7d3ff"
+    },
+    {
+      "source": "GptLean/TransformationsTranslationReference.lean",
+      "source_sha256": "7ca4aefc0860ec6956e80387b32b475f2446e3ccf75d0d3a49a1b57dc9b08bef"
+    },
+    {
+      "source": "GptLean/TransformationsTranslationStates.lean",
+      "source_sha256": "09486bdd7db51567a2e12952f6411fedef81108539efba733fb94a610292fc25"
+    },
+    {
+      "source": "GptLean/WeylCoherentOverlap.lean",
+      "source_sha256": "adb1f34fd05ad39058fbbad78df571f1b72aa11cc2802a79908606e568cbd121"
+    },
+    {
+      "source": "GptLean/WeylCoherentPhase.lean",
+      "source_sha256": "ef74a4b00864f385daa457a0c1952ca6a9646d21663d76e78800232cfc1d830c"
+    },
+    {
+      "source": "GptLean/WeylCoherentReal.lean",
+      "source_sha256": "0031edf0a58c31945e0f9e750881fdf366b3ff4f47793825c384d3589c91e360"
+    },
+    {
+      "source": "GptLean/WeylCoherentSobolev.lean",
+      "source_sha256": "5ba6ba678a07330274c23513740959228623e5b9829a6e3ea7716bf7e6d16e83"
+    },
+    {
+      "source": "GptLean/WeylCoherentSobolevLocal.lean",
+      "source_sha256": "bd95a0fb81c44fe697170bb12172c9760677f67d2cbd0bf503803dcf104e9d2a"
+    },
+    {
+      "source": "GptLean/WeylFormDisplacement.lean",
+      "source_sha256": "c9b32933a298f1fbddece98b2e2c207c212629db04105013dfa7487fc8f4b7c6"
+    },
+    {
+      "source": "GptLean/WeylGraphDomains.lean",
+      "source_sha256": "ec9fa177a8335df57f7d91403096e65abce49a423f1752692caf76a1b65103e5"
+    },
+    {
+      "source": "GptLean/WeylPhaseFinite.lean",
+      "source_sha256": "f780d425442bf69267fceaeef1049ea44c732a92872b3f0fe20f86594c82e2c7"
+    },
+    {
+      "source": "GptLean/WeylRadiationOperator.lean",
+      "source_sha256": "8eeb90cde491c9fbb87f72358edc305fc4e78c5a3e881860a20691b3e7a06fac"
+    },
+    {
+      "source": "GptLean/ZeroCurrent.lean",
+      "source_sha256": "353716d390012d8359a9034faf9dd5f55e55c3045cc5dc296f32745a490a3f0d"
+    }
+  ]
+}
